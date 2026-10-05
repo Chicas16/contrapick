@@ -1,0 +1,2427 @@
+{
+ "Aatrox": {
+  "herotype": [
+   "Fighter"
+  ],
+  "role": [
+   "Juggernaut"
+  ],
+  "position": [
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "3",
+  "utility": "2"
+ },
+ "Ahri": {
+  "herotype": [
+   "Mage",
+   "Assassin"
+  ],
+  "role": [
+   "Burst"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Akali": {
+  "herotype": [
+   "Assassin"
+  ],
+  "role": [
+   "Assassin"
+  ],
+  "position": [
+   "Mid",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Akshan": {
+  "herotype": [
+   "Assassin",
+   "Marksman"
+  ],
+  "role": [
+   "Assassin",
+   "Marksman"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Alistar": {
+  "herotype": [
+   "Tank",
+   "Support"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "1",
+  "toughness": "3",
+  "utility": "2"
+ },
+ "Ambessa": {
+  "herotype": [
+   "Fighter",
+   "Assassin"
+  ],
+  "role": [
+   "Diver",
+   "Skirmisher"
+  ],
+  "position": [
+   "Jungle",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Amumu": {
+  "herotype": [
+   "Tank"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Jungle",
+   "Support",
+   "Baron lane"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Annie": {
+  "herotype": [
+   "Mage",
+   "Support"
+  ],
+  "role": [
+   "Burst"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Ashe": {
+  "herotype": [
+   "Marksman",
+   "Support"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane",
+   "Support"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Aurora": {
+  "herotype": [],
+  "role": [
+   "Burst",
+   "Assassin"
+  ],
+  "position": [
+   "Mid",
+   "Baron Lane"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Bard": {
+  "herotype": [],
+  "role": [
+   "Catcher"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "1",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Blitzcrank": {
+  "herotype": [
+   "Tank",
+   "Support"
+  ],
+  "role": [
+   "Catcher"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "1",
+  "toughness": "2",
+  "utility": "2"
+ },
+ "Brand": {
+  "herotype": [
+   "Mage"
+  ],
+  "role": [
+   "Burst"
+  ],
+  "position": [
+   "Mid",
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Braum": {
+  "herotype": [
+   "Support",
+   "Tank"
+  ],
+  "role": [
+   "Warden"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "1",
+  "toughness": "2",
+  "utility": "2"
+ },
+ "Caitlyn": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Camille": {
+  "herotype": [
+   "Fighter"
+  ],
+  "role": [
+   "Diver"
+  ],
+  "position": [
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Cho'Gath": {
+  "herotype": [
+   "Tank",
+   "Mage"
+  ],
+  "role": [
+   "Specialist"
+  ],
+  "position": [
+   "Baron Lane"
+  ],
+  "adaptive": "Magical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Corki": {
+  "herotype": [
+   "Marksman",
+   "Mage"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane",
+   "Mid"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Darius": {
+  "herotype": [
+   "Fighter"
+  ],
+  "role": [
+   "Juggernaut"
+  ],
+  "position": [
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Diana": {
+  "herotype": [
+   "Fighter",
+   "Mage"
+  ],
+  "role": [
+   "Assassin",
+   "Diver"
+  ],
+  "position": [
+   "Mid",
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Dr. Mundo": {
+  "herotype": [
+   "Fighter",
+   "Tank"
+  ],
+  "role": [
+   "Juggernaut"
+  ],
+  "position": [
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Draven": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Ekko": {
+  "herotype": [
+   "Assassin",
+   "Fighter"
+  ],
+  "role": [
+   "Assassin"
+  ],
+  "position": [
+   "Mid",
+   "Jungle",
+   "Baron lane"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Evelynn": {
+  "herotype": [
+   "Assassin"
+  ],
+  "role": [
+   "Assassin"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "2"
+ },
+ "Ezreal": {
+  "herotype": [
+   "Marksman",
+   "Mage"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Fiddlesticks": {
+  "herotype": [
+   "Mage"
+  ],
+  "role": [
+   "Specialist"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Fiora": {
+  "herotype": [
+   "Fighter",
+   "Assassin"
+  ],
+  "role": [
+   "Skirmisher"
+  ],
+  "position": [
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "2"
+ },
+ "Fizz": {
+  "herotype": [
+   "Assassin",
+   "Mage"
+  ],
+  "role": [
+   "Assassin"
+  ],
+  "position": [
+   "Mid",
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Galio": {
+  "herotype": [
+   "Tank",
+   "Mage"
+  ],
+  "role": [
+   "Warden"
+  ],
+  "position": [
+   "Mid",
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Garen": {
+  "herotype": [
+   "Fighter",
+   "Tank"
+  ],
+  "role": [
+   "Juggernaut"
+  ],
+  "position": [
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Gnar": {
+  "herotype": [
+   "Fighter",
+   "Tank"
+  ],
+  "role": [
+   "Specialist"
+  ],
+  "position": [
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Gragas": {
+  "herotype": [
+   "Figher",
+   "Mage"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Jungle",
+   "Baron Lane",
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Graves": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Specialist"
+  ],
+  "position": [
+   "Jungle",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Gwen": {
+  "herotype": [
+   "Fighter",
+   "Assassin"
+  ],
+  "role": [
+   "Skirmisher"
+  ],
+  "position": [
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Hecarim": {
+  "herotype": [
+   "Fighter",
+   "Tank"
+  ],
+  "role": [
+   "Diver"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Heimerdinger": {
+  "herotype": [
+   "Mage",
+   "Support"
+  ],
+  "role": [
+   "Specialist"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Hwei": {
+  "herotype": [
+   "Mage",
+   "Support"
+  ],
+  "role": [
+   "Artillery"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Irelia": {
+  "herotype": [
+   "Fighter",
+   "Assassin"
+  ],
+  "role": [
+   "Diver"
+  ],
+  "position": [
+   "Mid",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Janna": {
+  "herotype": [
+   "Support",
+   "Mage"
+  ],
+  "role": [
+   "Enchanter"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "1",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Jarvan IV": {
+  "herotype": [
+   "Tank",
+   "Fighter"
+  ],
+  "role": [
+   "Diver"
+  ],
+  "position": [
+   "Jungle",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "2"
+ },
+ "Jax": {
+  "herotype": [
+   "Fighter"
+  ],
+  "role": [
+   "Skirmisher"
+  ],
+  "position": [
+   "Jungle",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Jayce": {
+  "herotype": [
+   "Fighter",
+   "Marksman"
+  ],
+  "role": [
+   "Artillery"
+  ],
+  "position": [
+   "Baron lane",
+   "Mid"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Jhin": {
+  "herotype": [
+   "Marksman",
+   "Mage"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon Lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Jinx": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon Lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "K'Sante": {
+  "herotype": [
+   "Tank",
+   "Fighter"
+  ],
+  "role": [
+   "Warden",
+   "Skirmisher"
+  ],
+  "position": [
+   "Baron Lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "2"
+ },
+ "Kai'Sa": {
+  "herotype": [
+   "Marksman",
+   "Assassin"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Kalista": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon Lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Karma": {
+  "herotype": [
+   "Mage",
+   "Support"
+  ],
+  "role": [
+   "Burst",
+   "Enchanter"
+  ],
+  "position": [
+   "Support",
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Kassadin": {
+  "herotype": [
+   "Assassin",
+   "Mage"
+  ],
+  "role": [
+   "Assassin"
+  ],
+  "position": [
+   "Mid",
+   "Baron lane"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Katarina": {
+  "herotype": [
+   "Assassin",
+   "Mage"
+  ],
+  "role": [
+   "Assassin"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Kayle": {
+  "herotype": [
+   "Fighter",
+   "Support"
+  ],
+  "role": [
+   "Specialist"
+  ],
+  "position": [
+   "Baron lane",
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Kayn": {
+  "herotype": [
+   "Fighter",
+   "Assassin"
+  ],
+  "role": [
+   "Skirmisher"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Kennen": {
+  "herotype": [
+   "Mage",
+   "Marksman"
+  ],
+  "role": [
+   "Specialist"
+  ],
+  "position": [
+   "Baron lane",
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Kha'Zix": {
+  "herotype": [
+   "Assassin"
+  ],
+  "role": [
+   "Assassin"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Kindred": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Kog'Maw": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon Lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Lee Sin": {
+  "herotype": [
+   "Fighter",
+   "Assassin"
+  ],
+  "role": [
+   "Diver"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Leona": {
+  "herotype": [
+   "Tank",
+   "Support"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "1",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Lillia": {
+  "herotype": [
+   "Fighter",
+   "Mage"
+  ],
+  "role": [
+   "Skirmisher"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Lissandra": {
+  "herotype": [
+   "Mage"
+  ],
+  "role": [
+   "Burst"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Lucian": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane",
+   "Mid"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Lulu": {
+  "herotype": [
+   "Support",
+   "Mage"
+  ],
+  "role": [
+   "Enchanter"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Lux": {
+  "herotype": [
+   "Mage",
+   "Support"
+  ],
+  "role": [
+   "Burst",
+   "Artillery"
+  ],
+  "position": [
+   "Mid",
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Malphite": {
+  "herotype": [
+   "Tank"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Support",
+   "Baron lane",
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "1",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Maokai": {
+  "herotype": [
+   "Tank",
+   "Support"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Jungle",
+   "Baron lane",
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "2"
+ },
+ "Master Yi": {
+  "herotype": [
+   "Assassin",
+   "Fighter"
+  ],
+  "role": [
+   "Skirmisher"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Mel": {
+  "herotype": [
+   "Mage",
+   "Support"
+  ],
+  "role": [
+   "Artillery"
+  ],
+  "position": [
+   "Mid",
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Milio": {
+  "herotype": [
+   "Support",
+   "Mage"
+  ],
+  "role": [
+   "Enchanter"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "1",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Miss Fortune": {
+  "herotype": [
+   "Marksman",
+   "Mage"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Mordekaiser": {
+  "herotype": [
+   "Fighter",
+   "Mage"
+  ],
+  "role": [
+   "Juggernaut"
+  ],
+  "position": [
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "2"
+ },
+ "Morgana": {
+  "herotype": [
+   "Mage",
+   "Support"
+  ],
+  "role": [
+   "Catcher"
+  ],
+  "position": [
+   "Support",
+   "Mid",
+   "Jungle"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Nami": {
+  "herotype": [
+   "Support",
+   "Mage"
+  ],
+  "role": [
+   "Enchanter"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Nautilus": {
+  "herotype": [
+   "Tank",
+   "Support"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Support",
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "1",
+  "toughness": "3",
+  "utility": "2"
+ },
+ "Nasus": {
+  "herotype": [
+   "Fighter",
+   "Tank"
+  ],
+  "role": [
+   "Juggernaut"
+  ],
+  "position": [
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Nidalee": {
+  "herotype": [
+   "Assassin",
+   "Mage"
+  ],
+  "role": [
+   "Specialist"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Nilah": {
+  "herotype": [
+   "Fighter",
+   "Assassin"
+  ],
+  "role": [
+   "Skirmisher"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Nocturne": {
+  "herotype": [
+   "Tank",
+   "Mage"
+  ],
+  "role": [
+   "Assassin"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Norra": {
+  "herotype": [
+   "Mage"
+  ],
+  "role": [
+   "Artillery"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Nunu & Willump": {
+  "herotype": [
+   "Tank",
+   "Mage"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "1",
+  "toughness": "3",
+  "utility": "2"
+ },
+ "Olaf": {
+  "herotype": [
+   "Fighter"
+  ],
+  "role": [
+   "Diver"
+  ],
+  "position": [
+   "Jungle",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Orianna": {
+  "herotype": [
+   "Mage",
+   "Support"
+  ],
+  "role": [
+   "Burst"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Ornn": {
+  "herotype": [
+   "Tank",
+   "Fighter"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "1",
+  "toughness": "3",
+  "utility": "2"
+ },
+ "Pantheon": {
+  "herotype": [
+   "Tank",
+   "Fighter"
+  ],
+  "role": [
+   "Warden"
+  ],
+  "position": [
+   "Baron Lane",
+   "Jungle",
+   "Mid"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Poppy": {
+  "herotype": [
+   "Tank"
+  ],
+  "role": [
+   "Warden"
+  ],
+  "position": [
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Pyke": {
+  "herotype": [
+   "Support",
+   "Assassin"
+  ],
+  "role": [
+   "Assassin",
+   "Catcher"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Rakan": {
+  "herotype": [
+   "Support",
+   "Tank"
+  ],
+  "role": [
+   "Catcher"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "1",
+  "toughness": "2",
+  "utility": "3"
+ },
+ "Rammus": {
+  "herotype": [
+   "Tank"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Rell": {
+  "herotype": [
+   "Tank",
+   "Support"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "1",
+  "toughness": "3",
+  "utility": "2"
+ },
+ "Renekton": {
+  "herotype": [
+   "Fighter"
+  ],
+  "role": [
+   "Diver"
+  ],
+  "position": [
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Rengar": {
+  "herotype": [
+   "Assassin",
+   "Fighter"
+  ],
+  "role": [
+   "Assassin",
+   "Diver"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Riven": {
+  "herotype": [
+   "Fighter",
+   "Assassin"
+  ],
+  "role": [
+   "Skirmisher"
+  ],
+  "position": [
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Rumble": {
+  "herotype": [],
+  "role": [
+   "Battlemage"
+  ],
+  "position": [
+   "Baron Lane"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Ryze": {
+  "herotype": [
+   "Mage",
+   "Fighter"
+  ],
+  "role": [
+   "Battlemage"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Samira": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Senna": {
+  "herotype": [
+   "Marksman",
+   "Support"
+  ],
+  "role": [
+   "Marksman",
+   "Enchanter"
+  ],
+  "position": [
+   "Dragon lane",
+   "Support"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Seraphine": {
+  "herotype": [
+   "Mage",
+   "Support"
+  ],
+  "role": [
+   "Burst",
+   "Enchanter"
+  ],
+  "position": [
+   "Support",
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Sett": {
+  "herotype": [
+   "Fighter",
+   "Tank"
+  ],
+  "role": [
+   "Juggernaut"
+  ],
+  "position": [
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Shen": {
+  "herotype": [
+   "Tank"
+  ],
+  "role": [
+   "Warden"
+  ],
+  "position": [
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "3"
+ },
+ "Shyvana": {
+  "herotype": [
+   "Fighter",
+   "Tank"
+  ],
+  "role": [
+   "Juggernaut"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Singed": {
+  "herotype": [
+   "Tank",
+   "Mage"
+  ],
+  "role": [
+   "Specialist"
+  ],
+  "position": [
+   "Baron lane"
+  ],
+  "adaptive": "Magic",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Sion": {
+  "herotype": [
+   "Tank",
+   "Fighter"
+  ],
+  "role": [
+   "Vanguard"
+  ],
+  "position": [
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Sivir": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Skarner": {
+  "herotype": [
+   "Vanguard",
+   "Juggernaut"
+  ],
+  "role": [
+   "Tank",
+   "Fighter"
+  ],
+  "position": [
+   "Jungle",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Smolder": {
+  "herotype": [
+   "Marksman",
+   "Mage"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Sona": {
+  "herotype": [
+   "Support",
+   "Mage"
+  ],
+  "role": [
+   "Enchanter"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Soraka": {
+  "herotype": [
+   "Support",
+   "Mage"
+  ],
+  "role": [
+   "Enchanter"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "1",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Swain": {
+  "herotype": [
+   "Mage",
+   "Fighter"
+  ],
+  "role": [
+   "Battlemage"
+  ],
+  "position": [
+   "Mid",
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Syndra": {
+  "herotype": [
+   "Mage"
+  ],
+  "role": [
+   "Burst"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Taliyah": {
+  "herotype": [
+   "Mage",
+   "Support"
+  ],
+  "role": [
+   "Battlemage"
+  ],
+  "position": [
+   "Jungle",
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Talon": {
+  "herotype": [
+   "Assassin"
+  ],
+  "role": [
+   "Assassin"
+  ],
+  "position": [
+   "Mid",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Teemo": {
+  "herotype": [
+   "Marksman",
+   "Mage"
+  ],
+  "role": [
+   "Specialist"
+  ],
+  "position": [
+   "Baron lane",
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Thresh": {
+  "herotype": [
+   "Support",
+   "Tank"
+  ],
+  "role": [
+   "Catcher"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "1",
+  "toughness": "2",
+  "utility": "3"
+ },
+ "Tristana": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Tryndamere": {
+  "herotype": [
+   "Fighter"
+  ],
+  "role": [
+   "Skirmisher"
+  ],
+  "position": [
+   "Jungle",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Twisted Fate": {
+  "herotype": [
+   "Mage",
+   "Marksman"
+  ],
+  "role": [
+   "Burst"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Twitch": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Urgot": {
+  "herotype": [
+   "Fighter"
+  ],
+  "role": [
+   "Juggernaut"
+  ],
+  "position": [
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Varus": {
+  "herotype": [
+   "Marksman",
+   "Mage"
+  ],
+  "role": [
+   "Marksman",
+   "Artillery"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Vayne": {
+  "herotype": [
+   "Marksman",
+   "Assassin"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Veigar": {
+  "herotype": [
+   "Mage"
+  ],
+  "role": [
+   "Burst"
+  ],
+  "position": [
+   "Mid",
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Vel'Koz": {
+  "herotype": [
+   "Mage"
+  ],
+  "role": [
+   "Artillery"
+  ],
+  "position": [
+   "Mid",
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "2"
+ },
+ "Vex": {
+  "herotype": [
+   "Mage"
+  ],
+  "role": [
+   "Burst"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "2"
+ },
+ "Vi": {
+  "herotype": [
+   "Fighter",
+   "Assassin"
+  ],
+  "role": [
+   "Diver"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Viktor": {
+  "herotype": [],
+  "role": [
+   "Battlemage"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Viego": {
+  "herotype": [
+   "Fighter",
+   "Assassin"
+  ],
+  "role": [
+   "Skirmisher"
+  ],
+  "position": [
+   "Jungle",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Vladimir": {
+  "herotype": [
+   "Mage"
+  ],
+  "role": [
+   "Battlemage"
+  ],
+  "position": [
+   "Mid",
+   "Baron lane"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Volibear": {
+  "herotype": [
+   "Fighter",
+   "Tank"
+  ],
+  "role": [
+   "Juggernaut"
+  ],
+  "position": [
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "3",
+  "utility": "1"
+ },
+ "Warwick": {
+  "herotype": [
+   "Fighter"
+  ],
+  "role": [
+   "Diver"
+  ],
+  "position": [
+   "Jungle",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Wukong": {
+  "herotype": [
+   "Fighter",
+   "Tank"
+  ],
+  "role": [
+   "Diver"
+  ],
+  "position": [
+   "Jungle",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Xayah": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Xin Zhao": {
+  "herotype": [
+   "Fighter",
+   "Tank"
+  ],
+  "role": [
+   "Diver"
+  ],
+  "position": [
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "2",
+  "toughness": "2",
+  "utility": "1"
+ },
+ "Yasuo": {
+  "herotype": [
+   "Fighter",
+   "Assassin"
+  ],
+  "role": [
+   "Skirmisher"
+  ],
+  "position": [
+   "Mid",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Yone": {
+  "herotype": [
+   "Assassin",
+   "Fighter"
+  ],
+  "role": [
+   "Assassin",
+   "Skirmisher"
+  ],
+  "position": [
+   "Mid",
+   "Baron lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Yunara": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Melee",
+  "range": "Physical",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Yuumi": {
+  "herotype": [
+   "Support",
+   "Mage"
+  ],
+  "role": [
+   "Enchanter"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "1",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Zed": {
+  "herotype": [
+   "Assassin"
+  ],
+  "role": [
+   "Assassin"
+  ],
+  "position": [
+   "Mid",
+   "Baron lane",
+   "Jungle"
+  ],
+  "adaptive": "Physical",
+  "range": "Melee",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Zeri": {
+  "herotype": [
+   "Marksman"
+  ],
+  "role": [
+   "Marksman"
+  ],
+  "position": [
+   "Dragon lane"
+  ],
+  "adaptive": "Physical",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Ziggs": {
+  "herotype": [
+   "Mage"
+  ],
+  "role": [
+   "Artillery"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Zilean": {
+  "herotype": [
+   "Support",
+   "Mage"
+  ],
+  "role": [
+   "Specialist"
+  ],
+  "position": [
+   "Support"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "2",
+  "toughness": "1",
+  "utility": "3"
+ },
+ "Zoe": {
+  "herotype": [
+   "Mage"
+  ],
+  "role": [
+   "Burst"
+  ],
+  "position": [
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ },
+ "Zyra": {
+  "herotype": [
+   "Mage",
+   "Support"
+  ],
+  "role": [
+   "Catcher"
+  ],
+  "position": [
+   "Support",
+   "Mid"
+  ],
+  "adaptive": "Magic",
+  "range": "Ranged",
+  "damage": "3",
+  "toughness": "1",
+  "utility": "1"
+ }
+}

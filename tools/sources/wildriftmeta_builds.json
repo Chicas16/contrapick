@@ -1,0 +1,4526 @@
+{
+ "aatrox": [
+  [
+   "Baron",
+   [
+    0,
+    8,
+    2
+   ],
+   [
+    "Eclipse",
+    "Plated Steelcaps",
+    "Sundered Sky",
+    "Sterak's Gage",
+    "Black Cleaver",
+    "Serylda\u2019s Grudge",
+    "Death's Dance",
+    "Amaranth's Twinguard",
+    "Spear of Shojin",
+    "Chempunk Chainsword",
+    "Maw of Malmortius"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    7,
+    2
+   ],
+   [
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Eclipse",
+    "Sterak's Gage",
+    "Serylda\u2019s Grudge",
+    "Death's Dance",
+    "Black Cleaver",
+    "Guardian Angel",
+    "Serpent's Fang",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "ahri": [
+  [
+   "Mid",
+   [
+    9,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Lich Bane",
+    "Malignance",
+    "Cosmic Drive",
+    "Horizon Focus",
+    "crown-of-the-shattered-queen",
+    "Oceanid's Trident",
+    "soulstealer",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "akali": [
+  [
+   "Baron",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "Lich Bane",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "Riftmaker",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "Lich Bane",
+    "Rabadon's Deathcap",
+    "Riftmaker",
+    "Oceanid's Trident",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "akshan": [
+  [
+   "Baron",
+   [
+    0,
+    8,
+    1
+   ],
+   [
+    "magnetic-blaster",
+    "Gluttonous Greaves",
+    "Blade of the Ruined King",
+    "Infinity Edge",
+    "Terminus",
+    "Mortal Reminder",
+    "Serylda\u2019s Grudge",
+    "Wit's End",
+    "Bloodthirster",
+    "Guardian Angel",
+    "Serpent's Fang"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    0,
+    8,
+    0
+   ],
+   [
+    "magnetic-blaster",
+    "Boots of Dynamism",
+    "The Collector",
+    "Infinity Edge",
+    "Mortal Reminder",
+    "Dominik\u2019s Regards",
+    "Duskblade of Draktharr",
+    "Bloodthirster",
+    "Serpent's Fang",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "alistar": [
+  [
+   "Support",
+   [
+    0,
+    0,
+    11
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Yordle Trap",
+    "Radiant Virtue",
+    "Frozen Heart",
+    "Zeke's Convergence",
+    "Abyssal Mask",
+    "Force of Nature",
+    "Amaranth's Twinguard",
+    "Randuin's Omen",
+    "Warmog's Armor",
+    "Thornmail"
+   ]
+  ]
+ ],
+ "ambessa": [
+  [
+   "Baron",
+   [
+    0,
+    5,
+    3
+   ],
+   [
+    "Eclipse",
+    "Plated Steelcaps",
+    "Black Cleaver",
+    "Sterak's Gage",
+    "Death's Dance",
+    "Maw of Malmortius",
+    "Thornmail",
+    "Amaranth's Twinguard",
+    "Chempunk Chainsword"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    6,
+    2
+   ],
+   [
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Black Cleaver",
+    "Death's Dance",
+    "Maw of Malmortius",
+    "Chempunk Chainsword",
+    "Spear of Shojin",
+    "Amaranth's Twinguard",
+    "Thornmail"
+   ]
+  ]
+ ],
+ "amumu": [
+  [
+   "Jungle",
+   [
+    0,
+    0,
+    7
+   ],
+   [
+    "searing-crown",
+    "Mercury's Treads",
+    "Hollow Radiance",
+    "Thornmail",
+    "Amaranth's Twinguard",
+    "Mantle of the Twelfth Hour",
+    "Unending Despair",
+    "Frozen Heart",
+    "Force of Nature"
+   ]
+  ],
+  [
+   "Support",
+   [
+    0,
+    0,
+    9
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "searing-crown",
+    "Amaranth's Twinguard",
+    "Kaenic Rookern",
+    "Thornmail",
+    "Dawnshroud",
+    "Frozen Heart",
+    "Zeke's Convergence",
+    "Randuin's Omen",
+    "Mantle of the Twelfth Hour"
+   ]
+  ]
+ ],
+ "annie": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "Liandry's Torment",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Oceanid's Trident"
+   ]
+  ]
+ ],
+ "ashe": [
+  [
+   "Dragon",
+   [
+    1,
+    7,
+    1
+   ],
+   [
+    "Kraken Slayer",
+    "Gluttonous Greaves",
+    "Guinsoo's Rageblade",
+    "Blade of the Ruined King",
+    "Terminus",
+    "Mortal Reminder",
+    "Bloodthirster",
+    "Runaan's Hurricane",
+    "Wit's End",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "aurelion-sol": [
+  [
+   "Mid",
+   [
+    8,
+    0,
+    0
+   ],
+   [
+    "Rod of Ages",
+    "Boots of Mana",
+    "Liandry's Torment",
+    "Infinity Orb",
+    "Rylai's Crystal Scepter",
+    "Rabadon's Deathcap",
+    "Malignance",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "aurora": [
+  [
+   "Baron",
+   [
+    5,
+    0,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "soulstealer",
+    "Rabadon's Deathcap",
+    "Liandry's Torment",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    8,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "Malignance",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen",
+    "Liandry's Torment",
+    "Morellonomicon",
+    "Cosmic Drive"
+   ]
+  ]
+ ],
+ "bard": [
+  [
+   "Support",
+   [
+    4,
+    0,
+    1
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "Lich Bane",
+    "Liandry's Torment",
+    "Oceanid's Trident",
+    "Morellonomicon",
+    "Amaranth's Twinguard",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "blitzcrank": [
+  [
+   "Support",
+   [
+    0,
+    0,
+    9
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Yordle Trap",
+    "Zeke's Convergence",
+    "Frozen Heart",
+    "Knight's Vow",
+    "Amaranth's Twinguard",
+    "Kaenic Rookern",
+    "Thornmail",
+    "Iceborn Gauntlet"
+   ]
+  ]
+ ],
+ "brand": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Liandry's Torment",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Malignance",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen",
+    "soulstealer"
+   ]
+  ],
+  [
+   "Support",
+   [
+    5,
+    0,
+    0
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "Liandry's Torment",
+    "Rylai's Crystal Scepter",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "braum": [
+  [
+   "Support",
+   [
+    1,
+    0,
+    8
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Redemption",
+    "Radiant Virtue",
+    "Amaranth's Twinguard",
+    "Knight's Vow",
+    "Randuin's Omen",
+    "Kaenic Rookern",
+    "Frozen Heart",
+    "Force of Nature"
+   ]
+  ]
+ ],
+ "caitlyn": [
+  [
+   "Dragon",
+   [
+    0,
+    7,
+    0
+   ],
+   [
+    "The Collector",
+    "Gluttonous Greaves",
+    "magnetic-blaster",
+    "Infinity Edge",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "Blade of the Ruined King",
+    "Bloodthirster",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "camille": [
+  [
+   "Baron",
+   [
+    0,
+    7,
+    5
+   ],
+   [
+    "Divine Sunderer",
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Hullbreaker",
+    "Death's Dance",
+    "Maw of Malmortius",
+    "Sterak's Gage",
+    "Chempunk Chainsword",
+    "Spear of Shojin",
+    "Amaranth's Twinguard",
+    "Thornmail",
+    "Hollow Radiance",
+    "Randuin's Omen"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    6,
+    5
+   ],
+   [
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Eclipse",
+    "Death's Dance",
+    "Maw of Malmortius",
+    "Sterak's Gage",
+    "Spear of Shojin",
+    "Chempunk Chainsword",
+    "Amaranth's Twinguard",
+    "Randuin's Omen",
+    "Thornmail",
+    "Hollow Radiance"
+   ]
+  ]
+ ],
+ "chogath": [],
+ "corki": [
+  [
+   "Mid",
+   [
+    0,
+    8,
+    0
+   ],
+   [
+    "Essence Reaver",
+    "Gluttonous Greaves",
+    "magnetic-blaster",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "Bloodthirster",
+    "Infinity Edge",
+    "Maw of Malmortius",
+    "Edge of Night",
+    "Trinity Force"
+   ]
+  ],
+  [
+   "Dragon",
+   [
+    0,
+    8,
+    0
+   ],
+   [
+    "Essence Reaver",
+    "Gluttonous Greaves",
+    "magnetic-blaster",
+    "Mortal Reminder",
+    "Dominik\u2019s Regards",
+    "Bloodthirster",
+    "Maw of Malmortius",
+    "Infinity Edge",
+    "Edge of Night",
+    "Trinity Force"
+   ]
+  ]
+ ],
+ "darius": [
+  [
+   "Baron",
+   [
+    0,
+    4,
+    4
+   ],
+   [
+    "Divine Sunderer",
+    "Plated Steelcaps",
+    "Spear of Shojin",
+    "Sterak's Gage",
+    "Dead Man's Plate",
+    "Chempunk Chainsword",
+    "Thornmail",
+    "Overlord's Bloodmail",
+    "Amaranth's Twinguard"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    4,
+    4
+   ],
+   [
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Spear of Shojin",
+    "Sterak's Gage",
+    "Death's Dance",
+    "Randuin's Omen",
+    "Thornmail",
+    "Chempunk Chainsword",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "diana": [
+  [
+   "Jungle",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Lich Bane",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "Riftmaker",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Oceanid's Trident"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Lich Bane",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "crown-of-the-shattered-queen",
+    "Riftmaker",
+    "Morellonomicon",
+    "Oceanid's Trident"
+   ]
+  ]
+ ],
+ "dr-mundo": [
+  [
+   "Baron",
+   [
+    0,
+    0,
+    7
+   ],
+   [
+    "Heartsteel",
+    "Plated Steelcaps",
+    "Sunfire Aegis",
+    "Thornmail",
+    "Warmog's Armor",
+    "Randuin's Omen",
+    "Force of Nature",
+    "Amaranth's Twinguard"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    0,
+    4
+   ],
+   [
+    "Heartsteel",
+    "Plated Steelcaps",
+    "Sunfire Aegis",
+    "Thornmail",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "draven": [
+  [
+   "Dragon",
+   [
+    0,
+    8,
+    0
+   ],
+   [
+    "Bloodthirster",
+    "Gluttonous Greaves",
+    "Essence Reaver",
+    "Mortal Reminder",
+    "Dominik\u2019s Regards",
+    "magnetic-blaster",
+    "Guardian Angel",
+    "Infinity Edge",
+    "Maw of Malmortius",
+    "Serpent's Fang"
+   ]
+  ]
+ ],
+ "ekko": [
+  [
+   "Jungle",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Lich Bane",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Riftmaker",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "soulstealer"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Lich Bane",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "Riftmaker",
+    "crown-of-the-shattered-queen",
+    "soulstealer",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "evelynn": [
+  [
+   "Jungle",
+   [
+    5,
+    0,
+    0
+   ],
+   [
+    "Lich Bane",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Morellonomicon",
+    "soulstealer",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "ezreal": [
+  [
+   "Dragon",
+   [
+    1,
+    9,
+    0
+   ],
+   [
+    "Muramana",
+    "Gluttonous Greaves",
+    "Trinity Force",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Riftmaker",
+    "Spear of Shojin",
+    "Blade of the Ruined King",
+    "Maw of Malmortius",
+    "Serpent's Fang",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "fiddlesticks": [
+  [
+   "Jungle",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "soulstealer",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Malignance",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Liandry's Torment",
+    "Rylai's Crystal Scepter",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "fiora": [
+  [
+   "Baron",
+   [
+    0,
+    8,
+    2
+   ],
+   [
+    "Trinity Force",
+    "Divine Sunderer",
+    "Plated Steelcaps",
+    "Hullbreaker",
+    "Death's Dance",
+    "Sterak's Gage",
+    "Maw of Malmortius",
+    "Serpent's Fang",
+    "Guardian Angel",
+    "Amaranth's Twinguard",
+    "Blade of the Ruined King"
+   ]
+  ]
+ ],
+ "fizz": [
+  [
+   "Jungle",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Lich Bane",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "Oceanid's Trident",
+    "Liandry's Torment",
+    "Riftmaker",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Lich Bane",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "Riftmaker",
+    "Oceanid's Trident",
+    "Liandry's Torment",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "galio": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    2
+   ],
+   [
+    "Rod of Ages",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "Lich Bane",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen",
+    "Amaranth's Twinguard",
+    "Kaenic Rookern"
+   ]
+  ],
+  [
+   "Support",
+   [
+    0,
+    0,
+    9
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Yordle Trap",
+    "Warmog's Armor",
+    "Knight's Vow",
+    "Frozen Heart",
+    "Thornmail",
+    "Kaenic Rookern",
+    "Amaranth's Twinguard",
+    "Randuin's Omen"
+   ]
+  ]
+ ],
+ "garen": [
+  [
+   "Baron",
+   [
+    0,
+    5,
+    3
+   ],
+   [
+    "Black Cleaver",
+    "Plated Steelcaps",
+    "Divine Sunderer",
+    "Death's Dance",
+    "Sterak's Gage",
+    "Dead Man's Plate",
+    "Spear of Shojin",
+    "Maw of Malmortius",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "gnar": [
+  [
+   "Baron",
+   [
+    0,
+    4,
+    5
+   ],
+   [
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Black Cleaver",
+    "Wit's End",
+    "Sterak's Gage",
+    "Thornmail",
+    "Kaenic Rookern",
+    "Hullbreaker",
+    "Amaranth's Twinguard",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "gragas": [
+  [
+   "Baron",
+   [
+    1,
+    0,
+    6
+   ],
+   [
+    "Rod of Ages",
+    "Plated Steelcaps",
+    "psychic-projector",
+    "Iceborn Gauntlet",
+    "Unending Despair",
+    "Randuin's Omen",
+    "Frozen Heart",
+    "Thornmail",
+    "Amaranth's Twinguard"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    5,
+    0,
+    0
+   ],
+   [
+    "Lich Bane",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen",
+    "Oceanid's Trident"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    5,
+    0,
+    0
+   ],
+   [
+    "Lich Bane",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen",
+    "Oceanid's Trident"
+   ]
+  ],
+  [
+   "Support",
+   [
+    1,
+    0,
+    7
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Imperial Mandate",
+    "Warmog's Armor",
+    "Frozen Heart",
+    "Thornmail",
+    "Randuin's Omen",
+    "Hollow Radiance",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "graves": [
+  [
+   "Jungle",
+   [
+    0,
+    10,
+    0
+   ],
+   [
+    "The Collector",
+    "Gluttonous Greaves",
+    "Essence Reaver",
+    "Mortal Reminder",
+    "Dominik\u2019s Regards",
+    "Infinity Edge",
+    "Bloodthirster",
+    "Black Cleaver",
+    "Maw of Malmortius",
+    "Edge of Night",
+    "Serpent's Fang"
+   ]
+  ]
+ ],
+ "gwen": [
+  [
+   "Baron",
+   [
+    5,
+    0,
+    1
+   ],
+   [
+    "Rod of Ages",
+    "Plated Steelcaps",
+    "psychic-projector",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "Riftmaker",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen",
+    "Amaranth's Twinguard"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    7,
+    0,
+    1
+   ],
+   [
+    "Nashor's Tooth",
+    "Boots of Mana",
+    "Riftmaker",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "Infinity Orb",
+    "Morellonomicon",
+    "Lich Bane",
+    "Amaranth's Twinguard",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "hecarim": [
+  [
+   "Jungle",
+   [
+    0,
+    7,
+    1
+   ],
+   [
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Muramana",
+    "Spear of Shojin",
+    "Serylda\u2019s Grudge",
+    "Death's Dance",
+    "Maw of Malmortius",
+    "Amaranth's Twinguard",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "heimerdinger": [
+  [
+   "Baron",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "soulstealer",
+    "Liandry's Torment",
+    "Rabadon's Deathcap",
+    "crown-of-the-shattered-queen",
+    "Rylai's Crystal Scepter",
+    "Morellonomicon",
+    "Oceanid's Trident"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "soulstealer",
+    "Rabadon's Deathcap",
+    "Liandry's Torment",
+    "Rylai's Crystal Scepter",
+    "crown-of-the-shattered-queen",
+    "Oceanid's Trident",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "hwei": [],
+ "irelia": [
+  [
+   "Baron",
+   [
+    0,
+    6,
+    3
+   ],
+   [
+    "Divine Sunderer",
+    "Gluttonous Greaves",
+    "Blade of the Ruined King",
+    "Hullbreaker",
+    "Sterak's Gage",
+    "Wit's End",
+    "Death's Dance",
+    "Maw of Malmortius",
+    "Amaranth's Twinguard",
+    "Guardian Angel"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    1,
+    8,
+    2
+   ],
+   [
+    "Trinity Force",
+    "Gluttonous Greaves",
+    "Blade of the Ruined King",
+    "Guinsoo's Rageblade",
+    "Death's Dance",
+    "Terminus",
+    "Mortal Reminder",
+    "Guardian Angel",
+    "Wit's End",
+    "Maw of Malmortius",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "janna": [
+  [
+   "Support",
+   [
+    6,
+    0,
+    3
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Ionian Boots of Lucidity",
+    "Harmonic Echo",
+    "Rabadon's Deathcap",
+    "Redemption",
+    "Zeke's Convergence",
+    "Ardent Censer",
+    "Oceanid's Trident",
+    "Frozen Heart",
+    "Imperial Mandate",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "jarvan-iv": [
+  [
+   "Baron",
+   [
+    0,
+    1,
+    8
+   ],
+   [
+    "Divine Sunderer",
+    "Plated Steelcaps",
+    "Radiant Virtue",
+    "Sterak's Gage",
+    "Thornmail",
+    "Force of Nature",
+    "Randuin's Omen",
+    "Frozen Heart",
+    "Unending Despair",
+    "Amaranth's Twinguard"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    1,
+    8
+   ],
+   [
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Radiant Virtue",
+    "Force of Nature",
+    "Sterak's Gage",
+    "Thornmail",
+    "Unending Despair",
+    "Frozen Heart",
+    "Randuin's Omen",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "jax": [
+  [
+   "Baron",
+   [
+    2,
+    4,
+    3
+   ],
+   [
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Riftmaker",
+    "Blade of the Ruined King",
+    "Zeke's Convergence",
+    "Amaranth's Twinguard",
+    "Hullbreaker",
+    "Oceanid's Trident",
+    "Guardian Angel",
+    "Kaenic Rookern"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    1,
+    7,
+    3
+   ],
+   [
+    "Trinity Force",
+    "Mercury's Treads",
+    "Guinsoo's Rageblade",
+    "Blade of the Ruined King",
+    "Death's Dance",
+    "Sterak's Gage",
+    "Chempunk Chainsword",
+    "Amaranth's Twinguard",
+    "Maw of Malmortius",
+    "Guardian Angel",
+    "Kaenic Rookern"
+   ]
+  ]
+ ],
+ "jayce": [
+  [
+   "Baron",
+   [
+    0,
+    8,
+    0
+   ],
+   [
+    "Youmuu's Ghostblade",
+    "Gluttonous Greaves",
+    "Eclipse",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Serpent's Fang",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Edge of Night"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    0,
+    8,
+    0
+   ],
+   [
+    "Youmuu's Ghostblade",
+    "Gluttonous Greaves",
+    "Eclipse",
+    "Serylda\u2019s Grudge",
+    "Serpent's Fang",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Edge of Night",
+    "Mortal Reminder"
+   ]
+  ]
+ ],
+ "jhin": [
+  [
+   "Dragon",
+   [
+    0,
+    8,
+    0
+   ],
+   [
+    "The Collector",
+    "Boots of Dynamism",
+    "magnetic-blaster",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "Infinity Edge",
+    "Duskblade of Draktharr",
+    "Bloodthirster",
+    "Guardian Angel",
+    "Serpent's Fang"
+   ]
+  ]
+ ],
+ "jinx": [
+  [
+   "Dragon",
+   [
+    0,
+    5,
+    0
+   ],
+   [
+    "Bloodthirster",
+    "Gluttonous Greaves",
+    "magnetic-blaster",
+    "Runaan's Hurricane",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "soul-transfer",
+    "Infinity Edge",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "kaisa": [
+  [
+   "Dragon",
+   [
+    1,
+    5,
+    1
+   ],
+   [
+    "Kraken Slayer",
+    "Gluttonous Greaves",
+    "Guinsoo's Rageblade",
+    "Blade of the Ruined King",
+    "Wit's End",
+    "Terminus",
+    "Mortal Reminder",
+    "Runaan's Hurricane"
+   ]
+  ]
+ ],
+ "kalista": [
+  [
+   "Baron",
+   [
+    1,
+    7,
+    2
+   ],
+   [
+    "Blade of the Ruined King",
+    "Berserker's Greaves",
+    "Runaan's Hurricane",
+    "Guinsoo's Rageblade",
+    "Mortal Reminder",
+    "Terminus",
+    "Black Cleaver",
+    "Amaranth's Twinguard",
+    "Wit's End",
+    "Serpent's Fang",
+    "Guardian Angel"
+   ]
+  ],
+  [
+   "Dragon",
+   [
+    1,
+    6,
+    1
+   ],
+   [
+    "Blade of the Ruined King",
+    "Berserker's Greaves",
+    "Runaan's Hurricane",
+    "Guinsoo's Rageblade",
+    "Mortal Reminder",
+    "Terminus",
+    "soul-transfer",
+    "Wit's End",
+    "Serpent's Fang",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "karma": [
+  [
+   "Mid",
+   [
+    8,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Boots of Mana",
+    "bandle-fantasy",
+    "Rabadon's Deathcap",
+    "Morellonomicon",
+    "Malignance",
+    "Oceanid's Trident",
+    "Liandry's Torment",
+    "crown-of-the-shattered-queen",
+    "Cosmic Drive",
+    "soulstealer",
+    "Horizon Focus"
+   ]
+  ],
+  [
+   "Support",
+   [
+    5,
+    0,
+    2
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Boots of Mana",
+    "Harmonic Echo",
+    "Ardent Censer",
+    "Redemption",
+    "crown-of-the-shattered-queen",
+    "Frozen Heart",
+    "Oceanid's Trident",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "kassadin": [
+  [
+   "Baron",
+   [
+    8,
+    0,
+    0
+   ],
+   [
+    "Rod of Ages",
+    "Boots of Mana",
+    "Seraph's Embrace",
+    "Rabadon's Deathcap",
+    "Malignance",
+    "Oceanid's Trident",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen",
+    "Infinity Orb",
+    "Liandry's Torment"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    8,
+    0,
+    0
+   ],
+   [
+    "Rod of Ages",
+    "Boots of Mana",
+    "Seraph's Embrace",
+    "Rabadon's Deathcap",
+    "Malignance",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Infinity Orb",
+    "crown-of-the-shattered-queen",
+    "Liandry's Torment"
+   ]
+  ]
+ ],
+ "katarina": [
+  [
+   "Mid",
+   [
+    6,
+    1,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "Rabadon's Deathcap",
+    "Liandry's Torment",
+    "Oceanid's Trident",
+    "Riftmaker",
+    "crown-of-the-shattered-queen",
+    "Death's Dance",
+    "Rylai's Crystal Scepter"
+   ]
+  ]
+ ],
+ "kayle": [
+  [
+   "Baron",
+   [
+    1,
+    7,
+    1
+   ],
+   [
+    "Guinsoo's Rageblade",
+    "Gluttonous Greaves",
+    "Blade of the Ruined King",
+    "Terminus",
+    "Mortal Reminder",
+    "Kraken Slayer",
+    "Edge of Night",
+    "Serpent's Fang",
+    "Amaranth's Twinguard"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    8,
+    1,
+    0
+   ],
+   [
+    "Nashor's Tooth",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Lich Bane",
+    "Guinsoo's Rageblade",
+    "Riftmaker",
+    "Liandry's Torment",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "kayn": [
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    1
+   ],
+   [
+    "Youmuu's Ghostblade",
+    "Berserker's Greaves",
+    "Eclipse",
+    "Serpent's Fang",
+    "Duskblade of Draktharr",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Edge of Night",
+    "Maw of Malmortius",
+    "Death's Dance",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "kennen": [
+  [
+   "Baron",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "soulstealer",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Liandry's Torment",
+    "Malignance"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "soulstealer",
+    "Rabadon's Deathcap",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Liandry's Torment",
+    "Malignance"
+   ]
+  ]
+ ],
+ "khazix": [
+  [
+   "Jungle",
+   [
+    0,
+    10,
+    0
+   ],
+   [
+    "Youmuu's Ghostblade",
+    "Gluttonous Greaves",
+    "Eclipse",
+    "Duskblade of Draktharr",
+    "Serpent's Fang",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Edge of Night",
+    "Death's Dance",
+    "Maw of Malmortius",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "kindred": [
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    2
+   ],
+   [
+    "The Collector",
+    "Gluttonous Greaves",
+    "Essence Reaver",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "Wit's End",
+    "Serpent's Fang",
+    "Bloodthirster",
+    "Infinity Edge",
+    "Edge of Night",
+    "Amaranth's Twinguard",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "kogmaw": [
+  [
+   "Dragon",
+   [
+    2,
+    5,
+    2
+   ],
+   [
+    "Blade of the Ruined King",
+    "Berserker's Greaves",
+    "Guinsoo's Rageblade",
+    "Runaan's Hurricane",
+    "Mortal Reminder",
+    "Terminus",
+    "Wit's End",
+    "Edge of Night",
+    "Amaranth's Twinguard",
+    "Riftmaker"
+   ]
+  ]
+ ],
+ "ksante": [
+  [
+   "Baron",
+   [
+    0,
+    0,
+    8
+   ],
+   [
+    "Iceborn Gauntlet",
+    "Plated Steelcaps",
+    "Unending Despair",
+    "Amaranth's Twinguard",
+    "Thornmail",
+    "Kaenic Rookern",
+    "Randuin's Omen",
+    "Warmog's Armor",
+    "Frozen Heart"
+   ]
+  ]
+ ],
+ "lee-sin": [
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    0
+   ],
+   [
+    "Youmuu's Ghostblade",
+    "Gluttonous Greaves",
+    "Serpent's Fang",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Death's Dance",
+    "Trinity Force",
+    "Maw of Malmortius",
+    "Guardian Angel",
+    "Edge of Night"
+   ]
+  ]
+ ],
+ "leona": [
+  [
+   "Support",
+   [
+    0,
+    0,
+    10
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Zeke's Convergence",
+    "Dawnshroud",
+    "Warmog's Armor",
+    "Thornmail",
+    "Randuin's Omen",
+    "Frozen Heart",
+    "Amaranth's Twinguard",
+    "Kaenic Rookern",
+    "Force of Nature"
+   ]
+  ]
+ ],
+ "lillia": [
+  [
+   "Jungle",
+   [
+    8,
+    0,
+    1
+   ],
+   [
+    "Liandry's Torment",
+    "Boots of Mana",
+    "Riftmaker",
+    "Rabadon's Deathcap",
+    "Rylai's Crystal Scepter",
+    "Infinity Orb",
+    "Cosmic Drive",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "lissandra": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "soulstealer",
+    "Boots of Mana",
+    "Malignance",
+    "Rabadon's Deathcap",
+    "Infinity Orb",
+    "crown-of-the-shattered-queen",
+    "Oceanid's Trident",
+    "Morellonomicon",
+    "Liandry's Torment"
+   ]
+  ]
+ ],
+ "lucian": [
+  [
+   "Mid",
+   [
+    0,
+    8,
+    0
+   ],
+   [
+    "Essence Reaver",
+    "Gluttonous Greaves",
+    "magnetic-blaster",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "Infinity Edge",
+    "Guardian Angel",
+    "Bloodthirster",
+    "Serpent's Fang",
+    "Maw of Malmortius"
+   ]
+  ],
+  [
+   "Dragon",
+   [
+    0,
+    7,
+    1
+   ],
+   [
+    "Essence Reaver",
+    "Berserker's Greaves",
+    "magnetic-blaster",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "Infinity Edge",
+    "Bloodthirster",
+    "Guardian Angel",
+    "Amaranth's Twinguard",
+    "Serpent's Fang"
+   ]
+  ]
+ ],
+ "lulu": [
+  [
+   "Support",
+   [
+    5,
+    0,
+    3
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Ionian Boots of Lucidity",
+    "Ardent Censer",
+    "Harmonic Echo",
+    "Staff of Flowing Water",
+    "Redemption",
+    "Imperial Mandate",
+    "crown-of-the-shattered-queen",
+    "Zeke's Convergence",
+    "Frozen Heart"
+   ]
+  ]
+ ],
+ "lux": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Horizon Focus",
+    "soulstealer"
+   ]
+  ],
+  [
+   "Support",
+   [
+    4,
+    0,
+    0
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Oceanid's Trident",
+    "Rabadon's Deathcap",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "soulstealer"
+   ]
+  ]
+ ],
+ "malphite": [
+  [
+   "Baron",
+   [
+    0,
+    0,
+    8
+   ],
+   [
+    "Iceborn Gauntlet",
+    "Plated Steelcaps",
+    "Thornmail",
+    "Zeke's Convergence",
+    "Force of Nature",
+    "Kaenic Rookern",
+    "Frozen Heart",
+    "Amaranth's Twinguard",
+    "Randuin's Omen"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    5,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ],
+  [
+   "Support",
+   [
+    0,
+    0,
+    8
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Iceborn Gauntlet",
+    "Zeke's Convergence",
+    "Kaenic Rookern",
+    "Thornmail",
+    "Frozen Heart",
+    "Randuin's Omen",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "maokai": [
+  [
+   "Baron",
+   [
+    0,
+    0,
+    9
+   ],
+   [
+    "Heartsteel",
+    "Plated Steelcaps",
+    "Sunfire Aegis",
+    "Unending Despair",
+    "Thornmail",
+    "Frozen Heart",
+    "Randuin's Omen",
+    "Amaranth's Twinguard",
+    "Kaenic Rookern",
+    "Force of Nature"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    0,
+    11
+   ],
+   [
+    "Sunfire Aegis",
+    "Plated Steelcaps",
+    "Zeke's Convergence",
+    "Thornmail",
+    "Frozen Heart",
+    "Randuin's Omen",
+    "Iceborn Gauntlet",
+    "Unending Despair",
+    "Warmog's Armor",
+    "Amaranth's Twinguard",
+    "Kaenic Rookern",
+    "Force of Nature"
+   ]
+  ],
+  [
+   "Support",
+   [
+    0,
+    0,
+    10
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Yordle Trap",
+    "Frozen Heart",
+    "Iceborn Gauntlet",
+    "Hollow Radiance",
+    "Knight's Vow",
+    "Unending Despair",
+    "Amaranth's Twinguard",
+    "Randuin's Omen",
+    "Thornmail"
+   ]
+  ]
+ ],
+ "master-yi": [
+  [
+   "Jungle",
+   [
+    1,
+    9,
+    2
+   ],
+   [
+    "Kraken Slayer",
+    "Gluttonous Greaves",
+    "Guinsoo's Rageblade",
+    "Experimental Hexplate",
+    "Wit's End",
+    "Terminus",
+    "Mortal Reminder",
+    "Blade of the Ruined King",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Death's Dance",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "mel": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "soulstealer",
+    "Rabadon's Deathcap",
+    "Malignance",
+    "Morellonomicon",
+    "Liandry's Torment",
+    "Horizon Focus",
+    "crown-of-the-shattered-queen"
+   ]
+  ],
+  [
+   "Support",
+   [
+    5,
+    0,
+    0
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "Rod of Ages",
+    "soulstealer",
+    "Liandry's Torment",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "milio": [
+  [
+   "Support",
+   [
+    6,
+    0,
+    3
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Boots of Mana",
+    "Ardent Censer",
+    "Harmonic Echo",
+    "Redemption",
+    "Staff of Flowing Water",
+    "Oceanid's Trident",
+    "Rabadon's Deathcap",
+    "Frozen Heart",
+    "Zeke's Convergence"
+   ]
+  ]
+ ],
+ "miss-fortune": [
+  [
+   "Dragon",
+   [
+    0,
+    9,
+    0
+   ],
+   [
+    "The Collector",
+    "Gluttonous Greaves",
+    "Bloodthirster",
+    "Dominik\u2019s Regards",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Infinity Edge",
+    "magnetic-blaster",
+    "Serpent's Fang",
+    "Edge of Night",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "mordekaiser": [
+  [
+   "Baron",
+   [
+    4,
+    1,
+    1
+   ],
+   [
+    "Riftmaker",
+    "Plated Steelcaps",
+    "Experimental Hexplate",
+    "psychic-projector",
+    "soulstealer",
+    "Amaranth's Twinguard",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Rylai's Crystal Scepter"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    5,
+    0,
+    1
+   ],
+   [
+    "Riftmaker",
+    "Boots of Mana",
+    "Rylai's Crystal Scepter",
+    "psychic-projector",
+    "soulstealer",
+    "Amaranth's Twinguard",
+    "Morellonomicon",
+    "Liandry's Torment",
+    "Oceanid's Trident"
+   ]
+  ]
+ ],
+ "morgana": [
+  [
+   "Jungle",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Liandry's Torment",
+    "Boots of Mana",
+    "Rylai's Crystal Scepter",
+    "Rabadon's Deathcap",
+    "Infinity Orb",
+    "Riftmaker",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen",
+    "Cosmic Drive"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Liandry's Torment",
+    "Boots of Mana",
+    "Rylai's Crystal Scepter",
+    "Rabadon's Deathcap",
+    "Infinity Orb",
+    "Cosmic Drive",
+    "bandle-fantasy",
+    "Morellonomicon",
+    "Oceanid's Trident"
+   ]
+  ],
+  [
+   "Support",
+   [
+    5,
+    0,
+    1
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "Liandry's Torment",
+    "Rylai's Crystal Scepter",
+    "Oceanid's Trident",
+    "Morellonomicon",
+    "Frozen Heart",
+    "Rabadon's Deathcap",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "nami": [
+  [
+   "Support",
+   [
+    5,
+    0,
+    1
+   ],
+   [
+    "Black Mist Scythe",
+    "Ionian Boots of Lucidity",
+    "Harmonic Echo",
+    "Ardent Censer",
+    "Staff of Flowing Water",
+    "Imperial Mandate",
+    "crown-of-the-shattered-queen",
+    "Redemption",
+    "Zeke's Convergence"
+   ]
+  ]
+ ],
+ "nasus": [
+  [
+   "Baron",
+   [
+    0,
+    3,
+    7
+   ],
+   [
+    "Divine Sunderer",
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Sundered Sky",
+    "Frozen Heart",
+    "Randuin's Omen",
+    "Thornmail",
+    "Amaranth's Twinguard",
+    "Kaenic Rookern",
+    "Hollow Radiance",
+    "Unending Despair"
+   ]
+  ]
+ ],
+ "nautilus": [
+  [
+   "Baron",
+   [
+    0,
+    0,
+    10
+   ],
+   [
+    "Sunfire Aegis",
+    "Mercury's Treads",
+    "Iceborn Gauntlet",
+    "Frozen Heart",
+    "Thornmail",
+    "Randuin's Omen",
+    "Force of Nature",
+    "Hollow Radiance",
+    "Kaenic Rookern",
+    "Unending Despair",
+    "Amaranth's Twinguard"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    4,
+    0,
+    0
+   ],
+   [
+    "Rod of Ages",
+    "Boots of Mana",
+    "Lich Bane",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "psychic-projector",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen"
+   ]
+  ],
+  [
+   "Support",
+   [
+    0,
+    0,
+    11
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Yordle Trap",
+    "Zeke's Convergence",
+    "Warmog's Armor",
+    "Thornmail",
+    "Frozen Heart",
+    "Randuin's Omen",
+    "Knight's Vow",
+    "Amaranth's Twinguard",
+    "Abyssal Mask",
+    "Kaenic Rookern"
+   ]
+  ]
+ ],
+ "nidalee": [
+  [
+   "Jungle",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Lich Bane",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Liandry's Torment",
+    "Morellonomicon",
+    "Horizon Focus",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "nilah": [
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    0
+   ],
+   [
+    "Bloodthirster",
+    "Gluttonous Greaves",
+    "The Collector",
+    "Mortal Reminder",
+    "Dominik\u2019s Regards",
+    "Infinity Edge",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Edge of Night",
+    "Serpent's Fang"
+   ]
+  ],
+  [
+   "Dragon",
+   [
+    0,
+    8,
+    1
+   ],
+   [
+    "Bloodthirster",
+    "Gluttonous Greaves",
+    "The Collector",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "Infinity Edge",
+    "Serpent's Fang",
+    "Maw of Malmortius",
+    "Edge of Night",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "nocturne": [
+  [
+   "Jungle",
+   [
+    0,
+    8,
+    1
+   ],
+   [
+    "Duskblade of Draktharr",
+    "Boots of Dynamism",
+    "Trinity Force",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Serpent's Fang",
+    "Death's Dance",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "norra": [
+  [
+   "Mid",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Malignance",
+    "crown-of-the-shattered-queen",
+    "soulstealer",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Liandry's Torment"
+   ]
+  ],
+  [
+   "Support",
+   [
+    5,
+    0,
+    0
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "soulstealer",
+    "Rylai's Crystal Scepter",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "Morellonomicon",
+    "Liandry's Torment",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "nunu-and-willump": [
+  [
+   "Jungle",
+   [
+    0,
+    0,
+    9
+   ],
+   [
+    "searing-crown",
+    "Mercury's Treads",
+    "Thornmail",
+    "Hollow Radiance",
+    "Kaenic Rookern",
+    "Force of Nature",
+    "Dead Man's Plate",
+    "Frozen Heart",
+    "Randuin's Omen",
+    "Unending Despair",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "olaf": [
+  [
+   "Baron",
+   [
+    0,
+    3,
+    6
+   ],
+   [
+    "Divine Sunderer",
+    "Mercury's Treads",
+    "Experimental Hexplate",
+    "Sterak's Gage",
+    "Death's Dance",
+    "Hollow Radiance",
+    "Frozen Heart",
+    "Thornmail",
+    "Amaranth's Twinguard",
+    "Randuin's Omen"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    3,
+    6
+   ],
+   [
+    "Trinity Force",
+    "Mercury's Treads",
+    "Experimental Hexplate",
+    "Sterak's Gage",
+    "Death's Dance",
+    "Thornmail",
+    "Frozen Heart",
+    "Hollow Radiance",
+    "Randuin's Omen",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "orianna": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Seraph's Embrace",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "crown-of-the-shattered-queen",
+    "soulstealer",
+    "Liandry's Torment",
+    "Cosmic Drive",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "ornn": [
+  [
+   "Baron",
+   [
+    0,
+    0,
+    8
+   ],
+   [
+    "Heartsteel",
+    "Plated Steelcaps",
+    "Sunfire Aegis",
+    "Frozen Heart",
+    "Warmog's Armor",
+    "Thornmail",
+    "Unending Despair",
+    "Amaranth's Twinguard",
+    "Randuin's Omen"
+   ]
+  ],
+  [
+   "Support",
+   [
+    0,
+    0,
+    11
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Warmog's Armor",
+    "Thornmail",
+    "Frozen Heart",
+    "Radiant Virtue",
+    "Force of Nature",
+    "Abyssal Mask",
+    "Knight's Vow",
+    "Unending Despair",
+    "Randuin's Omen",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "pantheon": [
+  [
+   "Baron",
+   [
+    0,
+    8,
+    2
+   ],
+   [
+    "Black Cleaver",
+    "Boots of Dynamism",
+    "Blade of the Ruined King",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Serpent's Fang",
+    "Sterak's Gage",
+    "Edge of Night",
+    "Amaranth's Twinguard",
+    "Guardian Angel",
+    "Maw of Malmortius"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    1
+   ],
+   [
+    "Duskblade of Draktharr",
+    "Gluttonous Greaves",
+    "Blade of the Ruined King",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Serpent's Fang",
+    "The Collector",
+    "Amaranth's Twinguard",
+    "Edge of Night",
+    "Guardian Angel",
+    "Maw of Malmortius"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    0,
+    10,
+    0
+   ],
+   [
+    "Duskblade of Draktharr",
+    "Gluttonous Greaves",
+    "Blade of the Ruined King",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Serpent's Fang",
+    "The Collector",
+    "Guardian Angel",
+    "Edge of Night",
+    "Maw of Malmortius",
+    "Black Cleaver"
+   ]
+  ]
+ ],
+ "poppy": [
+  [
+   "Baron",
+   [
+    0,
+    0,
+    9
+   ],
+   [
+    "Heartsteel",
+    "Plated Steelcaps",
+    "Sunfire Aegis",
+    "Thornmail",
+    "Frozen Heart",
+    "Unending Despair",
+    "Kaenic Rookern",
+    "Hollow Radiance",
+    "Amaranth's Twinguard",
+    "Randuin's Omen"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    3,
+    8
+   ],
+   [
+    "Trinity Force",
+    "Mercury's Treads",
+    "Sundered Sky",
+    "Thornmail",
+    "Hollow Radiance",
+    "Frozen Heart",
+    "Randuin's Omen",
+    "Kaenic Rookern",
+    "Sunfire Aegis",
+    "Eclipse",
+    "Amaranth's Twinguard",
+    "Iceborn Gauntlet"
+   ]
+  ]
+ ],
+ "pyke": [
+  [
+   "Mid",
+   [
+    0,
+    9,
+    0
+   ],
+   [
+    "Youmuu's Ghostblade",
+    "Boots of Dynamism",
+    "Duskblade of Draktharr",
+    "Serylda\u2019s Grudge",
+    "Serpent's Fang",
+    "Edge of Night",
+    "Maw of Malmortius",
+    "The Collector",
+    "Chempunk Chainsword",
+    "Death's Dance"
+   ]
+  ],
+  [
+   "Support",
+   [
+    0,
+    9,
+    1
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Boots of Dynamism",
+    "Youmuu's Ghostblade",
+    "Duskblade of Draktharr",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Serpent's Fang",
+    "Edge of Night",
+    "Death's Dance",
+    "Maw of Malmortius",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "rakan": [
+  [
+   "Support",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "Lich Bane",
+    "Infinity Orb",
+    "Oceanid's Trident",
+    "Rabadon's Deathcap",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen",
+    "Imperial Mandate"
+   ]
+  ]
+ ],
+ "rammus": [
+  [
+   "Jungle",
+   [
+    0,
+    0,
+    7
+   ],
+   [
+    "searing-crown",
+    "Plated Steelcaps",
+    "Thornmail",
+    "Iceborn Gauntlet",
+    "Amaranth's Twinguard",
+    "Hollow Radiance",
+    "Randuin's Omen",
+    "Frozen Heart",
+    "Unending Despair"
+   ]
+  ]
+ ],
+ "rell": [
+  [
+   "Support",
+   [
+    0,
+    0,
+    11
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Yordle Trap",
+    "Radiant Virtue",
+    "Zeke's Convergence",
+    "Randuin's Omen",
+    "Thornmail",
+    "Frozen Heart",
+    "Amaranth's Twinguard",
+    "Kaenic Rookern",
+    "Abyssal Mask",
+    "Knight's Vow"
+   ]
+  ]
+ ],
+ "renekton": [
+  [
+   "Baron",
+   [
+    0,
+    7,
+    2
+   ],
+   [
+    "Blade of the Ruined King",
+    "Plated Steelcaps",
+    "Hullbreaker",
+    "Mortal Reminder",
+    "Sterak's Gage",
+    "Trinity Force",
+    "Amaranth's Twinguard",
+    "Maw of Malmortius",
+    "Death's Dance",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "rengar": [
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    0
+   ],
+   [
+    "Essence Reaver",
+    "Boots of Dynamism",
+    "Bloodthirster",
+    "Mortal Reminder",
+    "Dominik\u2019s Regards",
+    "Infinity Edge",
+    "Guardian Angel",
+    "Serpent's Fang",
+    "Death's Dance",
+    "Maw of Malmortius"
+   ]
+  ]
+ ],
+ "riven": [
+  [
+   "Baron",
+   [
+    0,
+    10,
+    1
+   ],
+   [
+    "Eclipse",
+    "Gluttonous Greaves",
+    "Trinity Force",
+    "Divine Sunderer",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Death's Dance",
+    "Serpent's Fang",
+    "Spear of Shojin",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Amaranth's Twinguard"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    1
+   ],
+   [
+    "Trinity Force",
+    "Gluttonous Greaves",
+    "Eclipse",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Death's Dance",
+    "Spear of Shojin",
+    "Serpent's Fang",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "rumble": [
+  [
+   "Baron",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Liandry's Torment",
+    "Boots of Mana",
+    "Riftmaker",
+    "Rabadon's Deathcap",
+    "psychic-projector",
+    "Malignance",
+    "Rylai's Crystal Scepter",
+    "soulstealer",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Oceanid's Trident"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Liandry's Torment",
+    "Boots of Mana",
+    "Riftmaker",
+    "Rabadon's Deathcap",
+    "Rylai's Crystal Scepter",
+    "Malignance",
+    "psychic-projector",
+    "soulstealer",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Liandry's Torment",
+    "Boots of Mana",
+    "Riftmaker",
+    "Rabadon's Deathcap",
+    "Rylai's Crystal Scepter",
+    "Malignance",
+    "psychic-projector",
+    "soulstealer",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Oceanid's Trident"
+   ]
+  ]
+ ],
+ "ryze": [
+  [
+   "Baron",
+   [
+    6,
+    0,
+    1
+   ],
+   [
+    "Seraph's Embrace",
+    "Boots of Mana",
+    "Rod of Ages",
+    "Rabadon's Deathcap",
+    "Infinity Orb",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Amaranth's Twinguard"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    6,
+    0,
+    1
+   ],
+   [
+    "Seraph's Embrace",
+    "Boots of Mana",
+    "Rod of Ages",
+    "Rabadon's Deathcap",
+    "Infinity Orb",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "samira": [
+  [
+   "Dragon",
+   [
+    0,
+    9,
+    0
+   ],
+   [
+    "The Collector",
+    "Gluttonous Greaves",
+    "Bloodthirster",
+    "Infinity Edge",
+    "Mortal Reminder",
+    "Dominik\u2019s Regards",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Death's Dance",
+    "Serpent's Fang"
+   ]
+  ]
+ ],
+ "senna": [
+  [
+   "Dragon",
+   [
+    0,
+    9,
+    0
+   ],
+   [
+    "Duskblade of Draktharr",
+    "Boots of Dynamism",
+    "magnetic-blaster",
+    "Mortal Reminder",
+    "Serylda\u2019s Grudge",
+    "Dominik\u2019s Regards",
+    "Serpent's Fang",
+    "Maw of Malmortius",
+    "The Collector",
+    "Edge of Night",
+    "Guardian Angel"
+   ]
+  ],
+  [
+   "Support",
+   [
+    0,
+    6,
+    0
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Dynamism",
+    "magnetic-blaster",
+    "Essence Reaver",
+    "Serpent's Fang",
+    "Edge of Night",
+    "Black Cleaver",
+    "Guardian Angel",
+    "Infinity Edge"
+   ]
+  ]
+ ],
+ "seraphine": [
+  [
+   "Mid",
+   [
+    8,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "Malignance",
+    "Oceanid's Trident",
+    "Morellonomicon",
+    "Horizon Focus",
+    "crown-of-the-shattered-queen",
+    "Liandry's Torment"
+   ]
+  ],
+  [
+   "Support",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "Harmonic Echo",
+    "Ardent Censer",
+    "Redemption",
+    "Oceanid's Trident",
+    "Staff of Flowing Water",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "sett": [
+  [
+   "Baron",
+   [
+    0,
+    3,
+    5
+   ],
+   [
+    "Heartsteel",
+    "Plated Steelcaps",
+    "Hullbreaker",
+    "Overlord's Bloodmail",
+    "Black Cleaver",
+    "Amaranth's Twinguard",
+    "Hollow Radiance",
+    "Thornmail",
+    "Randuin's Omen"
+   ]
+  ],
+  [
+   "Support",
+   [
+    0,
+    1,
+    9
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Divine Sunderer",
+    "Dead Man's Plate",
+    "Abyssal Mask",
+    "Thornmail",
+    "Force of Nature",
+    "Amaranth's Twinguard",
+    "Warmog's Armor",
+    "Randuin's Omen",
+    "Frozen Heart"
+   ]
+  ]
+ ],
+ "shen": [
+  [
+   "Baron",
+   [
+    0,
+    0,
+    10
+   ],
+   [
+    "Heartsteel",
+    "Plated Steelcaps",
+    "Sunfire Aegis",
+    "Thornmail",
+    "Frozen Heart",
+    "Randuin's Omen",
+    "Force of Nature",
+    "Hollow Radiance",
+    "Abyssal Mask",
+    "Unending Despair",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "shyvana": [
+  [
+   "Jungle",
+   [
+    0,
+    5,
+    6
+   ],
+   [
+    "Trinity Force",
+    "Gluttonous Greaves",
+    "Blade of the Ruined King",
+    "Wit's End",
+    "Maw of Malmortius",
+    "Death's Dance",
+    "Sterak's Gage",
+    "Force of Nature",
+    "Thornmail",
+    "Frozen Heart",
+    "Guardian Angel",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "singed": [
+  [
+   "Baron",
+   [
+    5,
+    0,
+    2
+   ],
+   [
+    "Liandry's Torment",
+    "Boots of Mana",
+    "Riftmaker",
+    "Dead Man's Plate",
+    "Oceanid's Trident",
+    "Rylai's Crystal Scepter",
+    "Amaranth's Twinguard",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "sion": [
+  [
+   "Baron",
+   [
+    0,
+    0,
+    8
+   ],
+   [
+    "Heartsteel",
+    "Plated Steelcaps",
+    "Sunfire Aegis",
+    "Hollow Radiance",
+    "Thornmail",
+    "Unending Despair",
+    "Randuin's Omen",
+    "Mantle of the Twelfth Hour",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "sivir": [
+  [
+   "Dragon",
+   [
+    0,
+    7,
+    0
+   ],
+   [
+    "Bloodthirster",
+    "Gluttonous Greaves",
+    "Navori Quickblades",
+    "Dominik\u2019s Regards",
+    "soul-transfer",
+    "Mortal Reminder",
+    "magnetic-blaster",
+    "Infinity Edge",
+    "Black Cleaver",
+    "Guardian Angel",
+    "Maw of Malmortius"
+   ]
+  ]
+ ],
+ "skarner": [
+  [
+   "Jungle",
+   [
+    0,
+    0,
+    2
+   ],
+   [
+    "searing-crown",
+    "Zeke's Convergence",
+    "Thornmail"
+   ]
+  ]
+ ],
+ "smolder": [
+  [
+   "Dragon",
+   [
+    0,
+    8,
+    0
+   ],
+   [
+    "Essence Reaver",
+    "Ionian Boots of Lucidity",
+    "magnetic-blaster",
+    "Spear of Shojin",
+    "Infinity Edge",
+    "Bloodthirster",
+    "Mortal Reminder",
+    "Maw of Malmortius",
+    "Guardian Angel",
+    "Blade of the Ruined King"
+   ]
+  ]
+ ],
+ "sona": [
+  [
+   "Support",
+   [
+    5,
+    0,
+    1
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "Seraph's Embrace",
+    "Harmonic Echo",
+    "Ardent Censer",
+    "crown-of-the-shattered-queen",
+    "Oceanid's Trident",
+    "Frozen Heart",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "soraka": [
+  [
+   "Support",
+   [
+    5,
+    0,
+    1
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "Harmonic Echo",
+    "Ardent Censer",
+    "Staff of Flowing Water",
+    "crown-of-the-shattered-queen",
+    "Oceanid's Trident",
+    "Frozen Heart",
+    "Rabadon's Deathcap"
+   ]
+  ]
+ ],
+ "swain": [
+  [
+   "Baron",
+   [
+    0,
+    0,
+    9
+   ],
+   [
+    "Heartsteel",
+    "Plated Steelcaps",
+    "Warmog's Armor",
+    "Amaranth's Twinguard",
+    "Frozen Heart",
+    "Mantle of the Twelfth Hour",
+    "Thornmail",
+    "Dead Man's Plate",
+    "Kaenic Rookern",
+    "Hollow Radiance"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    3,
+    0,
+    0
+   ],
+   [
+    "Malignance",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "crown-of-the-shattered-queen"
+   ]
+  ],
+  [
+   "Support",
+   [
+    3,
+    0,
+    6
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Rylai's Crystal Scepter",
+    "psychic-projector",
+    "Amaranth's Twinguard",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Thornmail",
+    "Warmog's Armor",
+    "Frozen Heart",
+    "Randuin's Omen"
+   ]
+  ]
+ ],
+ "syndra": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "soulstealer",
+    "Rabadon's Deathcap",
+    "Malignance",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Liandry's Torment"
+   ]
+  ]
+ ],
+ "taliyah": [
+  [
+   "Mid",
+   [
+    4,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "crown-of-the-shattered-queen",
+    "Oceanid's Trident",
+    "Boots of Mana"
+   ]
+  ]
+ ],
+ "talon": [
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    0
+   ],
+   [
+    "Youmuu's Ghostblade",
+    "Gluttonous Greaves",
+    "Duskblade of Draktharr",
+    "Trinity Force",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Serpent's Fang",
+    "Edge of Night",
+    "Guardian Angel",
+    "Maw of Malmortius"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    0,
+    9,
+    0
+   ],
+   [
+    "Youmuu's Ghostblade",
+    "Boots of Dynamism",
+    "Duskblade of Draktharr",
+    "Trinity Force",
+    "Serpent's Fang",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Maw of Malmortius",
+    "Edge of Night",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "teemo": [
+  [
+   "Baron",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Nashor's Tooth",
+    "Boots of Mana",
+    "Liandry's Torment",
+    "Rabadon's Deathcap",
+    "Infinity Orb",
+    "Oceanid's Trident",
+    "bandle-fantasy",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Riftmaker"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Nashor's Tooth",
+    "Boots of Mana",
+    "Liandry's Torment",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "Infinity Orb",
+    "Riftmaker",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "bandle-fantasy"
+   ]
+  ]
+ ],
+ "thresh": [
+  [
+   "Support",
+   [
+    0,
+    0,
+    11
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Plated Steelcaps",
+    "Yordle Trap",
+    "Warmog's Armor",
+    "Kaenic Rookern",
+    "Abyssal Mask",
+    "Hollow Radiance",
+    "Knight's Vow",
+    "Amaranth's Twinguard",
+    "Frozen Heart",
+    "Randuin's Omen",
+    "Thornmail"
+   ]
+  ]
+ ],
+ "tristana": [
+  [
+   "Mid",
+   [
+    0,
+    8,
+    0
+   ],
+   [
+    "Bloodthirster",
+    "Gluttonous Greaves",
+    "Navori Quickblades",
+    "magnetic-blaster",
+    "Mortal Reminder",
+    "Terminus",
+    "Dominik\u2019s Regards",
+    "Edge of Night",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Infinity Edge"
+   ]
+  ],
+  [
+   "Dragon",
+   [
+    0,
+    8,
+    0
+   ],
+   [
+    "Bloodthirster",
+    "Gluttonous Greaves",
+    "Navori Quickblades",
+    "magnetic-blaster",
+    "Terminus",
+    "Mortal Reminder",
+    "Dominik\u2019s Regards",
+    "Infinity Edge",
+    "Guardian Angel",
+    "Edge of Night",
+    "Maw of Malmortius"
+   ]
+  ]
+ ],
+ "tryndamere": [
+  [
+   "Baron",
+   [
+    0,
+    10,
+    1
+   ],
+   [
+    "Blade of the Ruined King",
+    "Gluttonous Greaves",
+    "magnetic-blaster",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "Serylda\u2019s Grudge",
+    "Serpent's Fang",
+    "Infinity Edge",
+    "Trinity Force",
+    "Edge of Night",
+    "Amaranth's Twinguard",
+    "Guardian Angel",
+    "Maw of Malmortius"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    1
+   ],
+   [
+    "Blade of the Ruined King",
+    "Gluttonous Greaves",
+    "magnetic-blaster",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "Serylda\u2019s Grudge",
+    "Serpent's Fang",
+    "Infinity Edge",
+    "Amaranth's Twinguard",
+    "Edge of Night",
+    "Maw of Malmortius",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "twisted-fate": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Nashor's Tooth",
+    "Boots of Mana",
+    "Lich Bane",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "magnetic-blaster",
+    "crown-of-the-shattered-queen",
+    "Infinity Orb",
+    "Oceanid's Trident",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "twitch": [
+  [
+   "Dragon",
+   [
+    1,
+    6,
+    1
+   ],
+   [
+    "Kraken Slayer",
+    "Gluttonous Greaves",
+    "Runaan's Hurricane",
+    "magnetic-blaster",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "The Collector",
+    "Infinity Edge",
+    "Guardian Angel",
+    "Phantom Dancer",
+    "Wit's End",
+    "Nashor's Tooth"
+   ]
+  ]
+ ],
+ "urgot": [
+  [
+   "Baron",
+   [
+    0,
+    3,
+    7
+   ],
+   [
+    "Heartsteel",
+    "Plated Steelcaps",
+    "Titanic Hydra",
+    "Black Cleaver",
+    "Overlord's Bloodmail",
+    "Hollow Radiance",
+    "Mantle of the Twelfth Hour",
+    "Unending Despair",
+    "Thornmail",
+    "Amaranth's Twinguard",
+    "Randuin's Omen"
+   ]
+  ]
+ ],
+ "varus": [
+  [
+   "Dragon",
+   [
+    1,
+    5,
+    1
+   ],
+   [
+    "Blade of the Ruined King",
+    "Berserker's Greaves",
+    "Guinsoo's Rageblade",
+    "Runaan's Hurricane",
+    "Terminus",
+    "magnetic-blaster",
+    "Edge of Night",
+    "Wit's End",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "vayne": [
+  [
+   "Baron",
+   [
+    1,
+    8,
+    2
+   ],
+   [
+    "Kraken Slayer",
+    "Gluttonous Greaves",
+    "Guinsoo's Rageblade",
+    "Experimental Hexplate",
+    "Blade of the Ruined King",
+    "Terminus",
+    "Mortal Reminder",
+    "Guardian Angel",
+    "Amaranth's Twinguard",
+    "Wit's End",
+    "Edge of Night"
+   ]
+  ],
+  [
+   "Dragon",
+   [
+    1,
+    8,
+    2
+   ],
+   [
+    "Kraken Slayer",
+    "Gluttonous Greaves",
+    "Guinsoo's Rageblade",
+    "Blade of the Ruined King",
+    "Experimental Hexplate",
+    "Terminus",
+    "Mortal Reminder",
+    "Amaranth's Twinguard",
+    "Guardian Angel",
+    "Edge of Night",
+    "Wit's End"
+   ]
+  ]
+ ],
+ "veigar": [
+  [
+   "Mid",
+   [
+    4,
+    0,
+    0
+   ],
+   [
+    "soulstealer",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ],
+  [
+   "Support",
+   [
+    4,
+    0,
+    0
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "soulstealer",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Oceanid's Trident"
+   ]
+  ]
+ ],
+ "velkoz": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "soulstealer",
+    "Liandry's Torment",
+    "Riftmaker",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ],
+  [
+   "Support",
+   [
+    8,
+    0,
+    0
+   ],
+   [
+    "Black Mist Scythe",
+    "Ionian Boots of Lucidity",
+    "Imperial Mandate",
+    "Horizon Focus",
+    "Rabadon's Deathcap",
+    "Malignance",
+    "Liandry's Torment",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen",
+    "Riftmaker",
+    "Oceanid's Trident"
+   ]
+  ]
+ ],
+ "vex": [
+  [
+   "Mid",
+   [
+    5,
+    0,
+    0
+   ],
+   [
+    "soulstealer",
+    "Boots of Mana",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Liandry's Torment",
+    "Oceanid's Trident",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "vi": [
+  [
+   "Jungle",
+   [
+    0,
+    5,
+    3
+   ],
+   [
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Sundered Sky",
+    "Sterak's Gage",
+    "Death's Dance",
+    "Amaranth's Twinguard",
+    "Chempunk Chainsword",
+    "Maw of Malmortius",
+    "Randuin's Omen"
+   ]
+  ]
+ ],
+ "viego": [
+  [
+   "Jungle",
+   [
+    0,
+    8,
+    1
+   ],
+   [
+    "Kraken Slayer",
+    "Berserker's Greaves",
+    "The Collector",
+    "Mortal Reminder",
+    "Dominik\u2019s Regards",
+    "Bloodthirster",
+    "Infinity Edge",
+    "Maw of Malmortius",
+    "Amaranth's Twinguard",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "viktor": [
+  [
+   "Mid",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Boots of Mana",
+    "Lich Bane",
+    "Rabadon's Deathcap",
+    "Infinity Orb",
+    "Oceanid's Trident",
+    "Liandry's Torment",
+    "soulstealer",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "vladimir": [
+  [
+   "Baron",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "soulstealer",
+    "Rabadon's Deathcap",
+    "Riftmaker",
+    "Cosmic Drive",
+    "Morellonomicon",
+    "crown-of-the-shattered-queen",
+    "Oceanid's Trident",
+    "psychic-projector"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Infinity Orb",
+    "Boots of Mana",
+    "soulstealer",
+    "Rabadon's Deathcap",
+    "Riftmaker",
+    "crown-of-the-shattered-queen",
+    "crown-of-the-shattered-queen",
+    "Oceanid's Trident",
+    "Morellonomicon",
+    "Liandry's Torment"
+   ]
+  ]
+ ],
+ "volibear": [
+  [
+   "Baron",
+   [
+    0,
+    2,
+    7
+   ],
+   [
+    "Heartsteel",
+    "Plated Steelcaps",
+    "Trinity Force",
+    "Unending Despair",
+    "Titanic Hydra",
+    "Hollow Radiance",
+    "Thornmail",
+    "Frozen Heart",
+    "Amaranth's Twinguard",
+    "Randuin's Omen"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    1,
+    2,
+    5
+   ],
+   [
+    "Trinity Force",
+    "Mercury's Treads",
+    "Riftmaker",
+    "psychic-projector",
+    "Sterak's Gage",
+    "Hollow Radiance",
+    "Chempunk Chainsword",
+    "Frozen Heart",
+    "Randuin's Omen",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "warwick": [
+  [
+   "Baron",
+   [
+    0,
+    7,
+    2
+   ],
+   [
+    "Divine Sunderer",
+    "Gluttonous Greaves",
+    "Blade of the Ruined King",
+    "soulstealer",
+    "Wit's End",
+    "Chempunk Chainsword",
+    "Terminus",
+    "Amaranth's Twinguard",
+    "Guardian Angel",
+    "Edge of Night",
+    "Serpent's Fang"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    6,
+    3
+   ],
+   [
+    "Trinity Force",
+    "Gluttonous Greaves",
+    "Blade of the Ruined King",
+    "soulstealer",
+    "Wit's End",
+    "Terminus",
+    "Chempunk Chainsword",
+    "Amaranth's Twinguard",
+    "Guardian Angel",
+    "Kaenic Rookern",
+    "Edge of Night"
+   ]
+  ]
+ ],
+ "wukong": [
+  [
+   "Baron",
+   [
+    0,
+    7,
+    2
+   ],
+   [
+    "Divine Sunderer",
+    "Plated Steelcaps",
+    "Black Cleaver",
+    "Sundered Sky",
+    "Sterak's Gage",
+    "Chempunk Chainsword",
+    "Serpent's Fang",
+    "Maw of Malmortius",
+    "Amaranth's Twinguard",
+    "Edge of Night"
+   ]
+  ],
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    2
+   ],
+   [
+    "Youmuu's Ghostblade",
+    "Gluttonous Greaves",
+    "Trinity Force",
+    "Sterak's Gage",
+    "Serylda\u2019s Grudge",
+    "Serpent's Fang",
+    "Chempunk Chainsword",
+    "Duskblade of Draktharr",
+    "Death's Dance",
+    "Edge of Night",
+    "Amaranth's Twinguard",
+    "Maw of Malmortius"
+   ]
+  ]
+ ],
+ "xayah": [
+  [
+   "Dragon",
+   [
+    0,
+    6,
+    1
+   ],
+   [
+    "Bloodthirster",
+    "Gluttonous Greaves",
+    "Navori Quickblades",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "magnetic-blaster",
+    "Trinity Force",
+    "Maw of Malmortius",
+    "Duskblade of Draktharr",
+    "Amaranth's Twinguard"
+   ]
+  ]
+ ],
+ "xin-zhao": [
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    2
+   ],
+   [
+    "Trinity Force",
+    "Plated Steelcaps",
+    "Sundered Sky",
+    "Black Cleaver",
+    "Chempunk Chainsword",
+    "Serylda\u2019s Grudge",
+    "Death's Dance",
+    "Sterak's Gage",
+    "Serpent's Fang",
+    "Amaranth's Twinguard",
+    "Maw of Malmortius",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "yasuo": [
+  [
+   "Baron",
+   [
+    0,
+    6,
+    3
+   ],
+   [
+    "Blade of the Ruined King",
+    "Gluttonous Greaves",
+    "Divine Sunderer",
+    "Wit's End",
+    "Mortal Reminder",
+    "Death's Dance",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Amaranth's Twinguard",
+    "Kaenic Rookern"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    0,
+    11,
+    1
+   ],
+   [
+    "Bloodthirster",
+    "Gluttonous Greaves",
+    "Infinity Edge",
+    "Mortal Reminder",
+    "Dominik\u2019s Regards",
+    "Death's Dance",
+    "Trinity Force",
+    "Divine Sunderer",
+    "Blade of the Ruined King",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Amaranth's Twinguard",
+    "Edge of Night"
+   ]
+  ]
+ ],
+ "yone": [
+  [
+   "Baron",
+   [
+    0,
+    8,
+    1
+   ],
+   [
+    "Blade of the Ruined King",
+    "Berserker's Greaves",
+    "Bloodthirster",
+    "Divine Sunderer",
+    "Mortal Reminder",
+    "Serpent's Fang",
+    "Maw of Malmortius",
+    "Guardian Angel",
+    "Amaranth's Twinguard",
+    "Death's Dance"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    0,
+    6,
+    2
+   ],
+   [
+    "Bloodthirster",
+    "Berserker's Greaves",
+    "Navori Quickblades",
+    "Dominik\u2019s Regards",
+    "Mortal Reminder",
+    "Death's Dance",
+    "Amaranth's Twinguard",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Kaenic Rookern"
+   ]
+  ]
+ ],
+ "yunara": [
+  [
+   "Dragon",
+   [
+    0,
+    2,
+    1
+   ],
+   [
+    "Infinity Edge",
+    "Terminus",
+    "Wit's End"
+   ]
+  ]
+ ],
+ "yuumi": [
+  [
+   "Support",
+   [
+    8,
+    0,
+    1
+   ],
+   [
+    "Black Mist Scythe",
+    "Ionian Boots of Lucidity",
+    "Harmonic Echo",
+    "Ardent Censer",
+    "Staff of Flowing Water",
+    "Oceanid's Trident",
+    "Rylai's Crystal Scepter",
+    "Knight's Vow",
+    "Redemption",
+    "Imperial Mandate",
+    "Morellonomicon"
+   ]
+  ]
+ ],
+ "zed": [
+  [
+   "Jungle",
+   [
+    0,
+    9,
+    0
+   ],
+   [
+    "Youmuu's Ghostblade",
+    "Gluttonous Greaves",
+    "Trinity Force",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Serpent's Fang",
+    "Edge of Night",
+    "Spear of Shojin",
+    "Guardian Angel",
+    "Maw of Malmortius"
+   ]
+  ],
+  [
+   "Mid",
+   [
+    0,
+    9,
+    0
+   ],
+   [
+    "Youmuu's Ghostblade",
+    "Gluttonous Greaves",
+    "Eclipse",
+    "Serylda\u2019s Grudge",
+    "Mortal Reminder",
+    "Serpent's Fang",
+    "Edge of Night",
+    "Guardian Angel",
+    "Maw of Malmortius",
+    "Duskblade of Draktharr"
+   ]
+  ]
+ ],
+ "zeri": [
+  [
+   "Dragon",
+   [
+    0,
+    6,
+    0
+   ],
+   [
+    "Essence Reaver",
+    "Berserker's Greaves",
+    "Runaan's Hurricane",
+    "Mortal Reminder",
+    "Dominik\u2019s Regards",
+    "Infinity Edge",
+    "Bloodthirster",
+    "Guardian Angel"
+   ]
+  ]
+ ],
+ "ziggs": [
+  [
+   "Mid",
+   [
+    5,
+    0,
+    0
+   ],
+   [
+    "Luden's Echo",
+    "Boots of Mana",
+    "soulstealer",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "crown-of-the-shattered-queen",
+    "bandle-fantasy",
+    "Horizon Focus",
+    "Liandry's Torment"
+   ]
+  ]
+ ],
+ "zilean": [
+  [
+   "Mid",
+   [
+    7,
+    0,
+    0
+   ],
+   [
+    "Archangel's Staff",
+    "Boots of Mana",
+    "Rod of Ages",
+    "Infinity Orb",
+    "Rabadon's Deathcap",
+    "Liandry's Torment",
+    "crown-of-the-shattered-queen",
+    "Oceanid's Trident",
+    "Morellonomicon"
+   ]
+  ],
+  [
+   "Support",
+   [
+    6,
+    0,
+    2
+   ],
+   [
+    "Bulwark of the Mountain",
+    "Ionian Boots of Lucidity",
+    "Harmonic Echo",
+    "Ardent Censer",
+    "Redemption",
+    "Imperial Mandate",
+    "Redemption",
+    "crown-of-the-shattered-queen",
+    "Morellonomicon",
+    "Frozen Heart"
+   ]
+  ]
+ ],
+ "zoe": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Lich Bane",
+    "Boots of Mana",
+    "soulstealer",
+    "Rabadon's Deathcap",
+    "Oceanid's Trident",
+    "Infinity Orb",
+    "Morellonomicon",
+    "Horizon Focus",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ],
+ "zyra": [
+  [
+   "Mid",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Liandry's Torment",
+    "Boots of Mana",
+    "Rylai's Crystal Scepter",
+    "crown-of-the-shattered-queen",
+    "Rabadon's Deathcap",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Malignance",
+    "soulstealer"
+   ]
+  ],
+  [
+   "Support",
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    "Black Mist Scythe",
+    "Boots of Mana",
+    "Liandry's Torment",
+    "Rylai's Crystal Scepter",
+    "Rabadon's Deathcap",
+    "Morellonomicon",
+    "Oceanid's Trident",
+    "Malignance",
+    "crown-of-the-shattered-queen"
+   ]
+  ]
+ ]
+}

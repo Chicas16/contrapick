@@ -1,0 +1,802 @@
+{
+ "champ": {
+  "Aatrox": {
+   "file": "assets/champions/aatrox.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Aatrox_OriginalSquare_WR.png"
+  },
+  "Ahri": {
+   "file": "assets/champions/ahri.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Ahri_OriginalSquare_WR.png"
+  },
+  "Akali": {
+   "file": "assets/champions/akali.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Akali_OriginalSquare_WR.png"
+  },
+  "Akshan": {
+   "file": "assets/champions/akshan.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Akshan_OriginalSquare_WR.png"
+  },
+  "Alistar": {
+   "file": "assets/champions/alistar.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Alistar_OriginalSquare_WR.png"
+  },
+  "Ambessa": {
+   "file": "assets/champions/ambessa.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Ambessa_OriginalSquare_WR.png"
+  },
+  "Amumu": {
+   "file": "assets/champions/amumu.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Amumu_OriginalSquare_WR.png"
+  },
+  "Annie": {
+   "file": "assets/champions/annie.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Annie_OriginalSquare_WR.png"
+  },
+  "Ashe": {
+   "file": "assets/champions/ashe.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Ashe_OriginalSquare_WR.png"
+  },
+  "Aurelion Sol": {
+   "file": "assets/champions/aurelion-sol.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Aurelion_Sol_OriginalSquare_WR.png"
+  },
+  "Aurora": {
+   "file": "assets/champions/aurora.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Aurora_OriginalSquare_WR.png"
+  },
+  "Bard": {
+   "file": "assets/champions/bard.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Bard_OriginalSquare_WR.png"
+  },
+  "Blitzcrank": {
+   "file": "assets/champions/blitzcrank.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Blitzcrank_OriginalSquare_WR.png"
+  },
+  "Brand": {
+   "file": "assets/champions/brand.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Brand_OriginalSquare_WR.png"
+  },
+  "Braum": {
+   "file": "assets/champions/braum.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Braum_OriginalSquare_WR.png"
+  },
+  "Caitlyn": {
+   "file": "assets/champions/caitlyn.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Caitlyn_OriginalSquare_WR.png"
+  },
+  "Camille": {
+   "file": "assets/champions/camille.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Camille_OriginalSquare_WR.png"
+  },
+  "Cho'Gath": {
+   "file": "assets/champions/chogath.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Cho%27Gath_OriginalSquare_WR.png"
+  },
+  "Corki": {
+   "file": "assets/champions/corki.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Corki_OriginalSquare_WR.png"
+  },
+  "Darius": {
+   "file": "assets/champions/darius.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Darius_OriginalSquare_WR.png"
+  },
+  "Diana": {
+   "file": "assets/champions/diana.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Diana_OriginalSquare_WR.png"
+  },
+  "Dr. Mundo": {
+   "file": "assets/champions/dr-mundo.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Dr._Mundo_OriginalSquare_WR.png"
+  },
+  "Draven": {
+   "file": "assets/champions/draven.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Draven_OriginalSquare_WR.png"
+  },
+  "Ekko": {
+   "file": "assets/champions/ekko.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Ekko_OriginalSquare_WR.png"
+  },
+  "Evelynn": {
+   "file": "assets/champions/evelynn.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Evelynn_OriginalSquare_WR.png"
+  },
+  "Ezreal": {
+   "file": "assets/champions/ezreal.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Ezreal_OriginalSquare_WR.png"
+  },
+  "Fiddlesticks": {
+   "file": "assets/champions/fiddlesticks.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Fiddlesticks_OriginalSquare_WR.png"
+  },
+  "Fiora": {
+   "file": "assets/champions/fiora.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Fiora_OriginalSquare_WR.png"
+  },
+  "Fizz": {
+   "file": "assets/champions/fizz.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Fizz_OriginalSquare_WR.png"
+  },
+  "Galio": {
+   "file": "assets/champions/galio.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Galio_OriginalSquare_WR.png"
+  },
+  "Garen": {
+   "file": "assets/champions/garen.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Garen_OriginalSquare_WR.png"
+  },
+  "Gnar": {
+   "file": "assets/champions/gnar.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Gnar_OriginalSquare_WR.png"
+  },
+  "Gragas": {
+   "file": "assets/champions/gragas.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Gragas_OriginalSquare_WR.png"
+  },
+  "Graves": {
+   "file": "assets/champions/graves.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Graves_OriginalSquare_WR.png"
+  },
+  "Gwen": {
+   "file": "assets/champions/gwen.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Gwen_OriginalSquare_WR.png"
+  },
+  "Hecarim": {
+   "file": "assets/champions/hecarim.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Hecarim_OriginalSquare_WR.png"
+  },
+  "Heimerdinger": {
+   "file": "assets/champions/heimerdinger.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Heimerdinger_OriginalSquare_WR.png"
+  },
+  "Irelia": {
+   "file": "assets/champions/irelia.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Irelia_OriginalSquare_WR.png"
+  },
+  "Janna": {
+   "file": "assets/champions/janna.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Janna_OriginalSquare_WR.png"
+  },
+  "Jarvan IV": {
+   "file": "assets/champions/jarvan-iv.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Jarvan_IV_OriginalSquare_WR.png"
+  },
+  "Jax": {
+   "file": "assets/champions/jax.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Jax_OriginalSquare_WR.png"
+  },
+  "Jayce": {
+   "file": "assets/champions/jayce.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Jayce_OriginalSquare_WR.png"
+  },
+  "Jhin": {
+   "file": "assets/champions/jhin.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Jhin_OriginalSquare_WR.png"
+  },
+  "Jinx": {
+   "file": "assets/champions/jinx.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Jinx_OriginalSquare_WR.png"
+  },
+  "K'Sante": {
+   "file": "assets/champions/ksante.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:K%27Sante_OriginalSquare_WR.png"
+  },
+  "Kai'Sa": {
+   "file": "assets/champions/kaisa.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Kai%27Sa_OriginalSquare_WR.png"
+  },
+  "Kalista": {
+   "file": "assets/champions/kalista.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Kalista_OriginalSquare_WR.png"
+  },
+  "Karma": {
+   "file": "assets/champions/karma.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Karma_OriginalSquare_WR.png"
+  },
+  "Kassadin": {
+   "file": "assets/champions/kassadin.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Kassadin_OriginalSquare_WR.png"
+  },
+  "Katarina": {
+   "file": "assets/champions/katarina.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Katarina_OriginalSquare_WR.png"
+  },
+  "Kayle": {
+   "file": "assets/champions/kayle.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Kayle_OriginalSquare_WR.png"
+  },
+  "Kayn": {
+   "file": "assets/champions/kayn.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Kayn_OriginalSquare_WR.png"
+  },
+  "Kennen": {
+   "file": "assets/champions/kennen.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Kennen_OriginalSquare_WR.png"
+  },
+  "Kha'Zix": {
+   "file": "assets/champions/khazix.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Kha%27Zix_OriginalSquare_WR.png"
+  },
+  "Kindred": {
+   "file": "assets/champions/kindred.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Kindred_OriginalSquare_WR.png"
+  },
+  "Kog'Maw": {
+   "file": "assets/champions/kogmaw.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Kog%27Maw_OriginalSquare_WR.png"
+  },
+  "Lee Sin": {
+   "file": "assets/champions/lee-sin.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Lee_Sin_OriginalSquare_WR.png"
+  },
+  "Leona": {
+   "file": "assets/champions/leona.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Leona_OriginalSquare_WR.png"
+  },
+  "Lillia": {
+   "file": "assets/champions/lillia.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Lillia_OriginalSquare_WR.png"
+  },
+  "Lissandra": {
+   "file": "assets/champions/lissandra.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Lissandra_OriginalSquare_WR.png"
+  },
+  "Lucian": {
+   "file": "assets/champions/lucian.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Lucian_OriginalSquare_WR.png"
+  },
+  "Lulu": {
+   "file": "assets/champions/lulu.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Lulu_OriginalSquare_WR.png"
+  },
+  "Lux": {
+   "file": "assets/champions/lux.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Lux_OriginalSquare_WR.png"
+  },
+  "Malphite": {
+   "file": "assets/champions/malphite.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Malphite_OriginalSquare_WR.png"
+  },
+  "Maokai": {
+   "file": "assets/champions/maokai.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Maokai_OriginalSquare_WR.png"
+  },
+  "Master Yi": {
+   "file": "assets/champions/master-yi.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Master_Yi_OriginalSquare_WR.png"
+  },
+  "Mel": {
+   "file": "assets/champions/mel.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Mel_OriginalSquare_WR.png"
+  },
+  "Milio": {
+   "file": "assets/champions/milio.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Milio_OriginalSquare_WR.png"
+  },
+  "Miss Fortune": {
+   "file": "assets/champions/miss-fortune.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Miss_Fortune_OriginalSquare_WR.png"
+  },
+  "Mordekaiser": {
+   "file": "assets/champions/mordekaiser.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Mordekaiser_OriginalSquare_WR.png"
+  },
+  "Morgana": {
+   "file": "assets/champions/morgana.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Morgana_OriginalSquare_WR.png"
+  },
+  "Nami": {
+   "file": "assets/champions/nami.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Nami_OriginalSquare_WR.png"
+  },
+  "Nasus": {
+   "file": "assets/champions/nasus.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Nasus_OriginalSquare_WR.png"
+  },
+  "Nautilus": {
+   "file": "assets/champions/nautilus.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Nautilus_OriginalSquare_WR.png"
+  },
+  "Nidalee": {
+   "file": "assets/champions/nidalee.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Nidalee_OriginalSquare_WR.png"
+  },
+  "Nilah": {
+   "file": "assets/champions/nilah.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Nilah_OriginalSquare_WR.png"
+  },
+  "Nocturne": {
+   "file": "assets/champions/nocturne.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Nocturne_OriginalSquare_WR.png"
+  },
+  "Norra": {
+   "file": "assets/champions/norra.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Norra_OriginalSquare_WR.png"
+  },
+  "Nunu & Willump": {
+   "file": "assets/champions/nunu-and-willump.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Nunu_OriginalSquare_WR.png"
+  },
+  "Olaf": {
+   "file": "assets/champions/olaf.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Olaf_OriginalSquare_WR.png"
+  },
+  "Orianna": {
+   "file": "assets/champions/orianna.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Orianna_OriginalSquare_WR.png"
+  },
+  "Ornn": {
+   "file": "assets/champions/ornn.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Ornn_OriginalSquare_WR.png"
+  },
+  "Pantheon": {
+   "file": "assets/champions/pantheon.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Pantheon_OriginalSquare_WR.png"
+  },
+  "Poppy": {
+   "file": "assets/champions/poppy.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Poppy_OriginalSquare_WR.png"
+  },
+  "Pyke": {
+   "file": "assets/champions/pyke.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Pyke_OriginalSquare_WR.png"
+  },
+  "Rakan": {
+   "file": "assets/champions/rakan.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Rakan_OriginalSquare_WR.png"
+  },
+  "Rammus": {
+   "file": "assets/champions/rammus.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Rammus_OriginalSquare_WR.png"
+  },
+  "Rell": {
+   "file": "assets/champions/rell.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Rell_OriginalSquare_WR.png"
+  },
+  "Renekton": {
+   "file": "assets/champions/renekton.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Renekton_OriginalSquare_WR.png"
+  },
+  "Rengar": {
+   "file": "assets/champions/rengar.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Rengar_OriginalSquare_WR.png"
+  },
+  "Riven": {
+   "file": "assets/champions/riven.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Riven_OriginalSquare_WR.png"
+  },
+  "Rumble": {
+   "file": "assets/champions/rumble.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Rumble_OriginalSquare_WR.png"
+  },
+  "Ryze": {
+   "file": "assets/champions/ryze.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Ryze_OriginalSquare_WR.png"
+  },
+  "Samira": {
+   "file": "assets/champions/samira.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Samira_OriginalSquare_WR.png"
+  },
+  "Senna": {
+   "file": "assets/champions/senna.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Senna_OriginalSquare_WR.png"
+  },
+  "Seraphine": {
+   "file": "assets/champions/seraphine.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Seraphine_OriginalSquare_WR.png"
+  },
+  "Sett": {
+   "file": "assets/champions/sett.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Sett_OriginalSquare_WR.png"
+  },
+  "Shen": {
+   "file": "assets/champions/shen.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Shen_OriginalSquare_WR.png"
+  },
+  "Shyvana": {
+   "file": "assets/champions/shyvana.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Shyvana_OriginalSquare_WR.png"
+  },
+  "Singed": {
+   "file": "assets/champions/singed.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Singed_OriginalSquare_WR.png"
+  },
+  "Sion": {
+   "file": "assets/champions/sion.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Sion_OriginalSquare_WR.png"
+  },
+  "Sivir": {
+   "file": "assets/champions/sivir.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Sivir_OriginalSquare_WR.png"
+  },
+  "Skarner": {
+   "file": "assets/champions/skarner.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Skarner_OriginalSquare_WR.png"
+  },
+  "Smolder": {
+   "file": "assets/champions/smolder.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Smolder_OriginalSquare_WR.png"
+  },
+  "Sona": {
+   "file": "assets/champions/sona.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Sona_OriginalSquare_WR.png"
+  },
+  "Soraka": {
+   "file": "assets/champions/soraka.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Soraka_OriginalSquare_WR.png"
+  },
+  "Swain": {
+   "file": "assets/champions/swain.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Swain_OriginalSquare_WR.png"
+  },
+  "Syndra": {
+   "file": "assets/champions/syndra.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Syndra_OriginalSquare_WR.png"
+  },
+  "Taliyah": {
+   "file": "assets/champions/taliyah.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Taliyah_OriginalSquare_WR.png"
+  },
+  "Talon": {
+   "file": "assets/champions/talon.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Talon_OriginalSquare_WR.png"
+  },
+  "Teemo": {
+   "file": "assets/champions/teemo.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Teemo_OriginalSquare_WR.png"
+  },
+  "Thresh": {
+   "file": "assets/champions/thresh.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Thresh_OriginalSquare_WR.png"
+  },
+  "Tristana": {
+   "file": "assets/champions/tristana.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Tristana_OriginalSquare_WR.png"
+  },
+  "Tryndamere": {
+   "file": "assets/champions/tryndamere.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Tryndamere_OriginalSquare_WR.png"
+  },
+  "Twisted Fate": {
+   "file": "assets/champions/twisted-fate.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Twisted_Fate_OriginalSquare_WR.png"
+  },
+  "Twitch": {
+   "file": "assets/champions/twitch.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Twitch_OriginalSquare_WR.png"
+  },
+  "Urgot": {
+   "file": "assets/champions/urgot.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Urgot_OriginalSquare_WR.png"
+  },
+  "Varus": {
+   "file": "assets/champions/varus.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Varus_OriginalSquare_WR.png"
+  },
+  "Vayne": {
+   "file": "assets/champions/vayne.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Vayne_OriginalSquare_WR.png"
+  },
+  "Veigar": {
+   "file": "assets/champions/veigar.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Veigar_OriginalSquare_WR.png"
+  },
+  "Vel'Koz": {
+   "file": "assets/champions/velkoz.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Vel%27Koz_OriginalSquare_WR.png"
+  },
+  "Vex": {
+   "file": "assets/champions/vex.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Vex_OriginalSquare_WR.png"
+  },
+  "Vi": {
+   "file": "assets/champions/vi.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Vi_OriginalSquare_WR.png"
+  },
+  "Viego": {
+   "file": "assets/champions/viego.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Viego_OriginalSquare_WR.png"
+  },
+  "Viktor": {
+   "file": "assets/champions/viktor.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Viktor_OriginalSquare_WR.png"
+  },
+  "Vladimir": {
+   "file": "assets/champions/vladimir.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Vladimir_OriginalSquare_WR.png"
+  },
+  "Volibear": {
+   "file": "assets/champions/volibear.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Volibear_OriginalSquare_WR.png"
+  },
+  "Warwick": {
+   "file": "assets/champions/warwick.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Warwick_OriginalSquare_WR.png"
+  },
+  "Wukong": {
+   "file": "assets/champions/wukong.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Wukong_OriginalSquare_WR.png"
+  },
+  "Xayah": {
+   "file": "assets/champions/xayah.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Xayah_OriginalSquare_WR.png"
+  },
+  "Xin Zhao": {
+   "file": "assets/champions/xin-zhao.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Xin_Zhao_OriginalSquare_WR.png"
+  },
+  "Yasuo": {
+   "file": "assets/champions/yasuo.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Yasuo_OriginalSquare_WR.png"
+  },
+  "Yone": {
+   "file": "assets/champions/yone.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Yone_OriginalSquare_WR.png"
+  },
+  "Yunara": {
+   "file": "assets/champions/yunara.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Yunara_OriginalSquare_WR.png"
+  },
+  "Yuumi": {
+   "file": "assets/champions/yuumi.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Yuumi_OriginalSquare_WR.png"
+  },
+  "Zed": {
+   "file": "assets/champions/zed.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Zed_OriginalSquare_WR.png"
+  },
+  "Zeri": {
+   "file": "assets/champions/zeri.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Zeri_OriginalSquare_WR.png"
+  },
+  "Ziggs": {
+   "file": "assets/champions/ziggs.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Ziggs_OriginalSquare_WR.png"
+  },
+  "Zilean": {
+   "file": "assets/champions/zilean.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Zilean_OriginalSquare_WR.png"
+  },
+  "Zoe": {
+   "file": "assets/champions/zoe.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Zoe_OriginalSquare_WR.png"
+  },
+  "Zyra": {
+   "file": "assets/champions/zyra.webp",
+   "src": "https://wiki.leagueoflegends.com/en-us/File:Zyra_OriginalSquare_WR.png"
+  }
+ },
+ "item": {
+  "Botas de Mercurio": {
+   "file": "assets/items/mercurys-treads.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-mercurys-treads-icon.png"
+  },
+  "Punteras de Acero": {
+   "file": "assets/items/plated-steelcaps.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-plated-steelcaps-icon.png"
+  },
+  "Grebas del Berserker": {
+   "file": "assets/items/berserkers-greaves.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-berserkers-greaves-icon.png"
+  },
+  "Botas Jonias de la Lucidez": {
+   "file": "assets/items/ionian-boots-of-lucidity.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-ionian-boots-of-lucidity-icon.png"
+  },
+  "Botas de Dinamismo": {
+   "file": "assets/items/boots-of-dynamism.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-boots-of-dynamism-icon.png"
+  },
+  "Botas de Maná": {
+   "file": "assets/items/boots-of-mana.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-boots-of-mana-icon.png"
+  },
+  "Lucidez Carmesí": {
+   "file": "assets/items/crimson-lucidity.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-crimson-lucidity-icon.png"
+  },
+  "Fuerza de la Naturaleza": {
+   "file": "assets/items/force-of-nature.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-force-of-nature-icon.png"
+  },
+  "Cota de Espinas": {
+   "file": "assets/items/thornmail.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-thornmail-icon.png"
+  },
+  "Presagio de Randuin": {
+   "file": "assets/items/randuins-omen.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-randuins-omen-icon.png"
+  },
+  "Corazón de Hielo": {
+   "file": "assets/items/frozen-heart.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-frozen-heart-icon.png"
+  },
+  "Rookern Kaénico": {
+   "file": "assets/items/kaenic-rookern.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-kaenic-rookern-icon.png"
+  },
+  "Armadura Pétrea": {
+   "file": "assets/items/gargoyle-stoneplate.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-gargoyle-stoneplate-icon.png"
+  },
+  "Reloj de Arena de Zhonya": {
+   "file": "assets/items/zhonyas-hourglass.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-zhonyas-hourglass-icon.png"
+  },
+  "Velo de la Banshee": {
+   "file": "assets/items/banshees-veil.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-banshees-veil-icon.png"
+  },
+  "Fauces de Malmortius": {
+   "file": "assets/items/maw-of-malmortius.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-maw-of-malmortius-icon.png"
+  },
+  "Ángel Guardián": {
+   "file": "assets/items/guardian-angel.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-guardian-angel-icon.png"
+  },
+  "Cimitarra Mercurial": {
+   "file": "assets/items/mercurial-scimitar.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-mercurial-scimitar-icon.png"
+  },
+  "Filo de la Noche": {
+   "file": "assets/items/edge-of-night.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-edge-of-night-icon.png"
+  },
+  "Al Filo de la Cordura": {
+   "file": "assets/items/wits-end.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-wits-end-icon.png"
+  },
+  "Morellonomicón": {
+   "file": "assets/items/morellonomicon.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-morellonomicon-icon.png"
+  },
+  "Recordatorio Mortal": {
+   "file": "assets/items/mortal-reminder.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-mortal-reminder-icon.png"
+  },
+  "Espada Sierra Quimopunk": {
+   "file": "assets/items/chempunk-chainsword.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-chempunk-chainsword-icon.png"
+  },
+  "Báculo del Vacío": {
+   "file": "assets/items/void-staff.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-void-staff-icon.png"
+  },
+  "Recuerdos de Lord Dominik": {
+   "file": "assets/items/dominiks-regards.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-dominiks-regards-icon.png"
+  },
+  "Rencor de Serylda": {
+   "file": "assets/items/seryldas-grudge.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-seryldas-grudge-icon.png"
+  },
+  "Cuchilla Oscura": {
+   "file": "assets/items/black-cleaver.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-black-cleaver-icon.png"
+  },
+  "Tormento de Liandry": {
+   "file": "assets/items/liandrys-torment.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-liandrys-torment-icon.png"
+  },
+  "Espada del Rey Arruinado": {
+   "file": "assets/items/blade-of-the-ruined-king.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-blade-of-the-ruined-king-icon.png"
+  },
+  "Colmillo de Serpiente": {
+   "file": "assets/items/serpents-fang.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-serpents-fang-icon.png"
+  },
+  "Tridente del Oceánida": {
+   "file": "assets/items/oceanids-trident.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-oceanids-trident-icon.png"
+  },
+  "Guantelete de Sterak": {
+   "file": "assets/items/steraks-gage.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-steraks-gage-icon.png"
+  },
+  "Eclipse": {
+   "file": "assets/items/eclipse.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-eclipse-icon.png"
+  },
+  "Eco de Luden": {
+   "file": "assets/items/ludens-echo.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-ludens-echo-icon.png"
+  },
+  "Sombrero Mortífero de Rabadon": {
+   "file": "assets/items/rabadons-deathcap.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-rabadons-deathcap-icon.png"
+  },
+  "Espada Crepuscular de Draktharr": {
+   "file": "assets/items/duskblade-of-draktharr.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-duskblade-of-draktharr-icon.png"
+  },
+  "Filo del Infinito": {
+   "file": "assets/items/infinity-edge.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-infinity-edge-icon.png"
+  },
+  "La Sanguinaria": {
+   "file": "assets/items/bloodthirster.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-bloodthirster-icon.png"
+  },
+  "Matakrakens": {
+   "file": "assets/items/kraken-slayer.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-kraken-slayer-icon.png"
+  },
+  "Relicario de los Solari de Hierro": {
+   "file": "assets/items/locket-of-the-iron-solari.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-locket-of-the-iron-solari-icon.png"
+  },
+  "Redención": {
+   "file": "assets/items/redeeming.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-redeeming-icon.png"
+  },
+  "Creador de Grietas": {
+   "file": "assets/items/riftmaker.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-riftmaker-icon.png"
+  },
+  "Orbe del Infinito": {
+   "file": "assets/items/infinity-orb.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-infinity-orb-icon.png"
+  },
+  "Desesperación Eterna": {
+   "file": "assets/items/unending-despair.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-unending-despair-icon.png"
+  },
+  "Corazón de acero": {
+   "file": "assets/items/heartsteel.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-heartsteel-icon.png"
+  },
+  "Grebas Glotonas": {
+   "file": "assets/items/gluttonous-greaves.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-gluttonous-greaves-icon.png"
+  },
+  "Hoz de Niebla Negra": {
+   "file": "assets/items/black-mist-scythe.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-black-mist-scythe-icon.png"
+  },
+  "Eco armónico": {
+   "file": "assets/items/harmonic-echo.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-harmonic-echo-icon.png"
+  },
+  "Pebetero Ardiente": {
+   "file": "assets/items/ardent-censer.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-ardent-censer-icon.png"
+  },
+  "Baluarte de la Montaña": {
+   "file": "assets/items/bulwark-of-the-mountain.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-bulwark-of-the-mountain-icon.png"
+  },
+  "Protección de Amaranth": {
+   "file": "assets/items/amaranths-twinguard.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-amaranths-twinguard-icon.png"
+  },
+  "Espada Fantasma de Youmuu": {
+   "file": "assets/items/youmuus-ghostblade.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-youmuus-ghostblade-icon.png"
+  },
+  "Cercenador Divino": {
+   "file": "assets/items/divine-sunderer.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-divine-sunderer-icon.png"
+  },
+  "Fuerza de la Trinidad": {
+   "file": "assets/items/trinity-force.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-trinity-force-icon.png"
+  },
+  "Maldición del Liche": {
+   "file": "assets/items/lich-bane.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-lich-bane-icon.png"
+  },
+  "Égida de Fuego Solar": {
+   "file": "assets/items/sunfire-aegis.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-sunfire-aegis-icon.png"
+  },
+  "Promesa del Caballero": {
+   "file": "assets/items/knights-vow.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-knights-vow-icon.png"
+  },
+  "Danza de la Muerte": {
+   "file": "assets/items/deaths-dance.webp",
+   "src": "https://www.wildriftmeta.com/assets/item/icon/item-deaths-dance-icon.png"
+  }
+ }
+}

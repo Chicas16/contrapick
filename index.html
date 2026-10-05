@@ -3,64 +3,73 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Ayuda de builds Wild Rift en español (México). Elige campeón, rol y 5 enemigos." />
+  <meta name="description" content="Ayuda de builds Wild Rift en español (México). Elige campeón, rol y 5 enemigos y recibe un build con razones." />
+  <meta name="theme-color" content="#0b0e14" />
   <title>Wild Rift MX — Ayuda de builds</title>
+  <link rel="icon" href="data:," />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="wrap">
     <header>
       <h1>Wild Rift MX <span class="beta">beta</span></h1>
-      <p class="lead">Elige tu campeón y rol, más los 5 enemigos. Te sugerimos botas, núcleo y situacionales según la composición rival.</p>
-      <p class="disclaimer">Beta: builds aproximados. Proyecto fan no afiliado a Riot Games. Sin logos de Riot.</p>
+      <p class="lead">Elige tu campeón y rol, más los 5 enemigos. Te armamos un build en orden de compra con la razón de cada ítem según el equipo rival.</p>
+      <p class="disclaimer">Beta: builds aproximados. Proyecto de fans, no afiliado a Riot Games.</p>
     </header>
 
-    <div class="panel">
-      <label for="my-champion">Tu campeón</label>
-      <select id="my-champion"></select>
+    <section class="panel" aria-labelledby="t-draft">
+      <h2 id="t-draft" class="panel-title">Tu partida</h2>
 
-      <label for="my-role">Tu rol</label>
-      <select id="my-role"></select>
-
-      <div class="enemies">
-        <div class="full"><label>Campeones enemigos (5)</label></div>
-        <div>
-          <label for="enemy-1">Enemigo 1</label>
-          <select id="enemy-1"></select>
+      <div class="draft">
+        <div class="side side-me">
+          <div class="side-label">Tú</div>
+          <button type="button" class="slot slot-me" data-slot="me" aria-label="Elegir tu campeón"></button>
         </div>
-        <div>
-          <label for="enemy-2">Enemigo 2</label>
-          <select id="enemy-2"></select>
-        </div>
-        <div>
-          <label for="enemy-3">Enemigo 3</label>
-          <select id="enemy-3"></select>
-        </div>
-        <div>
-          <label for="enemy-4">Enemigo 4</label>
-          <select id="enemy-4"></select>
-        </div>
-        <div class="full">
-          <label for="enemy-5">Enemigo 5</label>
-          <select id="enemy-5"></select>
+        <div class="side side-enemy">
+          <div class="side-label">Enemigos</div>
+          <div class="enemy-slots">
+            <button type="button" class="slot" data-slot="0" aria-label="Elegir enemigo 1"></button>
+            <button type="button" class="slot" data-slot="1" aria-label="Elegir enemigo 2"></button>
+            <button type="button" class="slot" data-slot="2" aria-label="Elegir enemigo 3"></button>
+            <button type="button" class="slot" data-slot="3" aria-label="Elegir enemigo 4"></button>
+            <button type="button" class="slot" data-slot="4" aria-label="Elegir enemigo 5"></button>
+          </div>
         </div>
       </div>
 
-      <button type="button" id="btn-build">Ver build recomendado</button>
-      <div id="error" hidden></div>
-    </div>
+      <div class="field-label" id="lbl-role">Tu rol</div>
+      <div class="roles" role="radiogroup" aria-labelledby="lbl-role" id="roles"></div>
 
-    <div id="results" class="panel" hidden></div>
+      <div class="picker" id="picker">
+        <div class="picker-head">
+          <span id="picker-target" class="picker-target">Elige tu campeón</span>
+          <button type="button" class="link-btn" id="btn-clear-slot" hidden>Quitar</button>
+        </div>
+        <input type="search" id="search" placeholder="Buscar campeón…" autocomplete="off" aria-label="Buscar campeón" />
+        <div class="filters" id="filters" role="group" aria-label="Filtrar por clase"></div>
+        <div class="grid" id="grid" role="listbox" aria-label="Campeones"></div>
+        <p class="grid-empty" id="grid-empty" hidden>Sin resultados.</p>
+      </div>
+
+      <div class="actions">
+        <button type="button" id="btn-build">Ver build recomendado</button>
+        <button type="button" class="ghost" id="btn-reset">Reiniciar</button>
+      </div>
+      <div id="error" role="alert" hidden></div>
+    </section>
+
+    <section id="results" class="panel" hidden aria-live="polite"></section>
 
     <footer>
-      <p>74 campeones tienen traits etiquetados (AP/AD/tanque/curación/control/asesino/escudo); el resto cuenta como neutro. Ver <a href="DATA_SOURCES.md">DATA_SOURCES.md</a>.</p>
-      <p>Fuentes: <a href="https://wiki.leagueoflegends.com/en-us/WR:Champion" rel="noopener">WR Wiki campeones</a>,
-        <a href="https://www.wildriftmeta.com/es-419/items/" rel="noopener">wildriftmeta ES-419 objetos</a>,
+      <p>Los 141 campeones tienen tipo de daño (AP/AD/mixto) y traits (tanque, curación, control, asesino, escudo) basados en la WR Wiki y builds de wildriftmeta; son aproximados. Ver <a href="DATA_SOURCES.md">DATA_SOURCES.md</a>.</p>
+      <p>Fuentes: <a href="https://wiki.leagueoflegends.com/en-us/WR:Champion" rel="noopener">WR Wiki campeones</a> (datos y retratos),
+        <a href="https://www.wildriftmeta.com/es-419/items/" rel="noopener">wildriftmeta ES-419 objetos</a> (nombres, íconos y builds de referencia),
         <a href="https://wildrift.leagueoflegends.com/en-us/champions/" rel="noopener">sitio oficial WR</a>.</p>
-      <p>No afiliado a Riot Games. League of Legends: Wild Rift © Riot Games.</p>
+      <p>Proyecto de fans, no afiliado a Riot Games. El arte de campeones e ítems pertenece a Riot Games. League of Legends: Wild Rift © Riot Games.</p>
     </footer>
   </div>
   <script src="data.js"></script>
+  <script src="champions.js"></script>
   <script src="rules.js"></script>
   <script src="app.js"></script>
 </body>
