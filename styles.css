@@ -1,3 +1,6 @@
+/* Fuentes: Rajdhani (display/gamer) + Inter (texto) — Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600;700&display=swap");
+
 :root {
   --bg: #070707;
   --card: #121212;
@@ -14,7 +17,9 @@
   --good: #34d399;
   --warn: #fbbf24;
   --radius: 14px;
-  --font: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --font-display: "Rajdhani", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font: var(--font-body); /* alias legacy */
 }
 
 * { box-sizing: border-box; }
@@ -25,12 +30,32 @@ html, body {
   padding: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--font);
+  font-family: var(--font-body);
   min-height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 body { padding: 0; padding-bottom: 48px; }
 .wrap { max-width: 760px; margin: 0 auto; padding: 0 14px; }
 button { font: inherit; color: inherit; }
+
+/* ---------- Tipografía display (Rajdhani) ---------- */
+.logo,
+.site-header h1,
+.site-header .beta,
+.panel-title, .sec,
+.field-label, .side-label,
+.picker-target,
+.role-btn,
+.chip,
+#btn-build,
+.ghost,
+.res-title,
+.item-name,
+.kind,
+.order {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
 
 /* ---------- Header: red gradient + wave ---------- */
 .site-header {
@@ -52,17 +77,17 @@ button { font: inherit; color: inherit; }
 .site-header .wrap { position: relative; z-index: 1; }
 .logo {
   margin: 0;
-  font-weight: 800;
-  font-size: 1.05rem;
-  letter-spacing: 0.06em;
+  font-size: 1.3rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 .logo .mx { color: #ffc9ce; }
 .site-header h1 {
-  font-size: 1.45rem;
+  font-size: 1.95rem;
+  line-height: 1.05;
   margin: 12px 0 6px;
-  letter-spacing: -0.02em;
-  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 }
 .site-header .beta {
   display: inline-block;
@@ -70,9 +95,8 @@ button { font: inherit; color: inherit; }
   color: var(--red-deep);
   border: none;
   border-radius: 999px;
-  font-size: 0.68rem;
-  font-weight: 700;
-  padding: 3px 10px;
+  font-size: 0.78rem;
+  padding: 2px 10px;
   margin-left: 8px;
   vertical-align: middle;
   letter-spacing: 0.04em;
@@ -95,16 +119,15 @@ button { font: inherit; color: inherit; }
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
 }
 .panel-title, .sec {
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   color: var(--red-bright);
   margin: 0 0 10px;
 }
 .sec { margin: 18px 0 8px; }
 .field-label, .side-label {
-  font-size: 0.72rem;
-  font-weight: 700;
+  font-size: 0.85rem;
   color: var(--muted);
   margin: 12px 0 6px;
   letter-spacing: 0.08em;
@@ -206,10 +229,10 @@ button { font: inherit; color: inherit; }
   background: transparent;
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 9px 14px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   cursor: pointer;
   position: relative;
   color: var(--muted);
@@ -229,7 +252,6 @@ button { font: inherit; color: inherit; }
   background: var(--red);
   border-color: var(--red);
   color: #fff;
-  font-weight: 800;
   box-shadow: 0 4px 16px rgba(225, 29, 46, 0.5);
 }
 
@@ -247,7 +269,7 @@ button { font: inherit; color: inherit; }
   align-items: center;
   margin-bottom: 8px;
 }
-.picker-target { font-weight: 700; font-size: 0.92rem; }
+.picker-target { font-size: 1.05rem; letter-spacing: 0.03em; }
 .link-btn {
   background: none;
   border: none;
@@ -283,8 +305,9 @@ button { font: inherit; color: inherit; }
   background: var(--card2);
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 5px 11px;
-  font-size: 0.78rem;
+  padding: 4px 12px;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
   cursor: pointer;
   color: var(--muted);
 }
@@ -292,7 +315,6 @@ button { font: inherit; color: inherit; }
   background: var(--red);
   border-color: var(--red);
   color: #fff;
-  font-weight: 700;
 }
 .grid {
   display: grid;
@@ -374,9 +396,11 @@ span.fallback {
   background: linear-gradient(135deg, var(--red-bright), var(--red));
   border: none;
   border-radius: 12px;
-  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   cursor: pointer;
-  padding: 14px;
+  padding: 12px 14px;
   color: #fff;
   box-shadow: 0 8px 24px rgba(225, 29, 46, 0.5);
 }
@@ -386,6 +410,9 @@ span.fallback {
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 0 14px;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   cursor: pointer;
   color: var(--muted);
 }
@@ -418,7 +445,7 @@ button:focus-visible {
   object-fit: cover;
   box-shadow: 0 4px 16px rgba(225, 29, 46, 0.35);
 }
-.res-title { font-weight: 700; font-size: 1.1rem; }
+.res-title { font-size: 1.4rem; letter-spacing: 0.03em; line-height: 1.1; }
 .res-sub { color: var(--muted); font-size: 0.85rem; }
 
 .buildbar {
@@ -450,8 +477,7 @@ button:focus-visible {
   background: var(--bg);
   border: 1px solid var(--red-bright);
   color: var(--red-bright);
-  font-size: 0.62rem;
-  font-weight: 700;
+  font-size: 0.72rem;
   border-radius: 999px;
   min-width: 17px;
   height: 17px;
@@ -557,11 +583,11 @@ button:focus-visible {
   gap: 8px;
   align-items: baseline;
 }
-.item-name { font-weight: 700; font-size: 0.98rem; }
+.item-name { font-size: 1.12rem; letter-spacing: 0.02em; line-height: 1.15; }
 .kind {
-  font-size: 0.62rem;
+  font-size: 0.74rem;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   color: var(--muted);
   white-space: nowrap;
 }
@@ -597,5 +623,5 @@ footer a { color: #fda4af; }
     padding: 8px;
   }
   .slot-me .slot-name { font-size: 0.9rem; }
-  .role-btn { font-size: 0.72rem; padding: 8px 11px; }
+  .role-btn { font-size: 0.88rem; padding: 7px 11px; }
 }
