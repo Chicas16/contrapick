@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700;800&family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
   --bg: #070707;
@@ -22,6 +22,7 @@
   --radius: 14px;
   --glow-red: 0 0 28px rgba(225, 29, 46, 0.45);
   --font-display: "Rajdhani", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --font-brand: "Outfit", "Segoe UI", system-ui, sans-serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font: var(--font-body);
 }
@@ -152,7 +153,18 @@ button { font: inherit; color: inherit; }
     0 8px 22px rgba(0, 0, 0, 0.5);
   transform: translateY(-1px);
 }
-.brand-name { display: none; }
+.brand-name {
+  display: block;
+  font-family: var(--font-brand);
+  font-weight: 800;
+  font-size: clamp(1.35rem, 4.5vw, 1.85rem);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  color: #fff;
+  text-transform: none;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
 .tagline, .disclaimer-inline { display: none; }
 
 .site-header .beta {
