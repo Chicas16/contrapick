@@ -46,6 +46,25 @@ Conteo actual: AD 71 · AP 68 · mixto 2 · tanque 34 · control 58 · curación
 Solo se usan ítems que aparecen en esas listas (58 ítems). Los núcleos por estilo (crítico, letalidad, luchador, AP,
 encantador, tanque, soporte) se eligieron a partir de los ítems más frecuentes en las builds de wildriftmeta (parche 7.3a).
 
+
+## Runas
+
+Estructura usada en el sitio (y en las pruebas): **1 runa clave + 3 runas menores**, con nombres ES-419.
+El cliente de Wild Rift también organiza menores en rutas (Precisión, Dominación, Valor/Resolve, Hechicería/Sorcery);
+algunas guías describen 1 clave + 3 de ruta primaria + 1 secundaria (5 en total). Aquí priorizamos el modelo
+de 4 runas documentado por Riot Support y pedido por el producto.
+
+- Catálogo ES-419: [wildriftmeta.com/es-419/runes](https://www.wildriftmeta.com/es-419/runes/) (parche 7.3a, consultado 2026-10-05).
+- Estructura / listas EN: [WR Wiki — Rune](https://wiki.leagueoflegends.com/en-us/WR:Rune), [wildriftalpha.com/es/runes](https://www.wildriftalpha.com/es/runes).
+- Explicación oficial: [Soporte Wild Rift — Runas (ES-419)](https://support-wildrift.riotgames.com/hc/es-419/articles/360052002394-Runas).
+- Selección: por estilo de build (tanque / AP / encantador / crítico / letalidad / luchador) y al menos una menor adaptada al enemigo (tanques → Corte, mucho CC → Perseverancia, asesinos → Revestimiento de Huesos, etc.).
+
+## Hechizos de invocador
+
+- Catálogo ES-419: [wildriftmeta.com/es-419/summoner-spells](https://www.wildriftmeta.com/es-419/summoner-spells/) (Destello, Ignición, Castigo, Extenuación, Barrera, Curación, Fantasma, Purificar, Teleportación).
+- Explicación oficial: [Soporte Wild Rift — Hechizos (ES-419)](https://support-wildrift.riotgames.com/hc/es-419/articles/360052760753-Hechizos).
+- Reglas: siempre **Destello** + un segundo; **Jungla siempre Castigo**; adaptar Purificar vs mucho CC, Extenuación vs asesinos, Ignición vs curación, Barrera en ADC, etc.
+
 ## Imágenes
 
 Descargadas al repo (`assets/`) para no depender de enlaces externos; redimensionadas y comprimidas a WebP.
@@ -54,7 +73,9 @@ Descargadas al repo (`assets/`) para no depender de enlaces externos; redimensio
   [WR Wiki](https://wiki.leagueoflegends.com/en-us/WR:Champion) → `assets/champions/<slug>.webp` (80×80).
 - **Íconos de ítems (58/58)**: `/assets/item/icon/item-<slug>-icon.png` de
   [wildriftmeta.com](https://www.wildriftmeta.com/es-419/items/) → `assets/items/<slug>.webp` (64×64).
-- Total ≈ 350 KB. Si una imagen falta o no carga, la UI muestra las iniciales.
+- **Íconos de runas**: `/assets/rune/icon/rune-<slug>-icon.png` de wildriftmeta → `assets/runes/<slug>.webp` (56×56).
+- **Íconos de hechizos**: `/assets/summoner_spell/icon/summoner-spell-<slug>-icon.png` de wildriftmeta → `assets/spells/<slug>.webp` (56×56).
+- Si una imagen falta o no carga, la UI muestra las iniciales.
 - Mapa nombre → archivo → URL de origen: `tools/sources/asset_map.json`.
 
 Arte © Riot Games. League of Legends: Wild Rift © Riot Games. Uso no comercial de fans.
@@ -68,3 +89,5 @@ Simple y explicable (`rules.js`):
 4. Núcleo: 3 ítems del estilo; contra 2+ tanques el tercero se cambia por penetración.
 5. Situacionales: cada candidato tiene un puntaje = cuántos enemigos lo justifican; se muestran los mejores.
 6. Orden de compra mostrado: núcleo 1 → botas → núcleo 2 → núcleo 3 → 2 situacionales.
+7. Runas: 1 clave + 3 menores según estilo; al menos una menor reacciona al enemigo.
+8. Hechizos: Destello + segundo (Castigo si jungla); segundo adaptado a CC/asesinos/curación/rol.

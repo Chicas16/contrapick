@@ -43,6 +43,8 @@
 
   const champImg = (name, cls, size) => imgHTML(champs[name] && champs[name].img, name, cls, size);
   const itemImg = (item, cls, size) => imgHTML(item.icon, item.name, cls, size);
+  const runeImg = (rune, cls, size) => imgHTML(rune.icon, rune.name, cls, size);
+  const spellImg = (spell, cls, size) => imgHTML(spell.icon, spell.name, cls, size);
 
   /* ---------- Rol ---------- */
   data.roles.forEach((r) => {
@@ -224,6 +226,30 @@
     </li>`;
   }
 
+
+  function runeRow(entry, kind) {
+    const label = kind === "keystone" ? "Clave" : "Menor";
+    return `<li class="rune rune-${kind}">
+      <div class="rune-icon-wrap">${runeImg(entry.rune, "rune-img", 48)}</div>
+      <div class="rune-body">
+        <div class="rune-head"><span class="rune-name">${esc(entry.rune.name)}</span><span class="kind kind-rune">${label}</span></div>
+        <div class="rune-tag">${esc(entry.rune.tag || "")}</div>
+        <p class="rune-reason">${esc(entry.reason)}</p>
+      </div>
+    </li>`;
+  }
+
+  function spellRow(entry) {
+    return `<li class="spell">
+      <div class="spell-icon-wrap">${spellImg(entry.spell, "spell-img", 48)}</div>
+      <div class="spell-body">
+        <div class="spell-head"><span class="spell-name">${esc(entry.spell.name)}</span></div>
+        <div class="spell-tag">${esc(entry.spell.tag || "")}</div>
+        <p class="spell-reason">${esc(entry.reason)}</p>
+      </div>
+    </li>`;
+  }
+
   function render(rec) {
     const kindOf = (e) => (e === rec.boots ? "boots" : rec.core.includes(e) ? "core" : "sit");
     const orderSet = new Set(rec.order);
@@ -246,6 +272,22 @@
       <div class="summary">${esc(rec.summary)}</div>
       <div class="enemy-read">
         ${rec.enemies.map((n) => `<div class="er">${champImg(n, "er-img", 36)}<div><div class="er-name">${esc(n)}</div><div class="er-tags">${traitBadges(n)}</div></div></div>`).join("")}
+      </div>
+
+      <div class="rs-grid">
+        <div class="rs-col">
+          <h2 class="sec">Runas</h2>
+          <ul class="runes">
+            ${runeRow(rec.runes.keystone, "keystone")}
+            ${rec.runes.minors.map((m) => runeRow(m, "minor")).join("")}
+          </ul>
+        </div>
+        <div class="rs-col">
+          <h2 class="sec">Hechizos</h2>
+          <ul class="spells">
+            ${rec.spells.map((s) => spellRow(s)).join("")}
+          </ul>
+        </div>
       </div>
 
       <h2 class="sec">Orden de compra</h2>

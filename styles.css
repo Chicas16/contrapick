@@ -625,3 +625,71 @@ footer a { color: #fda4af; }
   .slot-me .slot-name { font-size: 0.9rem; }
   .role-btn { font-size: 0.88rem; padding: 7px 11px; }
 }
+
+/* ---------- Runas y hechizos (mínimo; bobby pule) ---------- */
+.rs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 12px;
+}
+@media (min-width: 560px) {
+  .rs-grid { grid-template-columns: 1fr 1fr; }
+}
+.runes, .spells {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.rune, .spell {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px 10px;
+}
+.rune-keystone { border-color: rgba(225, 29, 46, 0.45); }
+.rune-img, .spell-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  object-fit: cover;
+  display: block;
+  flex: 0 0 auto;
+}
+.fallback.rune-img, .fallback.spell-img {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+  background: #0c0c0c;
+  color: var(--muted);
+}
+.rune-body, .spell-body { min-width: 0; flex: 1; }
+.rune-head, .spell-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+.rune-name, .spell-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+.kind-rune { color: var(--red-bright); }
+.rune-tag, .spell-tag { color: var(--muted); font-size: 0.72rem; margin-top: 1px; }
+.rune-reason, .spell-reason {
+  margin: 4px 0 0;
+  font-size: 0.82rem;
+  color: #e0e0e0;
+  line-height: 1.35;
+}

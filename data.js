@@ -139,6 +139,88 @@
           it("Desesperación Eterna", "unending-despair", "Aguante en peleas")
         ]
       }
-    }
+    },
+
+    /* Runas Wild Rift (ES-419 wildriftmeta / WR Wiki). Estructura usada: 1 clave + 3 menores. */
+    runes: (() => {
+      const icon = (slug) => "assets/runes/" + slug + ".webp";
+      const k = (name, slug, tag) => ({ name, slug, tag, kind: "keystone", icon: icon(slug) });
+      const m = (name, slug, path, tag) => ({ name, slug, path, tag, kind: "minor", icon: icon(slug) });
+      return {
+        keystones: {
+          electrocute: k("Electrocutar", "electrocute", "Ráfaga adaptable"),
+          dark_harvest: k("Cosecha oscura", "dark-harvest", "Daño a poca vida"),
+          empowerment: k("Potenciación", "empowerment", "Daño sostenido en básicos"),
+          lethal_tempo: k("Cadencia Letal", "lethal-tempo", "Vel. de ataque acumulable"),
+          fleet_footwork: k("Pies veloces", "fleet-footwork", "Curación + movilidad"),
+          conqueror: k("Conquistador", "conqueror", "Daño adaptable + omnivampirismo"),
+          grasp: k("Garras del Inmortal", "grasp-of-undying", "Vida y daño en combate"),
+          guardian: k("Protector", "guardian", "Escudo a ti y a un aliado"),
+          aery: k("Aery", "aery", "Daño o escudo de apoyo"),
+          arcane_comet: k("Cometa Arcano", "arcane-comet", "Cometa al acertar habilidad"),
+          phase_rush: k("Fase Veloz", "phase-rush", "Velocidad tras combo"),
+          first_strike: k("Primer golpe", "first-strike", "Oro y daño al pegar primero"),
+          ice_overlord: k("Señor del Hielo", "ice-overlord", "Engage con control")
+        },
+        minors: {
+          brutal: m("Brutal", "brutal", "precision", "Daño extra en ataques"),
+          triumph: m("Triunfo", "triumph", "precision", "Curación al derribar"),
+          battle_zeal: m("Celo de Batalla", "battle-zeal", "precision", "Daño de habilidades básicas"),
+          last_stand: m("Última Batalla", "last-stand", "precision", "Más daño a poca vida"),
+          cut_down: m("Corte", "cut-down", "precision", "Más daño vs mucha vida"),
+          coup_de_grace: m("Golpe de gracia", "coup-de-grace", "precision", "Más daño a heridos"),
+          legend_alacrity: m("Leyenda: Presteza", "legend-alacrity", "precision", "Vel. de ataque por derribos"),
+          legend_tenacity: m("Leyenda: Aceleración", "legend-tenacity", "precision", "Aceleración de habilidades"),
+          legend_bloodline: m("Leyenda: Linaje", "legend-bloodline", "precision", "Omnivampirismo por derribos"),
+          cheap_shot: m("Golpe bajo", "cheap-shot", "domination", "Daño verdadero con CC"),
+          sudden_impact: m("Impacto Súbito", "sudden-impact", "domination", "Daño tras dash/sigilo"),
+          empowered_attack: m("Ataque potenciado", "empowered-attack", "domination", "Ataque reforzado periódico"),
+          chain_assault: m("Asalto Encadenado", "chain-assault", "domination", "Daño tras habilidad"),
+          tyrant: m("Tirano", "tyrant", "domination", "Daño a poca vida"),
+          hubris: m("Soberbia", "hubris", "domination", "Poder temporal al eliminar"),
+          eyeball: m("Colección de ojos", "eyeball-collection", "domination", "Fuerza adaptable por derribos"),
+          relentless: m("Cazador Implacable", "relentless-hunter", "domination", "MS fuera de combate"),
+          zombie_ward: m("Centinela Zombi", "zombie-ward", "domination", "Centinelas + fuerza"),
+          demolish: m("Demolición", "demolish", "resolve", "Daño a torres"),
+          font_of_life: m("Fuente de vida", "font-of-life", "resolve", "Cura a aliados"),
+          courage: m("Coraje del coloso", "courage-of-the-colossus", "resolve", "Escudo al inmovilizar"),
+          unshakeable: m("Inquebrantable", "unshakeable", "resolve", "Tenacidad y resistencias"),
+          second_wind: m("Segundo Aire", "second-wind", "resolve", "Regeneración tras daño"),
+          nullifying_orb: m("Orbe Anulador", "nullifying-orb", "resolve", "Escudo a poca vida"),
+          bone_plating: m("Revestimiento de Huesos", "bone-plating", "resolve", "Mitiga ráfaga"),
+          overgrowth: m("Sobrecrecimiento", "overgrowth", "resolve", "Vida máxima"),
+          revitalize: m("Revitalizar", "revitalize", "resolve", "Curaciones y escudos más fuertes"),
+          perseverance: m("Perseverancia", "perseverance", "resolve", "Tenacidad / resistencias con CC"),
+          axiom: m("Arcanista de Axioma", "axiom-arcanist", "sorcery", "Definitiva más fuerte"),
+          manaflow: m("Banda de Maná", "manaflow-band", "sorcery", "Maná que escala"),
+          botanist: m("Botánica", "botanist", "sorcery", "Plantas dan oro"),
+          hexflash: m("Destello Hextech", "hextech-flashtraption", "sorcery", "Segundo Destello"),
+          transcendence: m("Trascendencia", "transcendence", "sorcery", "Aceleración de habilidades"),
+          celerity: m("Celeridad", "celerity", "sorcery", "Más provecho de MS"),
+          absolute_focus: m("Concentración Absoluta", "absolute-focus", "sorcery", "Daño con vida alta"),
+          scorch: m("Piroláser", "scorch", "sorcery", "Quemadura con habilidades"),
+          nimbus: m("Manto del Nimbus", "nimbus-cloak", "sorcery", "Sprint tras hechizo"),
+          gathering_storm: m("Tormenta creciente", "gathering-storm", "sorcery", "Daño que escala con el tiempo"),
+          seedjar: m("Semillero de Ixtal", "ixtali-seedjar", "sorcery", "Replantar semillas")
+        }
+      };
+    })(),
+
+    /* Hechizos de invocador (ES-419 wildriftmeta / soporte oficial Riot). */
+    spells: (() => {
+      const icon = (slug) => "assets/spells/" + slug + ".webp";
+      const s = (name, slug, tag) => ({ name, slug, tag, icon: icon(slug) });
+      return {
+        flash: s("Destello", "flash", "Teletransporte corto"),
+        ignite: s("Ignición", "ignite", "Daño verdadero + heridas graves"),
+        smite: s("Castigo", "smite", "Daño a monstruos / objetivos"),
+        exhaust: s("Extenuación", "exhaust", "Reduce daño y MS enemigo"),
+        barrier: s("Barrera", "barrier", "Escudo temporal"),
+        heal: s("Curación", "heal", "Cura a ti y a un aliado"),
+        ghost: s("Fantasma", "ghost", "Velocidad de movimiento"),
+        cleanse: s("Purificar", "cleanse", "Quita control de masas"),
+        teleport: s("Teleportación", "teleport", "Viaje a aliado/estructura")
+      };
+    })()
   };
 })(typeof window !== "undefined" ? window : globalThis);

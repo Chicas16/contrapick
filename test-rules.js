@@ -27,6 +27,11 @@ function printRec(title, rec) {
   rec.order.forEach((e, i) => console.log(` ${i + 1}. ${e.item.name} — ${e.reason}`));
   const extra = rec.situational.filter((s) => !rec.order.includes(s));
   if (extra.length) console.log("OTRAS SITUACIONALES:", extra.map((s) => s.item.name).join(", "));
+  console.log("RUNAS:");
+  console.log(` Clave: ${rec.runes.keystone.rune.name} — ${rec.runes.keystone.reason}`);
+  rec.runes.minors.forEach((m) => console.log(` Menor: ${m.rune.name} — ${m.reason}`));
+  console.log("HECHIZOS:");
+  rec.spells.forEach((s) => console.log(` ${s.spell.name} — ${s.reason}`));
 }
 
 const names = (rec) => [rec.boots, ...rec.core, ...rec.situational].map((e) => e.item.name);
@@ -53,6 +58,38 @@ test("todos los retratos e íconos referenciados existen en assets/", () => {
     else if (o && typeof o === "object") Object.values(o).forEach(walk);
   };
   walk(data.items);
+  walk(data.runes);
+  walk(data.spells);
+});
+
+const allRuneNames = new Set([
+  ...Object.values(data.runes.keystones).map((r) => r.name),
+  ...Object.values(data.runes.minors).map((r) => r.name)
+]);
+const allSpellNames = new Set(Object.values(data.spells).map((s) => s.name));
+
+test("cada build tiene 1 clave + 3 menores + 2 hechizos distintos, nombres en data", () => {
+  data.champions.forEach((me) => data.roles.forEach((r) => {
+    const en = data.champions.filter((n) => n !== me).slice(0, 5);
+    const rec = rules.recommend(data, champs, { role: r.id, myChampion: me, enemies: en });
+    assert.ok(rec.runes && rec.runes.keystone && rec.runes.minors, "sin runas " + me);
+    assert.strictEqual(rec.runes.minors.length, 3, "menores " + me + " " + r.id);
+    assert.ok(allRuneNames.has(rec.runes.keystone.rune.name), "clave desconocida " + rec.runes.keystone.rune.name);
+    const rn = [rec.runes.keystone.rune.name, ...rec.runes.minors.map((m) => m.rune.name)];
+    assert.strictEqual(new Set(rn).size, 4, "runas repetidas " + me + " " + r.id);
+    rec.runes.minors.forEach((m) => assert.ok(allRuneNames.has(m.rune.name), "menor " + m.rune.name));
+    assert.strictEqual(rec.spells.length, 2, "hechizos " + me + " " + r.id);
+    assert.notStrictEqual(rec.spells[0].spell.name, rec.spells[1].spell.name);
+    rec.spells.forEach((s) => assert.ok(allSpellNames.has(s.spell.name), "hechizo " + s.spell.name));
+  }));
+});
+
+test("jungla siempre lleva Castigo", () => {
+  data.champions.forEach((me) => {
+    const en = data.champions.filter((n) => n !== me).slice(0, 5);
+    const rec = rules.recommend(data, champs, { role: "jungle", myChampion: me, enemies: en });
+    assert.ok(rec.spells.some((s) => s.spell.name === "Castigo"), "sin Castigo: " + me);
+  });
 });
 
 test("ningún enemigo cuenta como neutro", () => {

@@ -208,6 +208,171 @@
     return Number.isInteger(n) ? String(n) : String(n).replace(".", ",");
   }
 
+
+  function pickRunes(data, role, c, style, me) {
+    const K = data.runes.keystones;
+    const M = data.runes.minors;
+    const traits = (me && me.traits) || [];
+    const estilo = (me && me.estilo) || [];
+
+    let keystone, keyReason;
+    if (style === "tanque") {
+      if (role === "support" && traits.includes("control")) {
+        keystone = K.ice_overlord;
+        keyReason = "Soporte tanque con control: Señor del Hielo castiga al inmovilizar.";
+      } else {
+        keystone = K.grasp;
+        keyReason = "Tanque de combate: Garras del Inmortal suma vida y daño en pelea.";
+      }
+    } else if (style === "encantador") {
+      keystone = K.aery;
+      keyReason = "Encantador: Aery refuerza escudos y curaciones a aliados.";
+    } else if (style === "crit") {
+      keystone = K.lethal_tempo;
+      keyReason = "Tirador crítico: Cadencia Letal escala velocidad de ataque en peleas largas.";
+    } else if (style === "letal") {
+      keystone = K.electrocute;
+      keyReason = "Asesino AD: Electrocutar remata combos cortos.";
+    } else if (style === "luchador") {
+      keystone = K.conqueror;
+      keyReason = "Luchador: Conquistador da daño adaptable y omnivampirismo en peleas extendidas.";
+    } else {
+      // AP
+      if (role === "support" && traits.includes("control")) {
+        keystone = K.electrocute;
+        keyReason = "Soporte AP con poke/combo: Electrocutar castiga intercambios.";
+      } else if (estilo.includes("artillería") || role === "mid") {
+        keystone = K.electrocute;
+        keyReason = "Mago AP: Electrocutar castiga combos de 3 hits.";
+      } else {
+        keystone = K.electrocute;
+        keyReason = "Campeón AP: Electrocutar es la clave de ráfaga más usada.";
+      }
+    }
+
+    // Base minors by style (3 slots)
+    let minors = [];
+    const pushM = (rune, reason) => {
+      if (!rune || minors.some((x) => x.rune.name === rune.name)) return;
+      minors.push({ rune, reason });
+    };
+
+    if (style === "tanque") {
+      pushM(M.bone_plating, "Revestimiento de Huesos mitiga la primera ráfaga del lane.");
+      pushM(M.overgrowth, "Sobrecrecimiento suma vida máxima a lo largo de la partida.");
+      pushM(role === "support" ? M.font_of_life : M.demolish,
+        role === "support"
+          ? "Fuente de vida cura a tu carry cuando controlas enemigos."
+          : "Demolición acelera derribar torres tras un trade.");
+    } else if (style === "encantador") {
+      pushM(M.font_of_life, "Fuente de vida amplifica tu utilidad de curación.");
+      pushM(M.revitalize, "Revitalizar potencia curaciones y escudos.");
+      pushM(M.manaflow, "Banda de Maná sostiene el spam de habilidades.");
+    } else if (style === "crit") {
+      pushM(M.brutal, "Brutal suma daño en cada básico.");
+      pushM(M.cut_down, "Corte ayuda contra enemigos con más vida.");
+      pushM(M.legend_alacrity, "Leyenda: Presteza escala velocidad de ataque con derribos.");
+    } else if (style === "letal") {
+      pushM(M.sudden_impact, "Impacto Súbito premia dashes y salidas de sigilo.");
+      pushM(M.eyeball, "Colección de ojos escala fuerza adaptable con derribos.");
+      pushM(M.coup_de_grace, "Golpe de gracia remata a enemigos heridos.");
+    } else if (style === "luchador") {
+      pushM(M.brutal, "Brutal refuerza tus ataques en duelos.");
+      pushM(M.last_stand, "Última Batalla sube el daño cuando bajas de vida.");
+      pushM(M.legend_bloodline, "Leyenda: Linaje da omnivampirismo que escala.");
+    } else {
+      // AP
+      pushM(M.sudden_impact, "Impacto Súbito o daño extra tras movilidad/habilidades.");
+      pushM(M.transcendence, "Trascendencia da aceleración de habilidades.");
+      pushM(M.gathering_storm, "Tormenta creciente escala tu daño en late.");
+    }
+
+    // Adapt at least one minor to enemy team when it makes sense
+    let adapted = false;
+    if (c.tanque >= 2 && style !== "tanque" && style !== "encantador") {
+      // replace a damage-finisher slot with Cut Down if not already
+      if (!minors.some((x) => x.rune.name === M.cut_down.name)) {
+        minors[1] = { rune: M.cut_down, reason: `Hay ${c.tanque} tanques: Corte inflige más daño a campeones con mucha vida.` };
+        adapted = true;
+      }
+    }
+    if (!adapted && c.control >= 3) {
+      minors[2] = { rune: M.perseverance, reason: `Hay ${c.control} enemigos con mucho control: Perseverancia da tenacidad y resistencias bajo CC.` };
+      adapted = true;
+    }
+    if (!adapted && c.asesino >= 2) {
+      minors[0] = { rune: M.bone_plating, reason: `Hay ${c.asesino} asesinos: Revestimiento de Huesos mitiga su ráfaga inicial.` };
+      adapted = true;
+    }
+    if (!adapted && c.AP >= 3 && style !== "AP") {
+      minors[minors.length - 1] = { rune: M.nullifying_orb, reason: `${fmt(c.AP)} enemigos AP: Orbe Anulador te da un escudo a poca vida.` };
+      adapted = true;
+    }
+    if (!adapted && c.curacion >= 2 && (style === "letal" || style === "AP")) {
+      minors[minors.length - 1] = { rune: M.coup_de_grace, reason: `${c.curacion} con curación: Golpe de gracia ayuda a rematar antes de que se curen.` };
+      adapted = true;
+    }
+    if (!adapted && c.AD >= 3 && (style === "tanque" || style === "encantador")) {
+      minors[0] = { rune: M.bone_plating, reason: `${fmt(c.AD)} enemigos AD: Revestimiento de Huesos amortigua su ráfaga.` };
+      adapted = true;
+    }
+
+    // Ensure exactly 3 unique minors
+    const seen = new Set([keystone.name]);
+    const clean = [];
+    for (const row of minors) {
+      if (seen.has(row.rune.name)) continue;
+      seen.add(row.rune.name);
+      clean.push(row);
+      if (clean.length === 3) break;
+    }
+    const filler = [M.brutal, M.transcendence, M.bone_plating, M.gathering_storm, M.eyeball];
+    for (const f of filler) {
+      if (clean.length >= 3) break;
+      if (seen.has(f.name)) continue;
+      seen.add(f.name);
+      clean.push({ rune: f, reason: "Complemento general de poder según tu estilo." });
+    }
+
+    return {
+      keystone: { rune: keystone, reason: keyReason },
+      minors: clean.slice(0, 3)
+    };
+  }
+
+  function pickSpells(data, role, c, style) {
+    const S = data.spells;
+    const flash = { spell: S.flash, reason: "Destello es el hechizo estándar de movilidad y escapes." };
+    let second;
+
+    if (role === "jungle") {
+      second = { spell: S.smite, reason: "Jungla: Castigo es obligatorio para monstruos y objetivos." };
+    } else if (c.control >= 3) {
+      second = { spell: S.cleanse, reason: `Hay ${c.control} enemigos con mucho control: Purificar limpia stuns y raíces.` };
+    } else if (c.asesino >= 2 && (style === "crit" || style === "encantador" || style === "AP")) {
+      second = { spell: S.exhaust, reason: `Hay ${c.asesino} asesinos: Extenuación reduce su daño y velocidad.` };
+    } else if (c.curacion >= 2) {
+      second = { spell: S.ignite, reason: `${c.curacion} enemigos con curación: Ignición aplica heridas graves y remata.` };
+    } else if (style === "crit" || role === "adc") {
+      second = { spell: S.barrier, reason: "Tirador: Barrera te salva de una ráfaga en lane o teamfight." };
+    } else if (style === "encantador" || (style === "tanque" && role === "support")) {
+      second = { spell: S.exhaust, reason: "Soporte: Extenuación protege a tu carry del threat principal." };
+    } else if (style === "letal" || style === "AP") {
+      second = { spell: S.ignite, reason: "Ráfaga: Ignición asegura asesinatos y corta curaciones." };
+    } else if (style === "luchador" || style === "tanque") {
+      if (c.AP >= 3) second = { spell: S.ghost, reason: "Fantasma ayuda a perseguir o escapar en peleas largas." };
+      else second = { spell: S.ignite, reason: "Ignición aporta presión de kill en duelos de Barón/Jungla." };
+    } else {
+      second = { spell: S.ignite, reason: "Ignición es la segunda opción ofensiva más flexible." };
+    }
+
+    // Never duplicate; if somehow flash==second (shouldn't), swap
+    if (second.spell.name === flash.spell.name) {
+      second = { spell: S.ignite, reason: "Ignición como segundo hechizo ofensivo." };
+    }
+    return [flash, second];
+  }
+
   function recommend(data, champs, opts) {
     const { role, myChampion, enemies } = opts;
     if (!role || !myChampion || !enemies || enemies.length !== 5) {
@@ -237,6 +402,9 @@
     // Orden de compra estilo "build del juego": núcleo 1 → botas → núcleo 2 → núcleo 3 → situacionales
     const order = [core[0], boots, core[1], core[2], ...situational.slice(0, 2)].filter(Boolean);
 
+    const runes = pickRunes(data, role, c, style, me);
+    const spells = pickSpells(data, role, c, style);
+
     return {
       myChampion,
       role,
@@ -250,9 +418,11 @@
       boots,
       core,
       situational,
-      order
+      order,
+      runes,
+      spells
     };
   }
 
-  return { recommend, countTraits, buildStyle, getChamp, fmt };
+  return { recommend, countTraits, buildStyle, getChamp, fmt, pickRunes, pickSpells };
 });
