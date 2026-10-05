@@ -1070,3 +1070,15 @@ footer a { color: #fda4af; }
   letter-spacing: 0.02em;
 }
 
+
+
+/* header: logo only */
+.brand-mark {
+  height: 56px;
+  width: 56px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #070707;
+}
+.brand-name { display: none; }
+.tagline, .disclaimer-inline { display: none; }
