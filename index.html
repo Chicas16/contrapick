@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ayuda de builds Wild Rift en español (México). Elige campeón, rol y 5 enemigos." />
+  <title>Wild Rift MX — Ayuda de builds</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Wild Rift MX <span class="beta">beta</span></h1>
+      <p class="lead">Elige tu campeón y rol, más los 5 enemigos. Te sugerimos botas, núcleo y situacionales según la composición rival.</p>
+      <p class="disclaimer">Beta: builds aproximados. Proyecto fan no afiliado a Riot Games. Sin logos de Riot.</p>
+    </header>
+
+    <div class="panel">
+      <label for="my-champion">Tu campeón</label>
+      <select id="my-champion"></select>
+
+      <label for="my-role">Tu rol</label>
+      <select id="my-role"></select>
+
+      <div class="enemies">
+        <div class="full"><label>Campeones enemigos (5)</label></div>
+        <div>
+          <label for="enemy-1">Enemigo 1</label>
+          <select id="enemy-1"></select>
+        </div>
+        <div>
+          <label for="enemy-2">Enemigo 2</label>
+          <select id="enemy-2"></select>
+        </div>
+        <div>
+          <label for="enemy-3">Enemigo 3</label>
+          <select id="enemy-3"></select>
+        </div>
+        <div>
+          <label for="enemy-4">Enemigo 4</label>
+          <select id="enemy-4"></select>
+        </div>
+        <div class="full">
+          <label for="enemy-5">Enemigo 5</label>
+          <select id="enemy-5"></select>
+        </div>
+      </div>
+
+      <button type="button" id="btn-build">Ver build recomendado</button>
+      <div id="error" hidden></div>
+    </div>
+
+    <div id="results" class="panel" hidden></div>
+
+    <footer>
+      <p>74 campeones tienen traits etiquetados (AP/AD/tanque/curación/control/asesino/escudo); el resto cuenta como neutro. Ver <a href="DATA_SOURCES.md">DATA_SOURCES.md</a>.</p>
+      <p>Fuentes: <a href="https://wiki.leagueoflegends.com/en-us/WR:Champion" rel="noopener">WR Wiki campeones</a>,
+        <a href="https://www.wildriftmeta.com/es-419/items/" rel="noopener">wildriftmeta ES-419 objetos</a>,
+        <a href="https://wildrift.leagueoflegends.com/en-us/champions/" rel="noopener">sitio oficial WR</a>.</p>
+      <p>No afiliado a Riot Games. League of Legends: Wild Rift © Riot Games.</p>
+    </footer>
+  </div>
+  <script src="data.js"></script>
+  <script src="rules.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
