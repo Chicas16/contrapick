@@ -76,6 +76,19 @@ button { font: inherit; color: inherit; }
   pointer-events: none;
 }
 .site-header .wrap { position: relative; z-index: 1; }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 0 4px;
+}
+.brand-mark {
+  display: block;
+  height: 44px;
+  width: auto;
+  max-width: min(280px, 88vw);
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.35));
+}
 .logo {
   margin: 0;
   font-size: 1.3rem;
