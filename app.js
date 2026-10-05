@@ -366,6 +366,148 @@
     </section>`;
   }
 
+
+  /* ---------- Feedback ¿Te sirvió? ---------- */
+  const FB_STORE_KEY = "contrapick_feedback_votes";
+  let feedbackVote = null; // "SI" | "No" for current build
+
+  function feedbackStorage() {
+    try {
+      return JSON.parse(localStorage.getItem(FB_STORE_KEY) || "{}") || {};
+    } catch (_) {
+      return {};
+    }
+  }
+  function markFeedbackVoted(hash, vote) {
+    const s = feedbackStorage();
+    s[hash] = { vote: vote, at: Date.now() };
+    try { localStorage.setItem(FB_STORE_KEY, JSON.stringify(s)); } catch (_) {}
+  }
+  function getFeedbackVoted(hash) {
+    const s = feedbackStorage();
+    return s[hash] || null;
+  }
+  function currentBuildHash() {
+    return rules.buildShareHash(currentShareOpts()) || "#";
+  }
+  function currentBuildUrl() {
+    return rules.buildShareUrl(location.href, currentShareOpts());
+  }
+
+  function feedbackHTML() {
+    const hash = currentBuildHash();
+    const prev = getFeedbackVoted(hash);
+    if (prev) {
+      feedbackVote = prev.vote;
+      return `<section class="feedback" aria-label="¿Te sirvió esta build?">
+        <h2 class="feedback__title">¿Te sirvió esta build?</h2>
+        <p class="feedback__thanks">¡Gracias! 🙌</p>
+        <label class="feedback__label" for="feedback-comment">¿Qué le cambiarías? (opcional)</label>
+        <textarea class="feedback__comment" id="feedback-comment" rows="2" maxlength="500" placeholder="Ej. más anti-curación, otra runa…"></textarea>
+        <button type="button" class="feedback__send">Mandar comentario</button>
+        <p class="feedback__msg" hidden></p>
+      </section>`;
+    }
+    feedbackVote = null;
+    return `<section class="feedback" aria-label="¿Te sirvió esta build?">
+      <h2 class="feedback__title">¿Te sirvió esta build?</h2>
+      <div class="feedback__buttons">
+        <button type="button" class="feedback__btn feedback__btn--yes" data-vote="SI">Sí</button>
+        <button type="button" class="feedback__btn feedback__btn--no" data-vote="No">No</button>
+      </div>
+      <div class="feedback__after" hidden>
+        <p class="feedback__thanks">¡Gracias! 🙌</p>
+        <label class="feedback__label" for="feedback-comment">¿Qué le cambiarías? (opcional)</label>
+        <textarea class="feedback__comment" id="feedback-comment" rows="2" maxlength="500" placeholder="Ej. más anti-curación, otra runa…"></textarea>
+        <button type="button" class="feedback__send">Mandar comentario</button>
+      </div>
+      <p class="feedback__msg" hidden></p>
+    </section>`;
+  }
+
+  function showFeedbackMsg(text, isErr) {
+    const el = results.querySelector(".feedback__msg");
+    if (!el) return;
+    el.hidden = !text;
+    el.textContent = text || "";
+    el.classList.toggle("feedback__msg--err", !!isErr);
+  }
+
+  function sendFeedback(vote, comment) {
+    const payload = rules.buildFeedbackPayload({
+      vote: vote,
+      buildUrl: currentBuildUrl(),
+      comment: comment || ""
+    });
+    return fetch(payload.action, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: payload.body.toString()
+    });
+  }
+
+  function bindFeedback() {
+    const root = results.querySelector(".feedback");
+    if (!root) return;
+    const btns = root.querySelectorAll(".feedback__btn");
+    const after = root.querySelector(".feedback__after");
+    const sendBtn = root.querySelector(".feedback__send");
+    const ta = root.querySelector(".feedback__comment");
+
+    btns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (feedbackVote) return;
+        const vote = btn.dataset.vote;
+        btns.forEach((b) => { b.disabled = true; });
+        showFeedbackMsg("");
+        sendFeedback(vote, "")
+          .then(() => {
+            feedbackVote = vote;
+            markFeedbackVoted(currentBuildHash(), vote);
+            if (after) after.hidden = false;
+            else {
+              // already-voted markup path: thanks already visible
+            }
+            // hide vote buttons
+            const wrap = root.querySelector(".feedback__buttons");
+            if (wrap) wrap.hidden = true;
+            if (!root.querySelector(".feedback__thanks")) {
+              const p = document.createElement("p");
+              p.className = "feedback__thanks";
+              p.textContent = "¡Gracias! 🙌";
+              root.insertBefore(p, after || sendBtn);
+            }
+          })
+          .catch(() => {
+            btns.forEach((b) => { b.disabled = false; });
+            showFeedbackMsg("No se pudo enviar, intenta de nuevo", true);
+          });
+      });
+    });
+
+    if (sendBtn) {
+      sendBtn.addEventListener("click", () => {
+        if (!feedbackVote) {
+          showFeedbackMsg("Primero elige Sí o No", true);
+          return;
+        }
+        const comment = (ta && ta.value || "").trim();
+        sendBtn.disabled = true;
+        showFeedbackMsg("");
+        sendFeedback(feedbackVote, comment)
+          .then(() => {
+            showFeedbackMsg("Comentario enviado. ¡Gracias!", false);
+            if (ta) ta.disabled = true;
+          })
+          .catch(() => {
+            sendBtn.disabled = false;
+            showFeedbackMsg("No se pudo enviar, intenta de nuevo", true);
+          });
+      });
+    }
+  }
+
   function render(rec) {
     const kindOf = (e) => (e === rec.boots ? "boots" : rec.core.includes(e) ? "core" : "sit");
     const orderSet = new Set(rec.order);
@@ -426,6 +568,7 @@
         asesino ${rec.traitCounts.asesino}, escudo ${rec.traitCounts.escudo}. Los campeones mixtos cuentan 0,5 AP + 0,5 AD.</p>
     `;
     bindShare();
+    bindFeedback();
     results.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 

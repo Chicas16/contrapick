@@ -326,6 +326,26 @@ test("buildEnemyCards reacciona al estado (tips usan game state)", () => {
   assert.strictEqual(zed.item.name, "Reloj de Arena de Zhonya");
 });
 
+
+// ---------- Feedback form payload ----------
+test("buildFeedbackPayload mapea Sí→SI / No→No y arma entries", () => {
+  const p = rules.buildFeedbackPayload({
+    vote: "yes",
+    buildUrl: "https://chicas16.github.io/contrapick/#c=Ahri&r=mid",
+    comment: "hola"
+  });
+  assert.strictEqual(p.voteValue, "SI");
+  assert.ok(p.action.includes("formResponse"));
+  assert.strictEqual(p.body.get(rules.FEEDBACK_FORM.voteEntry), "SI");
+  assert.strictEqual(p.body.get(rules.FEEDBACK_FORM.buildEntry), "https://chicas16.github.io/contrapick/#c=Ahri&r=mid");
+  assert.strictEqual(p.body.get(rules.FEEDBACK_FORM.commentEntry), "hola");
+  const n = rules.buildFeedbackPayload({ vote: "No", buildUrl: "https://x/#", comment: "" });
+  assert.strictEqual(n.voteValue, "No");
+  assert.strictEqual(n.body.get(rules.FEEDBACK_FORM.commentEntry), "");
+  assert.throws(() => rules.buildFeedbackPayload({ vote: "maybe", buildUrl: "https://x" }));
+  assert.throws(() => rules.buildFeedbackPayload({ vote: "SI", buildUrl: "" }));
+});
+
 printRec("Ejemplo 1 — Mid Ahri vs tanques (antes neutros)", ex1);
 printRec("Ejemplo 2 — ADC Jinx vs curación (antes neutros)", ex2);
 printRec("Ejemplo 3 — Barón Malphite vs asesinos AD", ex3);

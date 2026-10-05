@@ -1378,3 +1378,96 @@ footer a:hover { color: #fecaca; border-bottom-color: #fecaca; }
   .enemy-card__portrait,
   .fallback.enemy-card__portrait { width: 48px; height: 48px; }
 }
+
+/* ---------- Feedback ¿Te sirvió? (mínimo; bobby pule) ---------- */
+.feedback {
+  margin-top: 18px;
+  padding: 14px 14px 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.feedback__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0 0 10px;
+  letter-spacing: 0.02em;
+}
+.feedback__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.feedback__btn {
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  color: #fff;
+  background: var(--card2);
+}
+.feedback__btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.feedback__btn--yes {
+  border-color: rgba(52, 211, 153, 0.55);
+  background: rgba(52, 211, 153, 0.16);
+}
+.feedback__btn--no {
+  border-color: rgba(225, 29, 46, 0.55);
+  background: rgba(225, 29, 46, 0.16);
+}
+.feedback__thanks {
+  margin: 8px 0 10px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.feedback__label {
+  display: block;
+  color: #e8e8e8;
+  font-size: 0.85rem;
+  margin: 0 0 6px;
+}
+.feedback__comment {
+  width: 100%;
+  box-sizing: border-box;
+  background: #0c0c0c;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: #f5f5f5;
+  padding: 8px 10px;
+  font: inherit;
+  resize: vertical;
+  min-height: 56px;
+}
+.feedback__comment::placeholder { color: #a3a3a3; }
+.feedback__send {
+  margin-top: 8px;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid var(--red);
+  background: rgba(225, 29, 46, 0.2);
+  color: #fff;
+}
+.feedback__send:disabled { opacity: 0.55; cursor: default; }
+.feedback__msg {
+  margin: 8px 0 0;
+  color: #86efac;
+  font-size: 0.88rem;
+}
+.feedback__msg--err { color: #fecaca; }

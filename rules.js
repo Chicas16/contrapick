@@ -951,6 +951,41 @@
     });
   }
 
+
+  /* ---- Feedback Google Form ---- */
+  const FEEDBACK_FORM = {
+    action: "https://docs.google.com/forms/d/e/1FAIpQLScCYEsQ_s4C7TWMRQE3EzGbMRuSMdkTJNPlcK3WrRKmQSi5Uw/formResponse",
+    voteEntry: "entry.2052794277",
+    buildEntry: "entry.535243991",
+    commentEntry: "entry.1497995570",
+    voteYes: "SI",
+    voteNo: "No"
+  };
+
+  /**
+   * Payload para el form de feedback.
+   * @param {{ vote: "yes"|"no"|"SI"|"No"|boolean, buildUrl: string, comment?: string }} opts
+   * @returns {{ action: string, body: URLSearchParams, voteValue: string }}
+   */
+  function buildFeedbackPayload(opts) {
+    opts = opts || {};
+    let v = opts.vote;
+    if (v === true || v === "yes" || v === "Sí" || v === "Si" || v === "SI") v = FEEDBACK_FORM.voteYes;
+    else if (v === false || v === "no" || v === "No") v = FEEDBACK_FORM.voteNo;
+    else v = String(v || "");
+    if (v !== FEEDBACK_FORM.voteYes && v !== FEEDBACK_FORM.voteNo) {
+      throw new Error("vote debe ser SI o No");
+    }
+    const buildUrl = String(opts.buildUrl || "");
+    if (!buildUrl) throw new Error("buildUrl requerido");
+    const comment = opts.comment == null ? "" : String(opts.comment);
+    const body = new URLSearchParams();
+    body.set(FEEDBACK_FORM.voteEntry, v);
+    body.set(FEEDBACK_FORM.buildEntry, buildUrl);
+    body.set(FEEDBACK_FORM.commentEntry, comment);
+    return { action: FEEDBACK_FORM.action, body: body, voteValue: v };
+  }
+
   /** Hash compartible (#c=&r=&e=&g=) a partir del estado del build. */
   function buildShareHash(opts) {
     opts = opts || {};
@@ -974,6 +1009,7 @@
   return {
     recommend, countTraits, buildStyle, getChamp, fmt, pickRunes, pickSpells,
     ESTADOS, normalizeEstado, applyEstado, pickSafetyItem, pickSnowballItem,
-    buildShareHash, buildShareUrl, buildEnemyCards, threatLine, findBuildCounter
+    buildShareHash, buildShareUrl, buildEnemyCards, threatLine, findBuildCounter,
+    FEEDBACK_FORM, buildFeedbackPayload
   };
 });
