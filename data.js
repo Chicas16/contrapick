@@ -28,7 +28,7 @@ window.WR_DATA = {
     "Yasuo","Yone","Yunara","Yuumi","Zed","Zeri","Ziggs","Zilean","Zoe","Zyra"
   ],
 
-  /* Traits aproximados (hechos a mano) — solo ~45 populares; el resto = neutro */
+  /* Traits aproximados (hechos a mano) — 74 de uso frecuente; el resto = neutro */
   traits: {
     "Aatrox": ["AD","curación","tanque"],
     "Ahri": ["AP","control"],
