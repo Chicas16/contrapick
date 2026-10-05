@@ -51,6 +51,7 @@ button { font: inherit; color: inherit; }
 .ghost,
 .res-title,
 .item-name,
+.rune-name, .spell-name,
 .kind,
 .order {
   font-family: var(--font-display);
@@ -626,70 +627,264 @@ footer a { color: #fda4af; }
   .role-btn { font-size: 0.88rem; padding: 7px 11px; }
 }
 
-/* ---------- Runas y hechizos (mínimo; bobby pule) ---------- */
+/* ---------- Runas y hechizos (tema negro+#e11d2e, alineado a ítems) ---------- */
 .rs-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
-  margin-top: 12px;
+  gap: 14px;
+  margin-top: 14px;
 }
 @media (min-width: 560px) {
-  .rs-grid { grid-template-columns: 1fr 1fr; }
+  .rs-grid { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
 }
-.runes, .spells {
+.rs-col .sec { margin-top: 0; }
+
+/* Runas: clave a ancho completo; menores en fila */
+.runes {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 }
-.rune, .spell {
+.rune {
+  position: relative;
   display: flex;
   gap: 10px;
   align-items: flex-start;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 8px 10px;
+  padding: 10px 10px 10px 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+  min-width: 0;
 }
-.rune-keystone { border-color: rgba(225, 29, 46, 0.45); }
-.rune-img, .spell-img {
+.rune::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: var(--red-deep);
+}
+
+/* Primaria (clave): enfatizada */
+.rune-keystone {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #1a0a0c 0%, var(--card) 55%);
+  border-color: rgba(225, 29, 46, 0.55);
+  box-shadow: 0 8px 28px rgba(225, 29, 46, 0.28), 0 8px 22px rgba(0, 0, 0, 0.45);
+  padding: 12px 12px 12px 18px;
+  gap: 12px;
+}
+.rune-keystone::before { background: var(--red-bright); width: 6px; }
+.rune-keystone .rune-img {
+  width: 56px;
+  height: 56px;
+  border-color: var(--red-bright);
+  box-shadow: 0 0 0 1px rgba(225, 29, 46, 0.35), 0 4px 14px rgba(225, 29, 46, 0.35);
+}
+.rune-keystone .rune-name {
+  font-size: 1.18rem;
+  color: #fff;
+}
+.rune-keystone .kind-rune {
+  color: var(--red-bright);
+  background: rgba(225, 29, 46, 0.16);
+  border: 1px solid rgba(225, 29, 46, 0.45);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.72rem;
+}
+
+/* Secundarias (menores): fila compacta */
+.rune-minor {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  padding: 8px 8px 8px 14px;
+}
+.rune-minor::before { background: var(--red); }
+.rune-minor .rune-icon-wrap {
+  display: flex;
+  justify-content: center;
+}
+.rune-minor .rune-img {
+  width: 40px;
+  height: 40px;
+  border-color: rgba(225, 29, 46, 0.45);
+}
+.rune-minor .rune-head {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.rune-minor .rune-name {
+  font-size: 0.92rem;
+  color: #f5f5f5;
+}
+.rune-minor .kind-rune {
+  color: #fda4af;
+  font-size: 0.68rem;
+}
+.rune-minor .rune-tag { font-size: 0.68rem; }
+.rune-minor .rune-reason {
+  font-size: 0.74rem;
+  color: #d4d4d4;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.rune-icon-wrap { position: relative; flex: 0 0 auto; }
+.rune-img {
   width: 48px;
   height: 48px;
   border-radius: 8px;
   border: 1px solid var(--line);
   object-fit: cover;
   display: block;
-  flex: 0 0 auto;
+  background: #0c0c0c;
 }
-.fallback.rune-img, .fallback.spell-img {
-  width: 48px;
-  height: 48px;
+.fallback.rune-img {
   display: grid;
   place-items: center;
   font-size: 0.7rem;
-  background: #0c0c0c;
-  color: var(--muted);
+  background: linear-gradient(135deg, #3a1018, #5c0e16);
+  color: #fecaca;
 }
-.rune-body, .spell-body { min-width: 0; flex: 1; }
-.rune-head, .spell-head {
+.rune-body { min-width: 0; flex: 1; }
+.rune-head {
   display: flex;
   justify-content: space-between;
   gap: 8px;
   align-items: baseline;
 }
-.rune-name, .spell-name {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1rem;
+.rune-name {
+  font-size: 1.08rem;
   letter-spacing: 0.02em;
   line-height: 1.15;
+  color: var(--ink);
 }
-.kind-rune { color: var(--red-bright); }
-.rune-tag, .spell-tag { color: var(--muted); font-size: 0.72rem; margin-top: 1px; }
-.rune-reason, .spell-reason {
+.kind-rune {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--red-bright);
+  white-space: nowrap;
+}
+.rune-tag {
+  color: var(--muted);
+  font-size: 0.74rem;
+  margin-top: 1px;
+}
+.rune-reason {
+  margin: 6px 0 0;
+  font-size: 0.86rem;
+  color: #e8e8e8;
+  line-height: 1.4;
+}
+
+/* Hechizos: dos chips claros lado a lado */
+.spells {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.spell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 8px 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+  min-width: 0;
+}
+.spell::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--red-bright), var(--red));
+}
+.spell-icon-wrap { flex: 0 0 auto; }
+.spell-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid rgba(225, 29, 46, 0.5);
+  object-fit: cover;
+  display: block;
+  background: #0c0c0c;
+  box-shadow: 0 4px 12px rgba(225, 29, 46, 0.25);
+}
+.fallback.spell-img {
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+  background: linear-gradient(135deg, #3a1018, #5c0e16);
+  color: #fecaca;
+}
+.spell-body { min-width: 0; width: 100%; }
+.spell-head {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: baseline;
+}
+.spell-name {
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+  color: #fff;
+  text-transform: uppercase;
+}
+.spell-tag {
+  color: var(--muted);
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+.spell-reason {
   margin: 4px 0 0;
-  font-size: 0.82rem;
-  color: #e0e0e0;
+  font-size: 0.74rem;
+  color: #d4d4d4;
   line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 420px) {
+  .runes { grid-template-columns: 1fr; }
+  .rune-minor {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .rune-minor .rune-icon-wrap { justify-content: flex-start; }
+  .rune-minor .rune-head {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+  }
+  .rune-minor .rune-reason { -webkit-line-clamp: 3; }
+  .spells { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .spell-name { font-size: 0.88rem; }
 }
