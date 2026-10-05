@@ -20,7 +20,7 @@ function test(name, fn) {
 
 function printRec(title, rec) {
   console.log("\n=== " + title + " ===");
-  console.log("Campeón:", rec.myChampion, "| Rol:", rec.role, "| Estilo:", rec.styleLabel);
+  console.log("Campeón:", rec.myChampion, "| Rol:", rec.role, "| Estilo:", rec.styleLabel, "| Estado:", rec.estadoLabel || rec.estado || "Parejo");
   console.log("Enemigos:", rec.enemies.map((n) => `${n} [${champs[n].dmg}${champs[n].traits.length ? ", " + champs[n].traits.join(", ") : ""}]`).join("; "));
   console.log(rec.summary);
   console.log("ORDEN DE COMPRA:");
@@ -172,11 +172,90 @@ test("cualquier campeón en cualquier rol da build de 6 ítems sin repetir", () 
   }));
 });
 
+
+// ---------- Estado de la partida ----------
+test("estado por defecto es Parejo si no se pasa", () => {
+  const rec = rules.recommend(data, champs, {
+    role: "mid", myChampion: "Ahri",
+    enemies: ["Zed", "Talon", "Rengar", "Draven", "Jhin"]
+  });
+  assert.strictEqual(rec.estado, "parejo");
+  assert.strictEqual(rules.normalizeEstado(undefined), "parejo");
+  assert.strictEqual(rules.normalizeEstado("nope"), "parejo");
+});
+
+const adEnemies = ["Zed", "Talon", "Rengar", "Draven", "Jhin"];
+const parejoAD = rules.recommend(data, champs, {
+  role: "mid", myChampion: "Ahri", enemies: adEnemies, estado: "parejo"
+});
+const perdiendoAD = rules.recommend(data, champs, {
+  role: "mid", myChampion: "Ahri", enemies: adEnemies, estado: "perdiendo"
+});
+test("Vas perdiendo vs AD adelanta un ítem de armadura/estasis vs Parejo", () => {
+  assert.ok(parejoAD.traitCounts.AD >= 4);
+  const armorish = new Set([
+    "Reloj de Arena de Zhonya", "Ángel Guardián", "Presagio de Randuin",
+    "Corazón de Hielo", "Cota de Espinas", "Filo de la Noche"
+  ]);
+  const idx = (rec) => rec.order.findIndex((e) => armorish.has(e.item.name));
+  const iP = idx(parejoAD);
+  const iD = idx(perdiendoAD);
+  assert.ok(iD >= 0, "perdiendo sin armadura/estasis: " + perdiendoAD.order.map((e) => e.item.name).join(", "));
+  assert.ok(iP < 0 || iD < iP, "esperaba armadura más temprano en perdiendo (parejo=" + iP + " perdiendo=" + iD + ")");
+  assert.ok(perdiendoAD.order.every((e) => e.item && e.item.name));
+});
+
+const tankEnemies = ["Ornn", "Sion", "Cho'Gath", "Maokai", "K'Sante"];
+const parejoTank = rules.recommend(data, champs, {
+  role: "mid", myChampion: "Ahri", enemies: tankEnemies, estado: "parejo"
+});
+const ganandoTank = rules.recommend(data, champs, {
+  role: "mid", myChampion: "Ahri", enemies: tankEnemies, estado: "ganando"
+});
+test("Vas ganando adelanta un ítem de daño/pen. vs Parejo", () => {
+  const dmgish = new Set([
+    "Báculo del Vacío", "Tormento de Liandry", "Recuerdos de Lord Dominik",
+    "Rencor de Serylda", "Morellonomicón", "Espada del Rey Arruinado",
+    "Cuchilla Oscura", "Recordatorio Mortal", "Espada Sierra Quimopunk"
+  ]);
+  const idx = (rec) => rec.order.findIndex((e) => dmgish.has(e.item.name));
+  const iP = idx(parejoTank);
+  const iG = idx(ganandoTank);
+  assert.ok(iG >= 0, "ganando sin daño/pen: " + ganandoTank.order.map((e) => e.item.name).join(", "));
+  assert.ok(iP < 0 || iG < iP, "esperaba daño más temprano en ganando (parejo=" + iP + " ganando=" + iG + ")");
+});
+
+test("estados usan solo nombres que existen en data (ítems/runas/hechizos)", () => {
+  const itemNames = new Set();
+  const walk = (o) => {
+    if (o && o.name && o.icon) itemNames.add(o.name);
+    else if (o && typeof o === "object") Object.values(o).forEach(walk);
+  };
+  walk(data.items);
+  ["parejo", "ganando", "perdiendo"].forEach((est) => {
+    data.roles.forEach((r) => {
+      const me = "Ahri";
+      const en = data.champions.filter((n) => n !== me).slice(0, 5);
+      const rec = rules.recommend(data, champs, { role: r.id, myChampion: me, enemies: en, estado: est });
+      rec.order.forEach((e) => assert.ok(itemNames.has(e.item.name), est + " ítem " + e.item.name));
+      assert.ok(allRuneNames.has(rec.runes.keystone.rune.name));
+      rec.runes.minors.forEach((m) => assert.ok(allRuneNames.has(m.rune.name), est + " runa " + m.rune.name));
+      rec.spells.forEach((s) => assert.ok(allSpellNames.has(s.spell.name), est + " hechizo " + s.spell.name));
+      assert.strictEqual(rec.estado, est);
+    });
+  });
+});
+
 printRec("Ejemplo 1 — Mid Ahri vs tanques (antes neutros)", ex1);
 printRec("Ejemplo 2 — ADC Jinx vs curación (antes neutros)", ex2);
 printRec("Ejemplo 3 — Barón Malphite vs asesinos AD", ex3);
 printRec("Ejemplo 4 — Jungla Evelynn vs magos", ex4);
 printRec("Ejemplo 5 — Soporte Lulu vs asesinos AD", ex5);
+
+printRec("Estado Parejo — Ahri mid vs AD", parejoAD);
+printRec("Estado Perdiendo — Ahri mid vs AD", perdiendoAD);
+printRec("Estado Parejo — Ahri mid vs tanques", parejoTank);
+printRec("Estado Ganando — Ahri mid vs tanques", ganandoTank);
 
 const imgs = data.champions.filter((n) => fs.existsSync(path.join(__dirname, champs[n].img))).length;
 console.log(`\nOK — ${passed} pruebas | campeones: ${data.champions.length} | con traits/tipo de daño: ${Object.keys(champs).length} | con retrato: ${imgs}`);

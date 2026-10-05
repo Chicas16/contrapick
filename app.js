@@ -15,7 +15,12 @@
   const errBox = $("#error");
   const slotEls = Array.from(document.querySelectorAll(".slot"));
 
-  const state = { me: "", role: "", enemies: ["", "", "", "", ""], active: "me", filter: "" };
+  const state = { me: "", role: "", enemies: ["", "", "", "", ""], active: "me", filter: "", estado: "parejo" };
+  const ESTADOS = rules.ESTADOS || {
+    parejo: { id: "parejo", label: "Parejo" },
+    ganando: { id: "ganando", label: "Vas ganando" },
+    perdiendo: { id: "perdiendo", label: "Vas perdiendo" }
+  };
 
   const esc = (s) => String(s).replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
   const SMALL = new Set(["de", "del", "la", "las", "el", "los", "y", "of", "the"]);
@@ -64,6 +69,42 @@
       b.classList.toggle("on", on);
       b.setAttribute("aria-checked", on ? "true" : "false");
       b.classList.toggle("suggested", suggested.includes(b.dataset.role));
+    });
+  }
+
+  /* ---------- Estado de la partida ---------- */
+  const estadoBox = $("#estado");
+  ["parejo", "ganando", "perdiendo"].forEach((id) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "estado-btn";
+    b.dataset.estado = id;
+    b.setAttribute("role", "radio");
+    b.textContent = ESTADOS[id].label;
+    b.addEventListener("click", () => {
+      state.estado = id;
+      renderEstado();
+      syncHash();
+      // Recomputar si ya hay un build completo
+      if (state.me && state.role && state.enemies.every(Boolean)) {
+        try {
+          showError("");
+          render(rules.recommend(data, champs, {
+            role: state.role, myChampion: state.me, enemies: state.enemies.slice(), estado: state.estado
+          }));
+        } catch (e) {
+          showError(e.message || "Error al generar el build.");
+        }
+      }
+    });
+    estadoBox.appendChild(b);
+  });
+  function renderEstado() {
+    estadoBox.querySelectorAll(".estado-btn").forEach((b) => {
+      const on = b.dataset.estado === state.estado;
+      b.classList.toggle("activo", on);
+      b.classList.toggle("on", on);
+      b.setAttribute("aria-checked", on ? "true" : "false");
     });
   }
 
@@ -188,6 +229,7 @@
     if (state.me) p.set("c", state.me);
     if (state.role) p.set("r", state.role);
     if (state.enemies.some(Boolean)) p.set("e", state.enemies.join(","));
+    if (state.estado && state.estado !== "parejo") p.set("g", state.estado);
     const h = p.toString();
     history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
   }
@@ -197,6 +239,7 @@
     if (ok(p.get("c"))) state.me = p.get("c");
     if (ROLE_NAME[p.get("r")]) state.role = p.get("r");
     (p.get("e") || "").split(",").slice(0, 5).forEach((n, i) => { if (ok(n) && !state.enemies.includes(n)) state.enemies[i] = n; });
+    state.estado = rules.normalizeEstado(p.get("g"));
     const nxt = nextEmpty();
     state.active = nxt === null ? "me" : nxt;
   }
@@ -260,9 +303,10 @@
         ${champImg(rec.myChampion, "res-champ", 64)}
         <div>
           <div class="res-title">${esc(rec.myChampion)} · ${esc(ROLE_NAME[rec.role] || rec.role)}</div>
-          <div class="res-sub">Build de ${esc(rec.styleLabel)}</div>
+          <div class="res-sub">Build de ${esc(rec.styleLabel)} · ${esc(rec.estadoLabel || "Parejo")}</div>
         </div>
       </div>
+      ${rec.estado && rec.estado !== "parejo" ? `<div class="estado-note">${esc(rec.estadoNote || "")}</div>` : ""}
 
       <div class="buildbar" aria-label="Build en orden de compra">
         ${rec.order.map((e, i) => `<div class="bb-slot bb-${kindOf(e)}" title="${esc(e.item.name)}">
@@ -312,19 +356,19 @@
       return;
     }
     try {
-      render(rules.recommend(data, champs, { role: state.role, myChampion: state.me, enemies: state.enemies.slice() }));
+      render(rules.recommend(data, champs, { role: state.role, myChampion: state.me, enemies: state.enemies.slice(), estado: state.estado }));
     } catch (e) {
       showError(e.message || "Error al generar el build.");
     }
   });
 
   $("#btn-reset").addEventListener("click", () => {
-    state.me = ""; state.role = ""; state.enemies = ["", "", "", "", ""]; state.active = "me"; state.filter = "";
+    state.me = ""; state.role = ""; state.enemies = ["", "", "", "", ""]; state.active = "me"; state.filter = ""; state.estado = "parejo";
     search.value = ""; results.hidden = true; showError("");
-    renderSlots(); renderGrid(); renderRoles(); syncHash();
+    renderSlots(); renderGrid(); renderRoles(); renderEstado(); syncHash();
   });
 
   loadHash();
-  renderSlots(); renderGrid(); renderRoles();
+  renderSlots(); renderGrid(); renderRoles(); renderEstado();
   if (state.me && state.role && state.enemies.every(Boolean)) $("#btn-build").click();
 })();

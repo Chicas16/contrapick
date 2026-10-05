@@ -888,3 +888,39 @@ footer a { color: #fda4af; }
   .spells { grid-template-columns: 1fr 1fr; gap: 6px; }
   .spell-name { font-size: 0.88rem; }
 }
+
+/* ---------- Estado de la partida (mínimo; bobby pule) ---------- */
+.estado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 14px;
+}
+.estado-btn {
+  background: var(--card2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+}
+.estado-btn.activo,
+.estado-btn.on {
+  background: rgba(225, 29, 46, 0.18);
+  border-color: var(--red);
+  color: #fff;
+}
+.estado-note {
+  margin: 10px 0 0;
+  background: #14080a;
+  border: 1px solid rgba(225, 29, 46, 0.35);
+  border-radius: 10px;
+  padding: 8px 12px;
+  color: #f5d0d4;
+  font-size: 0.88rem;
+}

@@ -373,8 +373,228 @@
     return [flash, second];
   }
 
+
+  const ESTADOS = {
+    parejo: { id: "parejo", label: "Parejo" },
+    ganando: { id: "ganando", label: "Vas ganando" },
+    perdiendo: { id: "perdiendo", label: "Vas perdiendo" }
+  };
+
+  function normalizeEstado(raw) {
+    const id = String(raw || "parejo").toLowerCase();
+    return ESTADOS[id] ? id : "parejo";
+  }
+
+  /** Ítem defensivo según daño enemigo dominante (solo nombres ya en data). */
+  function pickSafetyItem(I, c, style, dmg) {
+    if (c.AD >= c.AP) {
+      if (dmg === "AP") return { item: I.defensive.zhonya, why: "armadura + estasis vs AD" };
+      if (style === "crit" || style === "letal") return { item: I.defensive.ga, why: "segunda vida vs AD" };
+      if (style === "tanque" || style === "encantador" || style === "luchador") {
+        return { item: I.defensive.randuin, why: "armadura vs AD" };
+      }
+      return { item: I.defensive.ga, why: "salvavidas vs AD" };
+    }
+    // más AP
+    if (dmg === "AD") return { item: I.defensive.maw, why: "RM + salvavidas vs AP" };
+    if (style === "tanque" || style === "encantador") return { item: I.defensive.kaenic, why: "escudo mágico vs AP" };
+    if (dmg === "AP") return { item: I.defensive.banshee, why: "escudo de hechizo vs AP" };
+    return { item: I.defensive.zhonya, why: "estasis vs ráfaga" };
+  }
+
+  /** Ítem de daño/penetración para cerrar (solo data existente). */
+  function pickSnowballItem(I, c, style, dmg, core) {
+    if (dmg === "AP") {
+      if (c.tanque >= 2) return { item: I.pen.void, why: "pen. mágica para rematar tanques" };
+      if (c.curacion >= 2) return { item: I.antiheal.morello, why: "heridas graves para cerrar" };
+      return { item: I.pen.void, why: "pen. mágica para snowball" };
+    }
+    if (style === "crit") {
+      if (c.tanque >= 2) return { item: I.pen.dominik, why: "pen. armadura para cerrar vs tanques" };
+      if (c.curacion >= 2) return { item: I.antiheal.mortal, why: "anti-curación + pen. para cerrar" };
+      // segundo núcleo crítico (daño) si existe
+      if (core[1]) return { item: core[1].item, why: "pico de daño crítico más temprano" };
+      return { item: I.pen.dominik, why: "pen. armadura ofensiva" };
+    }
+    if (style === "letal") {
+      return { item: I.pen.serylda, why: "letalidad/pen. para cazar" };
+    }
+    if (style === "luchador") {
+      if (c.tanque >= 1) return { item: I.pen.black_cleaver, why: "reducir armadura y pelear" };
+      return { item: I.pen.botk, why: "daño % vida para snowball" };
+    }
+    // tanque / encantador: poco snowball de daño; usa núcleo 2 si hay
+    if (core[1]) return { item: core[1].item, why: "adelantar el segundo núcleo con ventaja" };
+    return { item: I.defensive.gargoyle, why: "presión con escudo activo" };
+  }
+
+  function entryOf(item, reason, kind) {
+    return { item, reason, kind: kind || "sit" };
+  }
+
+  /**
+   * Reescribe orden (y opcionalmente runas/hechizos) según estado de la partida.
+   * Parejo = sin cambios. Solo usa ítems ya en data.js.
+   */
+  function applyEstado(ctx) {
+    const { I, c, style, dmg, boots, core, situational, order, runes, spells, estado, data, role } = ctx;
+    const id = normalizeEstado(estado);
+    const label = ESTADOS[id].label;
+
+    if (id === "parejo") {
+      return {
+        order: order.slice(),
+        situational,
+        runes,
+        spells,
+        estado: id,
+        estadoLabel: label,
+        estadoNote: "Partida pareja: build estándar según el enemigo."
+      };
+    }
+
+    // Clonar entradas para no mutar razones base al reusar referencias
+    const clone = (e) => ({ item: e.item, reason: e.reason });
+    let ord = order.map(clone);
+    let sits = situational.map(clone);
+    let rn = {
+      keystone: { rune: runes.keystone.rune, reason: runes.keystone.reason },
+      minors: runes.minors.map((m) => ({ rune: m.rune, reason: m.reason }))
+    };
+    let sp = spells.map((s) => ({ spell: s.spell, reason: s.reason }));
+    let note = "";
+
+    const usedNames = () => new Set(ord.map((e) => e.item.name));
+    const idxOf = (name) => ord.findIndex((e) => e.item.name === name);
+    const placeAfterBoots = (entry) => {
+      // orden objetivo: núcleo1, botas, ENTRY, … (sin duplicar)
+      const name = entry.item.name;
+      const without = ord.filter((e) => e.item.name !== name && e.item.name !== boots.item.name && e.item.name !== (core[0] && core[0].item.name));
+      const head = [];
+      if (core[0]) head.push(clone(core[0]));
+      head.push(clone(boots));
+      head.push(entry);
+      const rest = without.filter((e) => !head.some((h) => h.item.name === e.item.name));
+      ord = [...head, ...rest].slice(0, 6);
+      // asegurar sits lista
+      if (!sits.some((s) => s.item.name === name) && entry !== core[0] && entry !== boots && !(core[1] && core[1].item.name === name) && !(core[2] && core[2].item.name === name)) {
+        sits = [entry, ...sits.filter((s) => s.item.name !== name)].slice(0, 4);
+      }
+    };
+
+    if (id === "ganando") {
+      note = "Vas adelante: compra daño para cerrar la partida rápido.";
+      const spike = pickSnowballItem(I, c, style, dmg, core);
+      const reason = `${note} ${spike.why.charAt(0).toUpperCase() + spike.why.slice(1)}.`;
+      // Si el spike ya es core[1], adelantar core[1] tras botas (ya está en pos 2 en orden base… base es c0,boots,c1 → ya).
+      // Forzar spike en posición 2 (índice 2) con razón de estado.
+      placeAfterBoots(entryOf(spike.item, reason, "sit"));
+      // Marcar razón en la entrada colocada
+      const i = idxOf(spike.item.name);
+      if (i >= 0) ord[i] = entryOf(spike.item, reason, "sit");
+
+      // Runas: snowball menor
+      const M = data.runes.minors;
+      if (style === "letal" || style === "AP") {
+        rn.minors[2] = { rune: M.hubris, reason: "Vas adelante: Soberbia te potencia tras cada eliminación." };
+      } else if (style === "crit" || style === "luchador") {
+        rn.minors[2] = { rune: M.coup_de_grace, reason: "Vas adelante: Golpe de gracia remata para cerrar." };
+      } else {
+        rn.minors[2] = { rune: M.demolish, reason: "Vas adelante: Demolición acelera derribar torres." };
+      }
+      // Hechizos: Ignición si no jungla
+      if (role !== "jungle") {
+        const S = data.spells;
+        if (sp[1].spell.name !== S.ignite.name && sp[0].spell.name !== S.ignite.name) {
+          sp[1] = { spell: S.ignite, reason: "Vas adelante: Ignición asegura kills para cerrar." };
+        } else if (sp[1].spell.name === S.ignite.name) {
+          sp[1] = { spell: S.ignite, reason: "Vas adelante: Ignición asegura kills para cerrar." };
+        }
+      }
+    } else {
+      // perdiendo
+      note = "Vas atrás: sobrevive primero y escala.";
+      const safe = pickSafetyItem(I, c, style, dmg);
+      const reason = `${note} Prioriza ${safe.why}.`;
+      placeAfterBoots(entryOf(safe.item, reason, "sit"));
+      const i = idxOf(safe.item.name);
+      if (i >= 0) ord[i] = entryOf(safe.item, reason, "sit");
+
+      const M = data.runes.minors;
+      rn.minors[0] = { rune: M.bone_plating, reason: "Vas atrás: Revestimiento de Huesos mitiga ráfagas." };
+      if (c.control >= 2) {
+        rn.minors[2] = { rune: M.perseverance, reason: "Vas atrás: Perseverancia ayuda bajo control." };
+      } else {
+        rn.minors[2] = { rune: M.second_wind, reason: "Vas atrás: Segundo Aire regenera tras el daño." };
+      }
+      // Hechizos defensivos
+      if (role !== "jungle") {
+        const S = data.spells;
+        if (c.control >= 3) {
+          sp[1] = { spell: S.cleanse, reason: "Vas atrás: Purificar para no morir al CC." };
+        } else if (c.asesino >= 2 || style === "crit" || style === "encantador") {
+          sp[1] = { spell: S.exhaust, reason: "Vas atrás: Extenuación recorta el daño enemigo." };
+        } else if (style === "crit" || role === "adc") {
+          sp[1] = { spell: S.barrier, reason: "Vas atrás: Barrera te da margen para escalar." };
+        } else {
+          sp[1] = { spell: S.barrier, reason: "Vas atrás: Barrera prioriza supervivencia." };
+        }
+      }
+    }
+
+    // Deduplicar runas menores si chocan con keystone / entre sí
+    const seenR = new Set([rn.keystone.rune.name]);
+    const cleanM = [];
+    for (const m of rn.minors) {
+      if (seenR.has(m.rune.name)) continue;
+      seenR.add(m.rune.name);
+      cleanM.push(m);
+    }
+    const fill = [data.runes.minors.brutal, data.runes.minors.transcendence, data.runes.minors.bone_plating, data.runes.minors.eyeball, data.runes.minors.gathering_storm];
+    for (const f of fill) {
+      if (cleanM.length >= 3) break;
+      if (seenR.has(f.name)) continue;
+      seenR.add(f.name);
+      cleanM.push({ rune: f, reason: "Complemento según el estado de la partida." });
+    }
+    rn.minors = cleanM.slice(0, 3);
+
+    // Dedup spells
+    if (sp[0].spell.name === sp[1].spell.name) {
+      sp[1] = { spell: data.spells.ignite, reason: "Segundo hechizo ofensivo." };
+    }
+
+    // Orden final 6 únicos
+    const seenI = new Set();
+    const final = [];
+    for (const e of ord) {
+      if (seenI.has(e.item.name)) continue;
+      seenI.add(e.item.name);
+      final.push(e);
+      if (final.length === 6) break;
+    }
+    // rellenar desde core/sits/boots si faltan
+    for (const e of [boots, ...core, ...sits]) {
+      if (final.length >= 6) break;
+      if (seenI.has(e.item.name)) continue;
+      seenI.add(e.item.name);
+      final.push(clone(e));
+    }
+
+    return {
+      order: final,
+      situational: sits,
+      runes: rn,
+      spells: sp,
+      estado: id,
+      estadoLabel: label,
+      estadoNote: note
+    };
+  }
+
   function recommend(data, champs, opts) {
     const { role, myChampion, enemies } = opts;
+    const estado = normalizeEstado(opts && opts.estado);
     if (!role || !myChampion || !enemies || enemies.length !== 5) {
       throw new Error("Se requieren rol, tu campeón y exactamente 5 enemigos.");
     }
@@ -405,6 +625,14 @@
     const runes = pickRunes(data, role, c, style, me);
     const spells = pickSpells(data, role, c, style);
 
+    const adj = applyEstado({
+      I, c, style, dmg, boots, core, situational, order, runes, spells, estado, data, role
+    });
+
+    const summaryBase = parts.length
+      ? "Lectura del enemigo: " + parts.join(", ") + "."
+      : "El equipo enemigo está equilibrado; build base de tu campeón.";
+
     return {
       myChampion,
       role,
@@ -412,17 +640,21 @@
       styleLabel: STYLE_LABEL[style],
       enemies: enemies.slice(),
       traitCounts: c,
-      summary: parts.length
-        ? "Lectura del enemigo: " + parts.join(", ") + "."
-        : "El equipo enemigo está equilibrado; build base de tu campeón.",
+      summary: summaryBase + (adj.estado !== "parejo" ? " " + adj.estadoNote : ""),
       boots,
       core,
-      situational,
-      order,
-      runes,
-      spells
+      situational: adj.situational,
+      order: adj.order,
+      runes: adj.runes,
+      spells: adj.spells,
+      estado: adj.estado,
+      estadoLabel: adj.estadoLabel,
+      estadoNote: adj.estadoNote
     };
   }
 
-  return { recommend, countTraits, buildStyle, getChamp, fmt, pickRunes, pickSpells };
+  return {
+    recommend, countTraits, buildStyle, getChamp, fmt, pickRunes, pickSpells,
+    ESTADOS, normalizeEstado, applyEstado, pickSafetyItem, pickSnowballItem
+  };
 });

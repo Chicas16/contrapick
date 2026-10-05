@@ -7,14 +7,14 @@
   <meta name="theme-color" content="#070707" />
   <title>Wild Rift MX — Ayuda de builds</title>
   <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="styles.css?v=6" />
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <p class="logo">WildRift <span class="mx">MX</span></p>
       <h1>Build recomendado <span class="beta">beta</span></h1>
-      <p class="lead">Elige tu campeón y rol, más los 5 enemigos. Te armamos un build en orden de compra con la razón de cada ítem según el equipo rival.</p>
+      <p class="lead">Elige tu campeón y rol, más los 5 enemigos. Te armamos un build en orden de compra según el equipo rival y cómo va la partida (parejo, ganando o perdiendo).</p>
       <p class="disclaimer">Beta: builds aproximados. Proyecto de fans, no afiliado a Riot Games.</p>
     </div>
   </header>
@@ -42,6 +42,9 @@
 
       <div class="field-label" id="lbl-role">Tu rol</div>
       <div class="roles" role="radiogroup" aria-labelledby="lbl-role" id="roles"></div>
+
+      <div class="field-label" id="lbl-estado">Estado de la partida</div>
+      <div class="estado" role="radiogroup" aria-labelledby="lbl-estado" id="estado"></div>
 
       <div class="picker" id="picker">
         <div class="picker-head">
@@ -74,6 +77,6 @@
   <script src="data.js"></script>
   <script src="champions.js"></script>
   <script src="rules.js"></script>
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>

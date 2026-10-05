@@ -91,3 +91,8 @@ Simple y explicable (`rules.js`):
 6. Orden de compra mostrado: núcleo 1 → botas → núcleo 2 → núcleo 3 → 2 situacionales.
 7. Runas: 1 clave + 3 menores según estilo; al menos una menor reacciona al enemigo.
 8. Hechizos: Destello + segundo (Castigo si jungla); segundo adaptado a CC/asesinos/curación/rol.
+9. **Estado de la partida** (`parejo` / `ganando` / `perdiendo`, URL `g=`):
+   - Parejo: build estándar (comportamiento previo).
+   - Vas ganando: adelanta daño/penetración tras las botas; runa/hechizo más de snowball (p. ej. Soberbia, Ignición).
+   - Vas perdiendo: adelanta defensa según daño enemigo (armadura vs AD, RM/estasis vs AP); runa/hechizo de supervivencia.
+   Solo usa ítems/runas/hechizos ya listados en `data.js`.
