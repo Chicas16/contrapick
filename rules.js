@@ -633,7 +633,7 @@
       ? "Lectura del enemigo: " + parts.join(", ") + "."
       : "El equipo enemigo está equilibrado; build base de tu campeón.";
 
-    return {
+    const result = {
       myChampion,
       role,
       style,
@@ -651,8 +651,305 @@
       estadoLabel: adj.estadoLabel,
       estadoNote: adj.estadoNote
     };
+    result.enemyCards = buildEnemyCards(champs, myChampion, role, enemies, result, estado);
+    return result;
   }
 
+
+
+  /* ---- Tarjetas por enemigo (amenaza + contra del build actual) ---- */
+
+  /** Líneas de amenaza por clase/trait (tono gamer casual ES-MX). */
+  const THREAT_BY_TRAIT = {
+    asesino: "te revienta de golpe",
+    curación: "no para de curar a su equipo",
+    control: "te controla y te cancela la pelea",
+    tanque: "te come en pelea larga",
+    escudo: "se pone escudos y aguanta de más"
+  };
+  const THREAT_BY_CLASS = {
+    "Asesino": "te cae encima y te borra",
+    "Tirador": "te derrite de lejos",
+    "Mago": "te funde con magia",
+    "Tanque": "se te planta en la cara y no se muere",
+    "Luchador": "te gana en el mano a mano",
+    "Soporte": "arma a su equipo y te complica la vida"
+  };
+  /** Overrides donde la clase genérica engaña (kits icónicos). */
+  const THREAT_OVERRIDE = {
+    "Zed": "te revienta de golpe",
+    "Malphite": "te encierra con su ulti",
+    "Pyke": "te ejecuta cuando bajas de vida",
+    "Blitzcrank": "te jala y te deja vendido",
+    "Thresh": "te engancha y te deja para el equipo",
+    "Nautilus": "te atrapa y no te suelta",
+    "Rell": "te engagéa y te deja sin escape",
+    "Leona": "te stunéa y te abre al ADC",
+    "Amumu": "te envuelve a todos con su ulti",
+    "Rammus": "te refleja el daño si le pegas",
+    "Master Yi": "te llega y te corta en segundos",
+    "Yasuo": "entra al combo y te destroza",
+    "Yone": "te persigue y te parte a dos",
+    "Kha'Zix": "te aísla y te elimina",
+    "Rengar": "salta desde la maleza y te borra",
+    "Talon": "te cruza y te remata",
+    "Evelynn": "sale del stealth y te funde",
+    "Fizz": "te unta el tiburón y adiós",
+    "Akali": "entra, sale y te deja en nada",
+    "Jhin": "te clava el cuarto tiro",
+    "Jinx": "te limpia si se pone a farmear kills",
+    "Lux": "te rootéa y te funde",
+    "Morgana": "te ata y te niega escapes",
+    "Lulu": "te polimorfea y te anula",
+    "Soraka": "cura todo lo que le haces a su carry",
+    "Sona": "potencia a su equipo a full",
+    "Nami": "te burbujea y empuja peleas",
+    "Seraphine": "te ultimá en área y cura a los suyos",
+    "Garen": "te silencia y te ejecuta",
+    "Darius": "te apila hemorragias y te parte",
+    "Sett": "te levanta y te estrella",
+    "Vayne": "te true damagea aunque seas tanque",
+    "Kayn": "te alcanza sí o sí en mid/late",
+    "Vi": "te apunta con la ulti y te saca",
+    "Warwick": "te huele con poca vida y te caza",
+    "Nocturne": "apaga el mapa y te llega",
+    "Annie": "te stunéa con Tibbers encima",
+    "Veigar": "te one-shotea si stackea",
+    "Brand": "te prende y te derrite en área",
+    "Swain": "te jala y se cura en la pelea",
+    "Vladimir": "se cura un montón y te drena",
+    "Sion": "revive y te sigue zonificando",
+    "Ornn": "te knockupea y te destroza en engage",
+    "K'Sante": "te all-inea y te saca de posición",
+    "Alistar": "te comboa y te deja sin moverte",
+    "Braum": "bloquea tu daño al carry",
+    "Shen": "tauntea y salva a su equipo",
+    "Galio": "llega con ulti y te tauntea",
+    "Gragas": "te empuja y te rompe la formación",
+    "Lee Sin": "te kicks y te aísla",
+    "Jarvan IV": "te encierra en la arena",
+    "Skarner": "te arrastra lejos de tu equipo",
+    "Urgot": "te ejecuta y controla la pelea",
+    "Cho'Gath": "te silencía y te come stacks",
+    "Dr. Mundo": "no se muere y te tira cleavers",
+    "Singed": "te trolleá con veneno y flips",
+    "Teemo": "te ciega y te mina el mapa",
+    "Shaco": "te confunde con clones y stealth",
+    "Twitch": "te invisiblea y te limpia de atrás",
+    "Kog'Maw": "te derrite a distancia absurda",
+    "Varus": "te rootéa y te pega poke brutal",
+    "Ashe": "te ralentiza y te ultimá de lejos",
+    "Caitlyn": "te trampa y te pega de francotiradora",
+    "Samira": "te entra al melee y te limpia",
+    "Nilah": "se mete al lio y te críticos",
+    "Senna": "te pokea y cura a distancia",
+    "Zyra": "te atrapa con plantas y te quema",
+    "Heimerdinger": "te zonifica con torretas",
+    "Anivia": "te walléa y te congela",
+    "Lissandra": "te ultimá y te saca de la pelea",
+    "Orianna": "te balléa y define teamfights",
+    "Syndra": "te stunéa y te estrella de lejos",
+    "Viktor": "te zonifica y escala absurdo",
+    "Azir": "te empuja con soldados y shurima",
+    "Aurelion Sol": "te estrellá con el mapa entero",
+    "Karma": "te shieldéa/rootéa y empuja lane",
+    "Zilean": "revive a su carry y te bomba",
+    "Bard": "te ultimá a todos y te descolocá",
+    "Rakan": "engagea y te charmés",
+    "Yuumi": "pega al carry y no la alcanzas",
+    "Milio": "limpia CC y pelea con su ADC",
+    "Renata Glasc": "te vuelve loco contra tu equipo",
+    "Nunu & Willump": "te snowballéa y controla objetivos",
+    "Ivern": "escuda a su jungla/carry y te atrapa",
+    "Kindred": "niega muertes en su área",
+    "Elise": "te stunéa y te burstéa en stun",
+    "Rek'Sai": "te unburrowéa y te saca",
+    "Diana": "te ultimá en área y te burstea",
+    "Ekko": "te stunéa y se rebobina",
+    "Kassadin": "te salta encima en late",
+    "Katarina": "resetéa kills y te limpia",
+    "Qiyana": "te ultimá en wall y te borra",
+    "Pantheon": "te stunéa y te llega del cielo",
+    "Xin Zhao": "te challengea y no te suelta",
+    "Wukong": "clonea y te ultimá en área",
+    "Camille": "te engancha a la pared",
+    "Fiora": "te true damagea los vitals",
+    "Irelia": "te markea y te remata en resets",
+    "Riven": "te comboa móvil y te estalla",
+    "Aatrox": "te drena y te revive la pelea",
+    "Mordekaiser": "te lleva al reino de la muerte",
+    "Volibear": "te torreá y te stunéa",
+    "Trundle": "te roba stats y te pisa",
+    "Olaf": "ignora tu CC y te corre encima",
+    "Tryndamere": "no se muere en ulti y te corta",
+    "Gwen": "te true damagea en su niebla",
+    "Lillia": "te dormís a todos en teamfight",
+    "Hecarim": "te cargá encima a full velocidad",
+    "Sejuani": "te stunéa en área y abre peleas",
+    "Maokai": "te rootéa y te sapitos a full",
+    "Poppy": "te niega dashes y te paredes",
+    "Tahm Kench": "te engulle y te saca",
+    "Sion": "carga y te zonifica aunque muera"
+  };
+
+  function threatLine(name, enemy) {
+    if (THREAT_OVERRIDE[name]) return name + ": " + THREAT_OVERRIDE[name];
+    if (!enemy) return name + ": amenaza desconocida (sin datos)";
+    const traits = enemy.traits || [];
+    // prioridad de traits más específicos
+    for (const t of ["asesino", "curación", "control", "escudo", "tanque"]) {
+      if (traits.includes(t) && THREAT_BY_TRAIT[t]) return name + ": " + THREAT_BY_TRAIT[t];
+    }
+    const clase = enemy.clase || [];
+    for (const c of clase) {
+      if (THREAT_BY_CLASS[c]) return name + ": " + THREAT_BY_CLASS[c];
+    }
+    if (enemy.dmg === "AP") return name + ": te pega daño mágico fuerte";
+    if (enemy.dmg === "AD") return name + ": te pega daño físico fuerte";
+    return name + ": pelea versátil, cuídate el matchup";
+  }
+
+  /** Busca en el build (orden) el mejor ítem que contrapique al enemigo. */
+  function findBuildCounter(enemy, buildItems) {
+    if (!enemy || !buildItems || !buildItems.length) return null;
+    const byName = (names) => {
+      for (const n of names) {
+        const hit = buildItems.find((it) => it && it.name === n);
+        if (hit) return hit;
+      }
+      return null;
+    };
+    const traits = enemy.traits || [];
+    const clase = enemy.clase || [];
+    const isAssassin = traits.includes("asesino") || clase.includes("Asesino");
+    const isTank = traits.includes("tanque") || clase.includes("Tanque");
+    const isHeal = traits.includes("curación");
+    const isShield = traits.includes("escudo");
+    const isCC = traits.includes("control");
+    const isAdc = clase.includes("Tirador");
+    const isMage = clase.includes("Mago");
+    const isFighter = clase.includes("Luchador");
+
+    if (isAssassin) {
+      const it = byName([
+        "Reloj de Arena de Zhonya", "Ángel Guardián", "Filo de la Noche",
+        "Velo de la Banshee", "Fauces de Malmortius", "Guantelete de Sterak",
+        "Protección de Amaranth", "Armadura Pétrea", "Danza de la Muerte",
+        "Punteras de Acero", "Botas de Mercurio"
+      ]);
+      if (it) return { item: it, why: "te salva de su ráfaga" };
+    }
+    if (isHeal) {
+      const it = byName([
+        "Morellonomicón", "Recordatorio Mortal", "Espada Sierra Quimopunk", "Cota de Espinas"
+      ]);
+      if (it) return { item: it, why: "le corta la curación" };
+      // Sin anti-curación en el build: mejor tip que un ítem flojo
+      return null;
+    }
+    if (isShield) {
+      const it = byName(["Colmillo de Serpiente", "Tridente del Oceánida"]);
+      if (it) return { item: it, why: "le rompe los escudos" };
+    }
+    // CC antes que tanque: hooks/engage importan más que "perforar"
+    if (isCC) {
+      const it = byName(["Botas de Mercurio", "Cimitarra Mercurial", "Reloj de Arena de Zhonya"]);
+      if (it) return { item: it, why: "te saca de su control o lo niega" };
+    }
+    if (isTank) {
+      const it = byName([
+        "Báculo del Vacío", "Recuerdos de Lord Dominik", "Tormento de Liandry",
+        "Cuchilla Oscura", "Espada del Rey Arruinado", "Rencor de Serylda"
+      ]);
+      if (it) return { item: it, why: "le perfora la tanquez" };
+    }
+    if (isAdc || (enemy.dmg === "AD" && !isAssassin)) {
+      const it = byName([
+        "Punteras de Acero", "Presagio de Randuin", "Corazón de Hielo",
+        "Cota de Espinas", "Reloj de Arena de Zhonya", "Danza de la Muerte",
+        "Ángel Guardián"
+      ]);
+      if (it) return { item: it, why: "aguantas mejor su DPS físico" };
+    }
+    if (isMage || enemy.dmg === "AP") {
+      const it = byName([
+        "Botas de Mercurio", "Velo de la Banshee", "Rookern Kaénico",
+        "Fuerza de la Naturaleza", "Fauces de Malmortius", "Al Filo de la Cordura"
+      ]);
+      if (it) return { item: it, why: "te blindás contra su magia" };
+    }
+    if (isFighter) {
+      const it = byName([
+        "Punteras de Acero", "Botas de Mercurio", "Presagio de Randuin",
+        "Ángel Guardián", "Guantelete de Sterak", "Danza de la Muerte",
+        "Cuchilla Oscura", "Espada del Rey Arruinado"
+      ]);
+      if (it) return { item: it, why: "te ayuda en el duelo contra él" };
+    }
+    return null;
+  }
+
+  function tipForEnemy(name, enemy, estado) {
+    const traits = (enemy && enemy.traits) || [];
+    const clase = (enemy && enemy.clase) || [];
+    if (traits.includes("asesino") || clase.includes("Asesino")) {
+      return "Tip: pelea cerca de tu equipo; no le des el 1v1 cuando tenga ulti.";
+    }
+    if (traits.includes("control")) {
+      return "Tip: guarda tu escape/Destello para su engage; no camines en su rango de hook.";
+    }
+    if (traits.includes("tanque")) {
+      return "Tip: no gastes todo el combo en él primero; prioriza a los carries.";
+    }
+    if (traits.includes("curación")) {
+      return "Tip: enfócala / al carry que cura antes de pelear largo.";
+    }
+    if (clase.includes("Tirador")) {
+      return "Tip: flanquea o espera su compromiso; no pelees en su kiting.";
+    }
+    if (estado === "perdiendo") {
+      return "Tip: farmea seguro y pelea solo con visión; no fuerces su all-in.";
+    }
+    if (estado === "ganando") {
+      return "Tip: fuerza objetivos; no le des free kills para que se recupere.";
+    }
+    return "Tip: respeta su cooldown clave y pelea cuando esté gastado.";
+  }
+
+  /**
+   * Tarjetas 1:1 por enemigo: amenaza + ítem del build que lo contrapica (o tip).
+   * @returns {{ name, img, threat, counterKind, item?, counter }}
+   */
+  function buildEnemyCards(champs, myChampion, role, enemies, build, gameState) {
+    const estado = normalizeEstado(gameState || (build && build.estado) || "parejo");
+    const order = (build && build.order) || [];
+    const buildItems = order.map((e) => e && e.item).filter(Boolean);
+    const list = (enemies || []).filter(Boolean).slice(0, 5);
+
+    return list.map((name) => {
+      const enemy = getChamp(champs, name);
+      const threat = threatLine(name, enemy);
+      const hit = findBuildCounter(enemy, buildItems);
+      if (hit) {
+        return {
+          name,
+          img: (enemy && enemy.img) || "",
+          threat,
+          counterKind: "item",
+          item: hit.item,
+          counter: "Te lo para: " + hit.item.name + " — " + hit.why + "."
+        };
+      }
+      return {
+        name,
+        img: (enemy && enemy.img) || "",
+        threat,
+        counterKind: "tip",
+        item: null,
+        counter: tipForEnemy(name, enemy, estado)
+      };
+    });
+  }
 
   /** Hash compartible (#c=&r=&e=&g=) a partir del estado del build. */
   function buildShareHash(opts) {
@@ -677,6 +974,6 @@
   return {
     recommend, countTraits, buildStyle, getChamp, fmt, pickRunes, pickSpells,
     ESTADOS, normalizeEstado, applyEstado, pickSafetyItem, pickSnowballItem,
-    buildShareHash, buildShareUrl
+    buildShareHash, buildShareUrl, buildEnemyCards, threatLine, findBuildCounter
   };
 });

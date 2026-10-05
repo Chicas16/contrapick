@@ -281,6 +281,51 @@ test("buildShareUrl concatena base + hash sin duplicar #", () => {
   assert.ok(!u2.includes("#old"));
 });
 
+
+// ---------- Tarjetas por enemigo ----------
+test("buildEnemyCards: 5 tarjetas, amenaza y contra solo con ítems del build", () => {
+  const enemies = ["Zed", "Malphite", "Soraka", "Thresh", "Jinx"];
+  const rec = rules.recommend(data, champs, {
+    role: "mid", myChampion: "Ahri", enemies, estado: "parejo"
+  });
+  assert.ok(rec.enemyCards);
+  assert.strictEqual(rec.enemyCards.length, 5);
+  const buildNames = new Set(rec.order.map((e) => e.item.name));
+  rec.enemyCards.forEach((card, i) => {
+    assert.strictEqual(card.name, enemies[i]);
+    assert.ok(card.threat && card.threat.includes(card.name), card.threat);
+    assert.ok(card.counter && card.counter.length > 8, card.counter);
+    if (card.counterKind === "item") {
+      assert.ok(card.item && buildNames.has(card.item.name), "ítem fuera del build: " + (card.item && card.item.name));
+      assert.ok(card.counter.includes(card.item.name));
+    } else {
+      assert.strictEqual(card.counterKind, "tip");
+      assert.ok(card.counter.startsWith("Tip:"));
+      assert.strictEqual(card.item, null);
+    }
+  });
+  // Zed threat override + counter from build
+  assert.ok(rec.enemyCards[0].threat.includes("revienta"));
+});
+
+test("buildEnemyCards reacciona al estado (tips usan game state)", () => {
+  const enemies = ["Jinx", "Caitlyn", "Ashe", "Sivir", "Tristana"]; // tiradores, tip likely
+  const a = rules.buildEnemyCards(champs, "Malphite", "baron", enemies, {
+    order: [{ item: data.items.boots.mercury }], estado: "parejo"
+  }, "parejo");
+  const b = rules.buildEnemyCards(champs, "Malphite", "baron", enemies, {
+    order: [{ item: data.items.boots.mercury }], estado: "ganando"
+  }, "ganando");
+  assert.strictEqual(a.length, 5);
+  assert.strictEqual(b.length, 5);
+  // Pure function callable standalone
+  const zed = rules.buildEnemyCards(champs, "Ahri", "mid", ["Zed"], {
+    order: [{ item: data.items.defensive.zhonya }]
+  }, "parejo")[0];
+  assert.strictEqual(zed.counterKind, "item");
+  assert.strictEqual(zed.item.name, "Reloj de Arena de Zhonya");
+});
+
 printRec("Ejemplo 1 — Mid Ahri vs tanques (antes neutros)", ex1);
 printRec("Ejemplo 2 — ADC Jinx vs curación (antes neutros)", ex2);
 printRec("Ejemplo 3 — Barón Malphite vs asesinos AD", ex3);

@@ -338,6 +338,34 @@
     }
   }
 
+
+  function enemyCardsHTML(cards) {
+    if (!cards || !cards.length) return "";
+    const rows = cards.map((card) => {
+      const portrait = champImg(card.name, "enemy-card__portrait", 56);
+      let counterInner;
+      if (card.counterKind === "item" && card.item) {
+        const m = String(card.counter).match(/^Te lo para: .+? — (.+)$/);
+        const whyText = m ? m[1] : card.counter;
+        counterInner = `Te lo para: ${itemImg(card.item, "enemy-card__item-icon", 28)} <span class="enemy-card__item">${esc(card.item.name)}</span> — ${esc(whyText)}`;
+      } else {
+        counterInner = esc(card.counter);
+      }
+      return `<article class="enemy-card">
+        ${portrait}
+        <div class="enemy-card__body">
+          <div class="enemy-card__name">${esc(card.name)}</div>
+          <p class="enemy-card__threat">${esc(card.threat)}</p>
+          <p class="enemy-card__counter">${counterInner}</p>
+        </div>
+      </article>`;
+    }).join("");
+    return `<section class="enemy-cards" aria-label="Contra quién va cada ítem">
+      <h2 class="enemy-cards__title">Contra quién va cada ítem</h2>
+      <div class="enemy-cards__list">${rows}</div>
+    </section>`;
+  }
+
   function render(rec) {
     const kindOf = (e) => (e === rec.boots ? "boots" : rec.core.includes(e) ? "core" : "sit");
     const orderSet = new Set(rec.order);
@@ -352,6 +380,12 @@
         </div>
       </div>
       ${rec.estado && rec.estado !== "parejo" ? `<div class="estado-note">${esc(rec.estadoNote || "")}</div>` : ""}
+
+      <div class="share">
+        <button type="button" class="share-btn" data-share-copy>Copiar link de mi build</button>
+        <button type="button" class="share-btn" data-share-native hidden>Compartir</button>
+        <span class="share-ok" hidden>¡Link copiado!</span>
+      </div>
 
       <div class="buildbar" aria-label="Build en orden de compra">
         ${rec.order.map((e, i) => `<div class="bb-slot bb-${kindOf(e)}" title="${esc(e.item.name)}">
@@ -384,6 +418,8 @@
 
       ${extras.length ? `<h2 class="sec">Otras opciones situacionales</h2>
       <ul class="item-list">${extras.map((e) => itemRow(e, "sit", 0)).join("")}</ul>` : ""}
+
+      ${enemyCardsHTML(rec.enemyCards)}
 
       <p class="hint">Conteo aproximado del enemigo: AP ${rules.fmt(rec.traitCounts.AP)}, AD ${rules.fmt(rec.traitCounts.AD)},
         tanque ${rec.traitCounts.tanque}, curación ${rec.traitCounts.curacion}, control ${rec.traitCounts.control},
