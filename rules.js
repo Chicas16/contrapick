@@ -653,8 +653,30 @@
     };
   }
 
+
+  /** Hash compartible (#c=&r=&e=&g=) a partir del estado del build. */
+  function buildShareHash(opts) {
+    opts = opts || {};
+    const p = new URLSearchParams();
+    if (opts.myChampion) p.set("c", opts.myChampion);
+    if (opts.role) p.set("r", opts.role);
+    const enemies = (opts.enemies || []).filter(Boolean);
+    if (enemies.length) p.set("e", enemies.join(","));
+    const est = normalizeEstado(opts.estado);
+    if (est !== "parejo") p.set("g", est);
+    const q = p.toString();
+    return q ? "#" + q : "";
+  }
+
+  /** URL absoluta o relativa + hash de build. */
+  function buildShareUrl(base, opts) {
+    const root = String(base == null ? "" : base).split("#")[0];
+    return root + buildShareHash(opts);
+  }
+
   return {
     recommend, countTraits, buildStyle, getChamp, fmt, pickRunes, pickSpells,
-    ESTADOS, normalizeEstado, applyEstado, pickSafetyItem, pickSnowballItem
+    ESTADOS, normalizeEstado, applyEstado, pickSafetyItem, pickSnowballItem,
+    buildShareHash, buildShareUrl
   };
 });

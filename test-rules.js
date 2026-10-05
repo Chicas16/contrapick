@@ -246,6 +246,41 @@ test("estados usan solo nombres que existen en data (ítems/runas/hechizos)", ()
   });
 });
 
+
+// ---------- Compartir / URL ----------
+test("buildShareHash incluye c, r, e y g solo si no es parejo", () => {
+  const h = rules.buildShareHash({
+    myChampion: "Ahri", role: "mid",
+    enemies: ["Zed", "Talon", "Rengar", "Draven", "Jhin"],
+    estado: "parejo"
+  });
+  assert.ok(h.startsWith("#"));
+  assert.ok(h.includes("c=Ahri"));
+  assert.ok(h.includes("r=mid"));
+  assert.ok(h.includes("e=Zed"));
+  assert.ok(!h.includes("g="), h);
+  const hg = rules.buildShareHash({
+    myChampion: "Ahri", role: "mid",
+    enemies: ["Zed", "Talon", "Rengar", "Draven", "Jhin"],
+    estado: "ganando"
+  });
+  assert.ok(hg.includes("g=ganando"), hg);
+});
+
+test("buildShareUrl concatena base + hash sin duplicar #", () => {
+  const u = rules.buildShareUrl("https://chicas16.github.io/contrapick/", {
+    myChampion: "Jinx", role: "adc", enemies: ["Thresh", "Nautilus", "Lulu", "Zed", "Yasuo"], estado: "perdiendo"
+  });
+  assert.strictEqual(u.indexOf("#"), u.lastIndexOf("#"));
+  assert.ok(u.startsWith("https://chicas16.github.io/contrapick/"));
+  assert.ok(u.includes("c=Jinx"));
+  assert.ok(u.includes("g=perdiendo"));
+  const u2 = rules.buildShareUrl("https://chicas16.github.io/contrapick/#old", {
+    myChampion: "Ahri", role: "mid", enemies: ["Zed", "Talon", "Rengar", "Draven", "Jhin"]
+  });
+  assert.ok(!u2.includes("#old"));
+});
+
 printRec("Ejemplo 1 — Mid Ahri vs tanques (antes neutros)", ex1);
 printRec("Ejemplo 2 — ADC Jinx vs curación (antes neutros)", ex2);
 printRec("Ejemplo 3 — Barón Malphite vs asesinos AD", ex3);

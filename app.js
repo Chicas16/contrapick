@@ -224,14 +224,12 @@
   });
 
   /* ---------- URL compartible (#c=…&r=…&e=…) ---------- */
+  function currentShareOpts() {
+    return { myChampion: state.me, role: state.role, enemies: state.enemies.slice(), estado: state.estado };
+  }
   function syncHash() {
-    const p = new URLSearchParams();
-    if (state.me) p.set("c", state.me);
-    if (state.role) p.set("r", state.role);
-    if (state.enemies.some(Boolean)) p.set("e", state.enemies.join(","));
-    if (state.estado && state.estado !== "parejo") p.set("g", state.estado);
-    const h = p.toString();
-    history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
+    const h = rules.buildShareHash(currentShareOpts());
+    history.replaceState(null, "", h || (location.pathname + location.search));
   }
   function loadHash() {
     const p = new URLSearchParams(location.hash.slice(1));
@@ -293,6 +291,53 @@
     </li>`;
   }
 
+
+  function fallbackCopy(text) {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.left = "-9999px";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); } catch (_) {}
+    document.body.removeChild(ta);
+  }
+
+  function copyShareLink(btn) {
+    const url = rules.buildShareUrl(location.href, currentShareOpts());
+    const done = () => {
+      const ok = btn.parentElement && btn.parentElement.querySelector(".share-ok");
+      if (ok) {
+        ok.hidden = false;
+        clearTimeout(ok._t);
+        ok._t = setTimeout(() => { ok.hidden = true; }, 2000);
+      }
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(done).catch(() => { fallbackCopy(url); done(); });
+    } else {
+      fallbackCopy(url);
+      done();
+    }
+  }
+
+  function nativeShare() {
+    const url = rules.buildShareUrl(location.href, currentShareOpts());
+    if (!navigator.share) return;
+    navigator.share({ title: "Mi build en Contrapick", url }).catch(() => {});
+  }
+
+  function bindShare() {
+    const copyBtn = results.querySelector("[data-share-copy]");
+    const shareBtn = results.querySelector("[data-share-native]");
+    if (copyBtn) copyBtn.addEventListener("click", () => copyShareLink(copyBtn));
+    if (shareBtn) {
+      if (navigator.share) shareBtn.hidden = false;
+      shareBtn.addEventListener("click", nativeShare);
+    }
+  }
+
   function render(rec) {
     const kindOf = (e) => (e === rec.boots ? "boots" : rec.core.includes(e) ? "core" : "sit");
     const orderSet = new Set(rec.order);
@@ -344,6 +389,7 @@
         tanque ${rec.traitCounts.tanque}, curación ${rec.traitCounts.curacion}, control ${rec.traitCounts.control},
         asesino ${rec.traitCounts.asesino}, escudo ${rec.traitCounts.escudo}. Los campeones mixtos cuentan 0,5 AP + 0,5 AD.</p>
     `;
+    bindShare();
     results.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 

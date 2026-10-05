@@ -1021,3 +1021,36 @@ footer a { color: #fda4af; }
 .site-header {
   padding: 14px 0 26px;
 }
+
+
+/* ---------- Compartir build (mínimo; bobby pule) ---------- */
+.share {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 12px 0 4px;
+}
+.share-btn {
+  background: var(--card2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+.share-btn:hover {
+  border-color: var(--red);
+  background: rgba(225, 29, 46, 0.16);
+}
+.share-ok {
+  color: var(--good);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
