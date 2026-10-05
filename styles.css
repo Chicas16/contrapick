@@ -1268,35 +1268,52 @@ footer a:hover { color: #fecaca; border-bottom-color: #fecaca; }
   }
 }
 
-/* ---------- Tarjetas por enemigo (mínimo; bobby pule) ---------- */
-.enemy-cards { margin-top: 18px; }
+/* ---------- Tarjetas por enemigo ---------- */
+.enemy-cards {
+  margin-top: 22px;
+  padding-top: 4px;
+}
 .enemy-cards__title {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.15rem;
-  letter-spacing: 0.03em;
-  margin: 0 0 10px;
-  color: #fff;
+  font-size: 1.05rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: var(--red-bright);
 }
 .enemy-cards__list {
   display: grid;
-  gap: 8px;
+  gap: 10px;
 }
 .enemy-card {
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 10px 12px;
+  position: relative;
+  background: linear-gradient(135deg, #1a0a0c 0%, #121212 55%, #0c0c0c 100%);
+  border: 1px solid rgba(225, 29, 46, 0.28);
+  border-radius: 14px;
+  padding: 12px 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+}
+.enemy-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--red-bright), var(--red-deep));
 }
 .enemy-card__portrait {
   width: 56px;
   height: 56px;
-  border-radius: 10px;
+  border-radius: 12px;
   object-fit: cover;
-  border: 1px solid var(--line);
+  border: 2px solid rgba(225, 29, 46, 0.55);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 4px 14px rgba(225, 29, 46, 0.25);
   flex: 0 0 auto;
   display: block;
 }
@@ -1308,23 +1325,30 @@ footer a:hover { color: #fecaca; border-bottom-color: #fecaca; }
   background: #0c0c0c;
   color: #e5e5e5;
   font-size: 0.8rem;
+  border-radius: 12px;
+  border: 2px solid rgba(225, 29, 46, 0.4);
 }
 .enemy-card__body { min-width: 0; flex: 1; }
 .enemy-card__name {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #fff;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 .enemy-card__threat {
   margin: 4px 0 0;
-  color: #f0f0f0;
+  color: #d4d4d4;
   font-size: 0.9rem;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 .enemy-card__counter {
-  margin: 6px 0 0;
+  margin: 8px 0 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(225, 29, 46, 0.1);
+  border: 1px solid rgba(225, 29, 46, 0.22);
   color: #ffe4e8;
   font-size: 0.88rem;
   line-height: 1.4;
@@ -1335,14 +1359,22 @@ footer a:hover { color: #fecaca; border-bottom-color: #fecaca; }
 }
 .enemy-card__item {
   color: var(--red-bright);
+  font-family: var(--font-display);
   font-weight: 700;
+  letter-spacing: 0.02em;
 }
 .enemy-card__item-icon {
   width: 28px;
   height: 28px;
-  border-radius: 6px;
-  border: 1px solid var(--line);
+  border-radius: 7px;
+  border: 1px solid rgba(255, 59, 74, 0.45);
   object-fit: cover;
   vertical-align: middle;
   display: inline-block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 420px) {
+  .enemy-card { padding: 10px; gap: 10px; }
+  .enemy-card__portrait,
+  .fallback.enemy-card__portrait { width: 48px; height: 48px; }
 }
