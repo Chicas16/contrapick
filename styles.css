@@ -1082,3 +1082,18 @@ footer a { color: #fda4af; }
 }
 .brand-name { display: none; }
 .tagline, .disclaimer-inline { display: none; }
+
+
+.slogan {
+  display: block !important;
+  margin: 10px auto 0;
+  max-width: 720px;
+  padding: 0 16px;
+  color: #ffc9ce;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(0.95rem, 3.5vw, 1.15rem);
+  letter-spacing: 0.04em;
+  text-transform: none;
+  line-height: 1.3;
+}
