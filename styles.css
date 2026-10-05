@@ -221,23 +221,13 @@ button { font: inherit; color: inherit; }
     0 8px 22px rgba(0, 0, 0, 0.5);
   transform: translateY(-1px);
 }
-.brand-name {
-  display: inline-flex;
-  align-items: flex-end;
-  gap: 0.02em;
-  font-family: var(--font-brand);
-  font-weight: 800;
-  font-size: clamp(1.45rem, 5vw, 2rem);
-  letter-spacing: 0.04em;
-  line-height: 1;
-  color: #fff;
-  text-transform: uppercase;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
-}
-.brand-letter {
-  display: inline-block;
-  /* letra caída: cada letra un poco más abajo */
-  transform: translateY(calc(var(--i) * 1.6px));
+.brand-wordmark {
+  display: block;
+  height: clamp(28px, 7vw, 40px);
+  width: auto;
+  max-width: min(260px, 58vw);
+  object-fit: contain;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.45));
 }
 
 .tagline, .disclaimer-inline { display: none; }
