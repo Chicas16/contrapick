@@ -222,15 +222,22 @@ button { font: inherit; color: inherit; }
   transform: translateY(-1px);
 }
 .brand-name {
-  display: block;
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 0.02em;
   font-family: var(--font-brand);
-  font-weight: 700;
-  font-size: clamp(1.4rem, 4.6vw, 1.9rem);
-  letter-spacing: 0.01em;
-  line-height: 1.05;
+  font-weight: 800;
+  font-size: clamp(1.45rem, 5vw, 2rem);
+  letter-spacing: 0.04em;
+  line-height: 1;
   color: #fff;
-  text-transform: none;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+.brand-letter {
+  display: inline-block;
+  /* letra caída: cada letra un poco más abajo */
+  transform: translateY(calc(var(--i) * 1.6px));
 }
 
 .tagline, .disclaimer-inline { display: none; }
