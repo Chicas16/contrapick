@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&display=swap');
 /* Fuentes: Rajdhani (display/gamer) + Inter (texto) — Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600;700&display=swap");
 
@@ -61,7 +62,7 @@ button { font: inherit; color: inherit; }
 /* ---------- Header: red gradient + wave ---------- */
 .site-header {
   background: linear-gradient(105deg, #1a0508 0%, #6b0f18 38%, var(--red) 72%, var(--red-bright) 100%);
-  padding: 18px 0 34px;
+  padding: 14px 0 26px;
   position: relative;
   margin-bottom: 8px;
 }
@@ -969,4 +970,54 @@ footer a { color: #fda4af; }
 @media (max-width: 420px) {
   .estado { grid-template-columns: 1fr; }
   .estado-btn { font-size: 0.84rem; padding: 12px 10px; }
+}
+
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  margin: 0;
+  min-width: 0;
+}
+.brand-mark {
+  display: block;
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+}
+.brand-name {
+  font-family: Orbitron, Rajdhani, system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.4rem, 6vw, 2.15rem);
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  text-shadow: 0 0 22px rgba(225,29,46,0.55);
+}
+.tagline {
+  margin: 8px 0 4px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+.disclaimer-inline {
+  margin: 0 0 14px;
+  color: #737373;
+  font-size: 0.75rem;
+}
+.site-header {
+  padding: 14px 0 26px;
 }
