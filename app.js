@@ -563,6 +563,8 @@
 
       ${enemyCardsHTML(rec.enemyCards)}
 
+      ${feedbackHTML()}
+
       <p class="hint">Conteo aproximado del enemigo: AP ${rules.fmt(rec.traitCounts.AP)}, AD ${rules.fmt(rec.traitCounts.AD)},
         tanque ${rec.traitCounts.tanque}, curación ${rec.traitCounts.curacion}, control ${rec.traitCounts.control},
         asesino ${rec.traitCounts.asesino}, escudo ${rec.traitCounts.escudo}. Los campeones mixtos cuentan 0,5 AP + 0,5 AD.</p>
