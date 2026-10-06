@@ -645,8 +645,8 @@
       core,
       situational: adj.situational,
       order: adj.order,
-      runes: adj.runes,
-      spells: adj.spells,
+      runes,  // runas y hechizos se eligen antes de la partida: no dependen del estado
+      spells,
       estado: adj.estado,
       estadoLabel: adj.estadoLabel,
       estadoNote: adj.estadoNote

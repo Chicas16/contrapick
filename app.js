@@ -542,6 +542,7 @@
       <div class="rs-grid">
         <div class="rs-col">
           <h2 class="sec">Runas</h2>
+          <p class="pregame-note">Se eligen antes de la partida.</p>
           <ul class="runes">
             ${runeRow(rec.runes.keystone, "keystone")}
             ${rec.runes.minors.map((m) => runeRow(m, "minor")).join("")}

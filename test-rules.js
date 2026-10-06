@@ -308,6 +308,17 @@ test("buildEnemyCards: 5 tarjetas, amenaza y contra solo con ítems del build", 
   assert.ok(rec.enemyCards[0].threat.includes("revienta"));
 });
 
+test("runas y hechizos no cambian con el estado (se eligen antes de la partida)", () => {
+  const base = { role: "mid", myChampion: "Ahri", enemies: ["Zed", "Malphite", "Soraka", "Thresh", "Jinx"] };
+  const key = (rec) => JSON.stringify({
+    r: [rec.runes.keystone.rune.name, ...rec.runes.minors.map((m) => m.rune.name)],
+    s: rec.spells.map((x) => x.spell.name)
+  });
+  const p = key(rules.recommend(data, champs, { ...base, estado: "parejo" }));
+  assert.strictEqual(key(rules.recommend(data, champs, { ...base, estado: "ganando" })), p);
+  assert.strictEqual(key(rules.recommend(data, champs, { ...base, estado: "perdiendo" })), p);
+});
+
 test("buildEnemyCards reacciona al estado (tips usan game state)", () => {
   const enemies = ["Jinx", "Caitlyn", "Ashe", "Sivir", "Tristana"]; // tiradores, tip likely
   const a = rules.buildEnemyCards(champs, "Malphite", "baron", enemies, {
