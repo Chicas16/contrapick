@@ -1593,3 +1593,110 @@ footer a:hover { color: #fecaca; border-bottom-color: #fecaca; }
   font-size: 0.88rem;
 }
 .feedback__msg--err { color: #fecaca; }
+
+/* ===== Tabs (Build / Cómo funciona) ===== */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.tab {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.02rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.28);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.tab:hover, .tab:focus-visible { border-color: #fff; background: rgba(0, 0, 0, 0.45); }
+.tab--active, .tab[aria-current="page"] {
+  background: #fff;
+  color: var(--red-deep);
+  border-color: #fff;
+}
+
+/* ===== Página Cómo funciona ===== */
+.how { padding: 22px 0 8px; color: var(--ink); }
+.how__title {
+  font-family: var(--font-brand);
+  font-size: clamp(2rem, 8vw, 2.8rem);
+  line-height: 1.05;
+  margin: 0 0 18px;
+  text-transform: uppercase;
+}
+.how__steps { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 12px; }
+.how__step {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--card);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: 14px;
+}
+.how__num {
+  flex: 0 0 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+  font-family: var(--font-brand);
+  font-size: 1.4rem;
+  box-shadow: var(--glow-red);
+}
+.how__step-body { flex: 1 1 auto; min-width: 0; }
+.how__step-title { margin: 0 0 4px; font-size: 1.25rem; line-height: 1.2; color: #fff; }
+.how__step-text, .how__block p { margin: 0; font-size: 1.08rem; line-height: 1.45; color: #f5f5f5; }
+.how__imgs, .how__icons { display: flex; gap: 6px; flex-shrink: 0; }
+.how__icons { margin-top: 12px; flex-wrap: wrap; }
+.how__img {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  border: 1px solid var(--line-strong);
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #000;
+}
+.how__icons .how__img { width: 48px; height: 48px; }
+.how__block {
+  background: var(--card);
+  border: 1px solid var(--line-strong);
+  border-left: 4px solid var(--red);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin: 0 0 12px;
+}
+.how__block-title { margin: 0 0 6px; font-size: 1.3rem; color: #fff; }
+.how__cta {
+  display: block;
+  text-align: center;
+  margin: 20px 0 8px;
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  background: var(--red);
+  color: #fff;
+  font-family: var(--font-brand);
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: var(--glow-red);
+}
+.how__cta:hover, .how__cta:focus-visible { background: var(--red-bright); }
+@media (max-width: 420px) {
+  .how__step { flex-wrap: wrap; }
+  .how__step-body { flex-basis: calc(100% - 58px); }
+  .how__imgs, .how__step > .how__img { margin-left: 58px; }
+  .how__img { width: 48px; height: 48px; }
+}

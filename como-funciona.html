@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#070707" />
   <meta property="og:title" content="Contrapick — tu build contra los 5" />
   <meta property="og:description" content="Elige tu campeón y los 5 enemigos y te damos objetos, runas y hechizos explicados. Proyecto de fans, no afiliado a Riot Games." />
-  <meta property="og:url" content="https://chicas16.github.io/contrapick/" />
+  <meta property="og:url" content="https://chicas16.github.io/contrapick/como-funciona.html" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_MX" />
   <meta property="og:image" content="https://chicas16.github.io/contrapick/assets/og-image.png" />
@@ -17,7 +17,7 @@
   <meta name="twitter:title" content="Contrapick — tu build contra los 5" />
   <meta name="twitter:description" content="Elige tu campeón y los 5 enemigos y te damos objetos, runas y hechizos explicados. Proyecto de fans, no afiliado a Riot Games." />
   <meta name="twitter:image" content="https://chicas16.github.io/contrapick/assets/og-image.png" />
-  <title>Contrapick — Tu build contra los 5</title>
+  <title>Cómo funciona — Contrapick</title>
   <link rel="icon" href="assets/icon-mira-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/icon-mira-180.png" sizes="180x180" />
   <link rel="icon" href="assets/icon-mira-512.png" type="image/png" sizes="512x512" />
@@ -39,58 +39,68 @@
     </div>
     <p class="wrap slogan">Que la build los cuente a ellos.</p>
     <nav class="wrap tabs" aria-label="Secciones">
-      <a class="tab tab--active" href="index.html" aria-current="page">Build</a>
-      <a class="tab" href="como-funciona.html">Cómo funciona</a>
+      <a class="tab" href="index.html">Build</a>
+      <a class="tab tab--active" href="como-funciona.html" aria-current="page">Cómo funciona</a>
     </nav>
     <div class="header-wave" aria-hidden="true"></div>
   </header>
 
   <div class="wrap">
-    <section class="panel" aria-labelledby="t-draft">
-      <h2 id="t-draft" class="panel-title">Tu partida</h2>
+    <main class="how">
+      <h1 class="how__title">Cómo funciona</h1>
 
-      <div class="draft">
-        <div class="side side-me">
-          <div class="side-label">Tú</div>
-          <button type="button" class="slot slot-me" data-slot="me" aria-label="Elegir tu campeón"></button>
-        </div>
-        <div class="side side-enemy">
-          <div class="side-label">Enemigos</div>
-          <div class="enemy-slots">
-            <button type="button" class="slot" data-slot="0" aria-label="Elegir enemigo 1"></button>
-            <button type="button" class="slot" data-slot="1" aria-label="Elegir enemigo 2"></button>
-            <button type="button" class="slot" data-slot="2" aria-label="Elegir enemigo 3"></button>
-            <button type="button" class="slot" data-slot="3" aria-label="Elegir enemigo 4"></button>
-            <button type="button" class="slot" data-slot="4" aria-label="Elegir enemigo 5"></button>
+      <ol class="how__steps">
+        <li class="how__step">
+          <span class="how__num" aria-hidden="true">1</span>
+          <div class="how__step-body">
+            <h2 class="how__step-title">Elige tu campeón y tu rol</h2>
+            <p class="how__step-text">Toca tu casilla, busca a tu main y dinos si vas a Barón, Jungla, Mid, Dragón o Soporte.</p>
           </div>
+          <img class="how__img" src="assets/champions/ahri.webp" width="56" height="56" alt="Ahri" loading="lazy" />
+        </li>
+        <li class="how__step">
+          <span class="how__num" aria-hidden="true">2</span>
+          <div class="how__step-body">
+            <h2 class="how__step-title">Elige a los 5 rivales</h2>
+            <p class="how__step-text">Pon a los cinco del otro equipo. Así sabemos si hay mucho AP, AD, tanques o curación.</p>
+          </div>
+          <span class="how__imgs">
+            <img class="how__img" src="assets/champions/zed.webp" width="56" height="56" alt="Zed" loading="lazy" />
+            <img class="how__img" src="assets/champions/malphite.webp" width="56" height="56" alt="Malphite" loading="lazy" />
+          </span>
+        </li>
+        <li class="how__step">
+          <span class="how__num" aria-hidden="true">3</span>
+          <div class="how__step-body">
+            <h2 class="how__step-title">Dinos cómo va la partida</h2>
+            <p class="how__step-text"><strong>Parejo</strong>, <strong>Vas ganando</strong> o <strong>Vas perdiendo</strong>. La build se ajusta a cómo vas.</p>
+          </div>
+        </li>
+      </ol>
+
+      <section class="how__block how__block--done" aria-labelledby="how-listo">
+        <h2 id="how-listo" class="how__block-title">Listo</h2>
+        <p>Te damos <strong>6 ítems con el porqué</strong>, runas, hechizos y una tarjeta por cada enemigo con el ítem que lo para.</p>
+        <div class="how__icons">
+          <img class="how__img" src="assets/items/zhonyas-hourglass.webp" width="48" height="48" alt="Reloj de Arena de Zhonya" loading="lazy" />
+          <img class="how__img" src="assets/items/infinity-edge.webp" width="48" height="48" alt="Filo del Infinito" loading="lazy" />
+          <img class="how__img" src="assets/runes/electrocute.webp" width="48" height="48" alt="Electrocutar" loading="lazy" />
+          <img class="how__img" src="assets/spells/flash.webp" width="48" height="48" alt="Destello" loading="lazy" />
         </div>
-      </div>
+      </section>
 
-      <div class="field-label" id="lbl-role">Tu rol</div>
-      <div class="roles" role="radiogroup" aria-labelledby="lbl-role" id="roles"></div>
+      <section class="how__block" aria-labelledby="how-share">
+        <h2 id="how-share" class="how__block-title">Compártela</h2>
+        <p>Copia el link de tu build o compártelo directo con tu dúo. Abre con todo ya elegido.</p>
+      </section>
 
-      <div class="field-label" id="lbl-estado">Estado de la partida</div>
-      <div class="estado" role="radiogroup" aria-labelledby="lbl-estado" id="estado"></div>
+      <section class="how__block" aria-labelledby="how-beta">
+        <h2 id="how-beta" class="how__block-title">Estamos en beta</h2>
+        <p>Las builds salen de reglas armadas para el parche 7.3a, no de estadísticas de partidas. Dale a <strong>“¿Te sirvió?”</strong> para que la mejoremos.</p>
+      </section>
 
-      <div class="picker" id="picker">
-        <div class="picker-head">
-          <span id="picker-target" class="picker-target">Elige tu campeón</span>
-          <button type="button" class="link-btn" id="btn-clear-slot" hidden>Quitar</button>
-        </div>
-        <input type="search" id="search" placeholder="Buscar campeón…" autocomplete="off" aria-label="Buscar campeón" />
-        <div class="filters" id="filters" role="group" aria-label="Filtrar por clase"></div>
-        <div class="grid" id="grid" role="listbox" aria-label="Campeones"></div>
-        <p class="grid-empty" id="grid-empty" hidden>Sin resultados.</p>
-      </div>
-
-      <div class="actions">
-        <button type="button" id="btn-build">Ver build recomendado</button>
-        <button type="button" class="ghost" id="btn-reset">Reiniciar</button>
-      </div>
-      <div id="error" role="alert" hidden></div>
-    </section>
-
-    <section id="results" class="panel" hidden aria-live="polite"></section>
+      <a class="how__cta" href="index.html">Armar mi build</a>
+    </main>
 
     <footer>
       <p>Los 141 campeones tienen tipo de daño (AP/AD/mixto) y traits (tanque, curación, control, asesino, escudo) basados en la WR Wiki y builds de wildriftmeta; son aproximados. Ver <a href="DATA_SOURCES.md">DATA_SOURCES.md</a>.</p>
@@ -100,9 +110,5 @@
       <p>Proyecto de fans, no afiliado a Riot Games. El arte de campeones, ítems, runas y hechizos pertenece a Riot Games. League of Legends: Wild Rift © Riot Games.</p>
     </footer>
   </div>
-  <script src="data.js"></script>
-  <script src="champions.js"></script>
-  <script src="rules.js"></script>
-  <script src="app.js?v=7"></script>
 </body>
 </html>
